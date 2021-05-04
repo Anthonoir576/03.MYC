@@ -1,0 +1,104 @@
+/* - 4 four - */
+
+/* variable | color */
+$bluesky: #6cb0f6;
+$gray: #727272;
+
+/* MARGIN page */
+.bloc_page2 {
+    margin: 0em 23.438em 0em;
+}
+
+#myJob {
+    text-decoration: none;
+    & h2 {
+        display: block;
+        position: relative;
+        z-index: 2;
+        top: 7em;
+        font-size: 2.5em;
+        color: black;
+    }
+    & span {
+        font-size: 1em;
+        font-weight: 200;
+        color: $gray;
+    }
+    & strong {
+        font-size: 0.4em;
+        font-weight: 500;
+        color: $gray;
+    }
+    /* little nav */
+    & a {
+        margin-right: 1.5em;
+        color: $gray;
+    }
+
+    .Nomargelien {
+        margin-right: 0em;
+    }
+
+    & a:hover {
+        color: $bluesky;
+        text-decoration: none;
+        font-size: 1.005em;
+        text-shadow: 0px 0px 4px $bluesky;      
+    }
+
+    & a:link {
+        color: $gray;
+        text-decoration: none;      
+    }
+
+    & a:visited {
+        color: $gray;
+        text-decoration: none;
+    }
+}
+
+/* picture project */
+.myProjectPix {
+    & img {
+        border: 1px solid $gray;
+        border-color: (114,114,114,0);
+        border-radius: 1em;
+    }
+    & a:hover {
+        opacity: 0.5;
+    }
+    .imageLH {
+        display: flex;
+        position: relative;
+        top: 21.7em;
+    }
+
+    .imageLB {
+        display: flex;
+        position: relative;
+        top: 23em;
+    }
+
+    .imageRH {
+        display: flex;
+        position: relative;
+        bottom: 73.4em;
+        left: 48em;
+        margin-right: 0em;
+    }
+
+    .imageRB {
+        display: flex;
+        position: relative;
+        bottom: 72em;
+        left: 48.15em;
+        margin-right: 0em;
+    }
+
+    .imageCENTER {
+        display: flex;
+        position: relative;
+        left: 23.8em;
+        bottom: 25.2em;
+    }
+}

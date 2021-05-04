@@ -1,0 +1,183 @@
+/* - 6 six - */
+
+/* variable | color */
+$bluesky: #6cb0f6;
+$gray: #727272;
+
+.bloc_page3 {
+    margin: 0em 23.438em 0em;
+    & h2 {
+        display: block;
+        position: relative;
+        z-index: 2;
+        bottom: 21em;
+        left: 0.3em;
+        font-size: 2.5em;
+        color: black;
+        & span {
+            font-size: 1em;
+            font-weight: 200;
+            color: $gray;
+        }
+        & em {
+            font-size: 0.4em;
+            font-weight: 500;
+            color: $gray;
+        }
+    }
+    & h3 {
+        display: block;
+        position: relative;
+        font-size: 0.8em;
+        font-weight: 450;
+        color: $gray;
+        margin-bottom: 4.5em;
+        bottom: 63em;
+        left: 1.2em;
+    }
+}
+
+/*FORMULAIRE !*/
+form {
+    display: block;
+    position: relative;
+    top: 51em;
+    width: 450px;
+    padding: 1em;
+    border: 1px solid $gray;
+    border-color: (114,114,114,0);
+    border-radius: 1em;
+    margin-top: -100em;
+    & div + div {
+        margin-top: 2.3em;
+    }  
+}
+  
+input, textarea { 
+    font: 1em sans-serif;
+    width: 450px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #cfcfcf;
+    &:focus  {
+        outline: none;
+        border: 2.5px solid $bluesky;
+    }
+}
+
+textarea {
+    vertical-align: top;
+    height: 10em;
+}
+
+.buttonEnd {
+    padding-left: 0px;
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    bottom: 0.5em;
+    background-color: rgba(108,176,246,0.80);
+    border-radius: 50px 50px;
+    border-color: $bluesky;
+    width: 25%;
+    height: 40px;
+    padding: 0% 0% 0% 0%;
+    color: white;
+    border-style: none;
+    font-weight: 600;
+    transform: scale(1);
+    transition: transform 200ms, background-color 250ms;
+    transition-delay: 0, 150ms;
+    /*transition: transform 200ms ease-in;
+    transition: transform 400ms ease-out;*/
+    transition-timing-function: cubic-bezier(.50,.58,.8,3.04);
+    &:hover {
+        transform: scale(1.055, 1.055);
+        background-color: $bluesky;
+        box-shadow: 0px 0px 11px $bluesky;
+        animation: balancierbutton 100ms cubic-bezier(.4,.1,.6,.9) 2;
+    }
+    @keyframes balancierbutton {
+        25% {        
+            transform: translateX(2%);
+        }
+        75% {        
+            transform: translateX(2% * -1);
+        }
+    }
+}
+
+/*text RIGHT */
+.textedefin {
+    display: block;
+    position: relative;
+    float: right;
+    margin-top: -50em;
+    top: 13.2em;
+    right: 6.2em;
+    color: $gray;
+    font-weight: 400;
+    & p + p {
+        margin-top: 2.5em;
+    }
+}
+
+.iconEnd img {
+    display: block;
+    position: relative;
+    margin-top: 2.45em;
+    top: 16.5em;
+    left: 43em;
+}
+
+#correctionimg {
+    left: 43.3em;
+}
+
+#correctionimg2 {
+    left: 43.1em;
+}
+
+/*img MAP position*/
+#montigny {
+    display: flex;
+    position: relative;
+    float: right;
+    top: 77.1em;
+    margin-top: -100em;
+    right: 5em;
+    border: 1px solid $gray;
+    border-color: (114,114,114,0);
+    border-radius: 1em;
+}
+
+/* banner the end */
+#finish {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 1.6em;
+}
+
+.copyme {
+    display: flex;
+    position: relative;
+    float: right;
+    top: 1.2em;
+    right: 28em;
+    & strong {
+        font-weight: 400;
+        color: $gray;
+    }
+    & em {
+        font-style: italic;
+        font-weight: 300;
+        color: $gray;
+    }    
+}
+
+/* END */

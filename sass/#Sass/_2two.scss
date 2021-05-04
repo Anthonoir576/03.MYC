@@ -1,0 +1,179 @@
+/* - 2 two - */
+
+/* variable | color */
+$bluesky: #6cb0f6;
+$gray: #727272;
+
+/* Div block description */
+.MiseEnPage {
+    display: flex;
+    position: relative;
+    top: 54em;
+    right: 24em;
+    z-index: 1;
+    /* Picture profil 02 LEFT */
+    .pixProfil02 {
+        position: relative;
+        right: 4.2em;
+    }  
+}
+
+/* text_bottom picture LEFT */
+.MiniDescription {   
+    display: block;
+    position: relative;
+    z-index: 2;
+    top: 23.5em;
+    left: 14.5em;
+    .MiniDescription li {
+        margin-bottom: 1.4em; 
+    }
+    .MiniDescription strong {
+    font-weight: 800;
+    text-decoration: underline;
+    }  
+}
+
+.MiniDescription, .MiniDescriptionII {
+    font-family: 'Lato', 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: #232323;
+}
+
+.MiniDescriptionII {
+    display: block;
+    position: relative;
+    z-index: 2;
+    top: 10.1em;
+    left: 3.5em;
+}
+
+/* link social network's LEFT */
+.Rsociaux {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 113em;
+    left: 27.9em;
+    & a {
+        margin-right: 8em;
+    }
+    /* NO MARGIN  */
+    #Nomarge2 {
+        margin-right: -30em;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/*DIV ALL TEXT RIGHT*/
+#textAll {
+    position: relative;
+    top: 3.1em;
+    & > p {
+    color: $gray;
+    font-size: 0.9em;
+    font-weight: 350;
+    text-align: justify;
+    }
+    & > h2 {
+        font-size: 2.8em;
+    }
+}
+
+.textOne {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+.textTwo {
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    color: #686868;
+    font-weight: 400;
+}
+
+.textThree {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+}
+
+/* Picture % and skill text */
+#blockTextAndPix img {
+    z-index: 2;
+    margin-top: 2.3em;
+    bottom: 0em;
+}
+
+#skillText {
+    display: block;
+    position: relative;
+    bottom: 21em;
+    z-index: 1;
+    & p {
+        margin-top: 3.9em;
+        font-weight: 300;
+        font-style: oblique;
+        color: #616161;
+    }
+}
+
+/* download button cv */
+.downloadCV {
+    display: inline;
+    position: absolute;
+    bottom: 12em;
+    left: 0em;
+    right: 0em;
+    z-index: 3;
+    background-color: $bluesky;
+    border-radius: 50px / 50px;
+    width: 30%;
+    color: white;
+    box-shadow: 0px 0px 5px $bluesky; 
+    transform: scale(1);
+    transition: transform 300ms;
+    @keyframes balancierdl {
+        25% {        
+            transform: translateX(2%);
+        }
+        75% {        
+            transform: translateX(2% * -1);
+        }
+    }
+    & p {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        padding: 2% 0% 0% 0%;
+        border-width: 15px 15px 15px 15px;
+        color: #ffffff;
+    }
+    & a:hover {
+        color: $bluesky;
+        text-decoration: none;
+        font-size: 1.015em;      
+    }   
+    &:hover {
+        box-shadow: 0px 0px 15px $bluesky;
+        transform: scale(1.05);
+        animation: balancierdl 100ms cubic-bezier(.4,.1,.6,.9) 2;
+    }
+    & a:link {
+        color: #ffffff;
+        text-decoration: none;      
+    }
+    & a:visited {
+        color: #ffffff;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,157 @@
+/* - 1 one - */
+
+/* variable | color */
+$bluesky: #6cb0f6;
+$gray: #727272;
+
+/* FONT and BACKGROUND */
+body {
+    font-family: 'Josefin Sans', 'Lato', sans-serif;
+    background-image: url(../image/headerbanner.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/* MARGIN page */
+.bloc_page {
+    margin: 0em 23.438em 0em;
+}
+
+/* Logo + text TOP/LEFT */ 
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    position: relative;
+    bottom: 1.7em;
+    & > img {
+        width: 35px;
+        height: 30px;
+    }
+    & > h1 {
+        font-size: 2.263em;
+        color: white;
+        text-shadow: 0px 0px 3.5px $bluesky;
+    }
+}
+
+/* Nav TOP/RIGHT */
+nav {
+    margin: 0em 23.438em 0em;
+    text-shadow: 0px 0px 4px $bluesky;
+    & ul {
+        list-style-type: none;
+        display: flex;
+        position: relative;
+        float: right;
+    }
+    & li {
+        margin-right: 117px;
+    }
+    & a {
+        font-size: 0.9em;
+        color: #ffffff;
+        padding-bottom: 10px;
+        text-decoration: none;
+        font-style: normal;
+        text-rendering: auto;
+        &:hover {
+            color: #eeeeee;
+            border-bottom: 1.5px solid #ffffff;
+        }
+    }
+}
+
+.Navigation{
+    & a:hover {
+        font-size: 1.3em;
+        text-shadow: 0px 0px 20px $bluesky;
+    }
+    & li:hover {
+        animation: balanciernav 100ms cubic-bezier(.4,.1,.6,.9) 2;
+    }
+    @keyframes balanciernav {
+        25% {       
+            transform: translateX(1%);
+        }
+        75% {       
+            transform: translateX(1% * -1);
+        }
+    }
+    #Navigation--noMarge {
+        margin-right: 1px;
+    }
+}
+
+header {
+    color: white;
+}
+
+/* content text LEFT */
+.Container01 {
+    margin-top: 13em;
+    margin-left: 0.5em;
+    float: left;
+
+    .headerhone {
+        font-size: 3.5em;
+        font-weight: 550;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 0px 0px 3.5px $bluesky;      
+    }
+    .headerhtwo {
+        font-size: 1.625em;
+        font-weight: normal;
+        font-style: italic;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 3px;
+        margin-top: 1.1em;
+    }
+}
+
+/* Button contact LEFT */
+.contactMe {
+    font-size: 0.855em; 
+    background-color: white;
+    padding: 0.063em;
+    display: inline-block;
+    border-radius: 50px / 50px;
+    width: 30%; 
+    text-align: center;
+    margin-top: 3.2em;
+    color: $bluesky;
+    box-shadow: 0px 0px 5px $bluesky;
+    transform: scale(1);
+    transition: transform 300ms;
+     & a:hover {
+         color: $bluesky;
+         text-decoration: none;
+         font-size: 1.07em;      
+     }
+     &:hover {
+         box-shadow: 0px 0px 15px $bluesky;
+         transform: scale(1.15);
+         animation: balanciercontact 100ms cubic-bezier(.4,.1,.6,.9) 2;
+         @keyframes balanciercontact {
+             25% {        
+                 transform: translateX(2%);
+             }
+             75% {        
+                 transform: translateX(2% * -1);
+             }
+         }
+     }
+     & a:link {
+         color: $bluesky;
+         text-decoration: none;      
+     }
+     & a:visited {
+         color: $bluesky;
+         text-decoration: none;
+     } 
+ }
+
+/* picture MIDDLE/RIGHT */
+#pixProfil01 {
+    float: right; 
+}
