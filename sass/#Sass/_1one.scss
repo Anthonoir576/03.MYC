@@ -1,10 +1,10 @@
 /* - 1 one - */
 
-/* variable | color */
+/* ###### variable | color ###### */
 $bluesky: #6cb0f6;
 $gray: #727272;
 
-/* FONT and BACKGROUND */
+/* ###### FONT and BACKGROUND ###### */
 body {
     font-family: 'Josefin Sans', 'Lato', sans-serif;
     background-image: url(../image/headerbanner.png);
@@ -12,17 +12,18 @@ body {
     background-repeat: no-repeat;
 }
 
-/* MARGIN page */
+/* ###### MARGIN page ###### */
 .bloc_page {
     margin: 0em 23.438em 0em;
 }
 
-/* Logo + text TOP/LEFT */ 
+/* ###### Logo + text TOP/LEFT ###### */ 
 #logo {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     position: relative;
+    max-width: 90px;
     bottom: 1.7em;
     & > img {
         width: 35px;
@@ -35,7 +36,7 @@ body {
     }
 }
 
-/* Nav TOP/RIGHT */
+/* ###### Nav TOP/RIGHT ###### */
 nav {
     margin: 0em 23.438em 0em;
     text-shadow: 0px 0px 4px $bluesky;
@@ -87,19 +88,25 @@ header {
     color: white;
 }
 
-/* content text LEFT */
-.Container01 {
+/* ###### Container text and pix ###### */
+.container01 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ###### content text LEFT ###### */
+.helloWorld {
     margin-top: 13em;
     margin-left: 0.5em;
     float: left;
 
-    .headerhone {
+    & > h1 {
         font-size: 3.5em;
         font-weight: 550;
         font-family: 'Josefin Sans', sans-serif;
         text-shadow: 0px 0px 3.5px $bluesky;      
     }
-    .headerhtwo {
+    & > h2 {
         font-size: 1.625em;
         font-weight: normal;
         font-style: italic;
@@ -109,12 +116,11 @@ header {
     }
 }
 
-/* Button contact LEFT */
+/* ###### Button contact LEFT ###### */
 .contactMe {
     font-size: 0.855em; 
     background-color: white;
     padding: 0.063em;
-    display: inline-block;
     border-radius: 50px / 50px;
     width: 30%; 
     text-align: center;
@@ -149,9 +155,4 @@ header {
          color: $bluesky;
          text-decoration: none;
      } 
- }
-
-/* picture MIDDLE/RIGHT */
-#pixProfil01 {
-    float: right; 
 }

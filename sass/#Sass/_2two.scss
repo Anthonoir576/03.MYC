@@ -1,72 +1,85 @@
 /* - 2 two - */
 
-/* variable | color */
+/* ###### variable | color ###### */
 $bluesky: #6cb0f6;
 $gray: #727272;
 
-/* Div block description */
-.MiseEnPage {
+/* ###### Div block description ###### */
+.container02 {
     display: flex;
+    justify-content: space-between;
     position: relative;
-    top: 54em;
-    right: 24em;
+    top: 12em;
     z-index: 1;
-    /* Picture profil 02 LEFT */
+    /* ###### Picture profil 02 LEFT ###### */
     .pixProfil02 {
         position: relative;
         right: 4.2em;
+        max-width: 550px;
+        max-height: 938px;
     }  
 }
 
-/* text_bottom picture LEFT */
-.MiniDescription {   
-    display: block;
+/* ###### text_bottom picture LEFT ###### */
+.MiniDescription p {   
+    display: flex;
     position: relative;
+    max-width: 250px;
+    max-height: 57px;
     z-index: 2;
-    top: 23.5em;
-    left: 14.5em;
-    .MiniDescription li {
-        margin-bottom: 1.4em; 
-    }
-    .MiniDescription strong {
-    font-weight: 800;
-    text-decoration: underline;
-    }  
+    bottom: 10em;
+    left: 12em;
 }
+
+.MiniDescription strong {
+font-weight: 800;
+text-decoration: underline;
+}  
 
 .MiniDescription, .MiniDescriptionII {
     font-family: 'Lato', 'Josefin Sans', sans-serif;
     font-size: 1em;
     color: #232323;
+    max-width: auto;
+    max-height: auto;
 }
 
-.MiniDescriptionII {
-    display: block;
+.MiniDescriptionII p {
+    display: flex;
     position: relative;
+    max-width: 200px;
+    max-height: 90px;
     z-index: 2;
-    top: 10.1em;
-    left: 3.5em;
+    bottom: 23.3em;
+    left: 1.5em;
 }
 
-/* link social network's LEFT */
+/* ###### link social network's LEFT ###### */
 .Rsociaux {
     display: flex;
-    position: absolute;
+    position: relative;
     z-index: 2;
-    top: 113em;
-    left: 27.9em;
+    max-width: 380px;
+    bottom: 21em;
+    left: 1.8em;
     & a {
         margin-right: 8em;
     }
-    /* NO MARGIN  */
+    /* ###### NO MARGIN ###### */
     #Nomarge2 {
-        margin-right: -30em;
+        margin-right: -8em;
         margin: 0;
         padding: 0;
     }
 }
 
-/*DIV ALL TEXT RIGHT*/
+/* ###### DIV ALL TEXT RIGHT ###### */
+
+article {
+    max-width: 580px;
+    max-height: 900px;
+}
+
 #textAll {
     position: relative;
     top: 3.1em;
@@ -75,16 +88,15 @@ $gray: #727272;
     font-size: 0.9em;
     font-weight: 350;
     text-align: justify;
+    max-width: 552px;
+    max-height: 135px;
     }
     & > h2 {
-        font-size: 2.8em;
-    }
-}
-
-.textOne {
+    font-size: 2.8em;
     margin-bottom: 0.5em;
     margin-top: 1em;
     font-weight: 700;
+    }
 }
 
 .textTwo {
@@ -100,12 +112,17 @@ $gray: #727272;
     font-size: 1.8em;
 }
 
-/* Picture % and skill text */
-#blockTextAndPix img {
-    z-index: 2;
-    margin-top: 2.3em;
-    bottom: 0em;
+/* ###### Picture % and skill text ###### */
+#blockTextAndPix {
+    max-height: 330px;
+    & img {
+        z-index: 2;
+        margin-top: 2.3em;
+        bottom: 0em;
+    }
 }
+
+
 
 #skillText {
     display: block;
@@ -120,14 +137,14 @@ $gray: #727272;
     }
 }
 
-/* download button cv */
+/* ###### download button cv ###### */
 .downloadCV {
     display: inline;
     position: absolute;
-    bottom: 12em;
+    z-index: 3;
+    top: 47em;
     left: 0em;
     right: 0em;
-    z-index: 3;
     background-color: $bluesky;
     border-radius: 50px / 50px;
     width: 30%;
