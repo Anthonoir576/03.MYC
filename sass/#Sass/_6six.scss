@@ -1,16 +1,19 @@
 /* - 6 six - */
 
-/* variable | color */
+/* ##### variable | color ##### */
 $bluesky: #6cb0f6;
 $gray: #727272;
 
-.bloc_page3 {
-    margin: 0em 23.438em 0em;
+.container04 {
+    padding: auto;
+    margin: 1em;
+    position: relative;
+    bottom: 15em;
     & h2 {
         display: block;
         position: relative;
         z-index: 2;
-        bottom: 21em;
+        top: 40em;
         left: 0.3em;
         font-size: 2.5em;
         color: black;
@@ -32,22 +35,22 @@ $gray: #727272;
         font-weight: 450;
         color: $gray;
         margin-bottom: 4.5em;
-        bottom: 63em;
+        top: 127em;
         left: 1.2em;
     }
 }
 
-/*FORMULAIRE !*/
+/* ##### FORMULAIRE ##### !*/
 form {
     display: block;
     position: relative;
-    top: 51em;
+    top: 104em;
     width: 450px;
     padding: 1em;
     border: 1px solid $gray;
     border-color: (114,114,114,0);
     border-radius: 1em;
-    margin-top: -100em;
+    margin-top: -0em;
     & div + div {
         margin-top: 2.3em;
     }  
@@ -110,14 +113,14 @@ button {
     }
 }
 
-/*text RIGHT */
+/* ##### text RIGHT ##### */
 .textedefin {
     display: block;
     position: relative;
     float: right;
-    margin-top: -50em;
-    top: 13.2em;
-    right: 6.2em;
+    margin-top: -0em;
+    top: 70.1em;
+    right: 3.2em;
     color: $gray;
     font-weight: 400;
     & p + p {
@@ -129,46 +132,37 @@ button {
     display: block;
     position: relative;
     margin-top: 2.45em;
-    top: 16.5em;
-    left: 43em;
+    top: 68.8em;
+    left: 44em;
 }
 
 #correctionimg {
-    left: 43.3em;
+    left: 44.3em;
 }
 
 #correctionimg2 {
-    left: 43.1em;
+    left: 44.1em;
 }
 
-/*img MAP position*/
-#montigny {
+/* ##### img MAP position ##### */
+#map {
     display: flex;
     position: relative;
     float: right;
-    top: 77.1em;
-    margin-top: -100em;
-    right: 5em;
+    top: 74em;
+    margin-top: -0em;
+    left: 17em;
     border: 1px solid $gray;
     border-color: (114,114,114,0);
     border-radius: 1em;
 }
 
-/* banner the end */
-#finish {
+#copyme {
     display: flex;
     position: relative;
-    width: 100%;
-    height: 100%;
-    bottom: 1.6em;
-}
-
-.copyme {
-    display: flex;
-    position: relative;
-    float: right;
-    top: 1.2em;
-    right: 28em;
+    float: center;
+    top: 98em;
+    left: 29em;
     & strong {
         font-weight: 400;
         color: $gray;

@@ -1,21 +1,20 @@
 /* - 4 four - */
 
-/* variable | color */
+/* ###### variable | color ###### */
 $bluesky: #6cb0f6;
 $gray: #727272;
 
-/* MARGIN page */
-.bloc_page2 {
-    margin: 0em 23.438em 0em;
-}
-
-#myJob {
+.myJob {
     text-decoration: none;
+    position: relative;
+    top: 2em;
     & h2 {
         display: block;
         position: relative;
+        max-width: 780px;
         z-index: 2;
-        top: 7em;
+        top: 9em;
+        margin-left: 0.5em;
         font-size: 2.5em;
         color: black;
     }
@@ -29,25 +28,25 @@ $gray: #727272;
         font-weight: 500;
         color: $gray;
     }
-    /* little nav */
+    /* ###### little nav ###### */
     & a {
         margin-right: 1.5em;
         color: $gray;
     }
 
-    .Nomargelien {
-        margin-right: 0em;
+    /*##### link modifier margin ##### */
+    .link--modif {
+        margin-left: 3.5em;
     }
 
-    & a:hover {
+    h2 a:hover {
         color: $bluesky;
-        text-decoration: none;
-        font-size: 1.005em;
-        text-shadow: 0px 0px 4px $bluesky;      
+        text-decoration: none;       
+        text-shadow: 0px 0px 4px $bluesky;    
     }
 
     & a:link {
-        color: $gray;
+        color: $bluesky;
         text-decoration: none;      
     }
 
@@ -57,48 +56,12 @@ $gray: #727272;
     }
 }
 
-/* picture project */
-.myProjectPix {
-    & img {
-        border: 1px solid $gray;
-        border-color: (114,114,114,0);
-        border-radius: 1em;
-    }
-    & a:hover {
-        opacity: 0.5;
-    }
-    .imageLH {
-        display: flex;
-        position: relative;
-        top: 21.7em;
-    }
-
-    .imageLB {
-        display: flex;
-        position: relative;
-        top: 23em;
-    }
-
-    .imageRH {
-        display: flex;
-        position: relative;
-        bottom: 73.4em;
-        left: 48em;
-        margin-right: 0em;
-    }
-
-    .imageRB {
-        display: flex;
-        position: relative;
-        bottom: 72em;
-        left: 48.15em;
-        margin-right: 0em;
-    }
-
-    .imageCENTER {
-        display: flex;
-        position: relative;
-        left: 23.8em;
-        bottom: 25.2em;
-    }
+/* ###### video project ###### */
+.videoProject {
+    position: relative;
+    max-width: 1050px;
+    top: 25em;
+    & > video {
+        margin-left: 1.4em;
+    }   
 }

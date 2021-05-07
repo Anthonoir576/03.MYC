@@ -1,28 +1,37 @@
 /* - 1 one - */
 
-/* variable | color */
+/* ###### variable | color ###### */
 $bluesky: #6cb0f6;
 $gray: #727272;
 
-/* FONT and BACKGROUND */
+
+/* ###### FONT and BACKGROUND ###### */
+/* Background top */
 body {
     font-family: 'Josefin Sans', 'Lato', sans-serif;
-    background-image: url(../image/headerbanner.png);
-    background-position: top;
-    background-repeat: no-repeat;
+    background-image: url(../image/headerbanner.png),
+                      url(../image/centerbanner.png),
+                      url(../image/footerbanner.png),
+                      url(../image/Rectanglefinal.png);
+
+    background-position: 50% 0%, 50% 57.5%, 50% 103%, 50% 122.5%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 1920px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
+    background-attachment: scroll;
 }
 
-/* MARGIN page */
+/* ###### MARGIN page ###### */
 .bloc_page {
     margin: 0em 23.438em 0em;
 }
 
-/* Logo + text TOP/LEFT */ 
+/* ###### Logo + text TOP/LEFT ###### */ 
 #logo {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     position: relative;
+    max-width: 90px;
     bottom: 1.7em;
     & > img {
         width: 35px;
@@ -35,7 +44,7 @@ body {
     }
 }
 
-/* Nav TOP/RIGHT */
+/* ###### Nav TOP/RIGHT ###### */
 nav {
     margin: 0em 23.438em 0em;
     text-shadow: 0px 0px 4px $bluesky;
@@ -64,19 +73,13 @@ nav {
 
 .Navigation{
     & a:hover {
-        font-size: 1.3em;
         text-shadow: 0px 0px 20px $bluesky;
+        filter: saturate(900%);
+        -webkit-filter: saturate(900%);
     }
     & li:hover {
-        animation: balanciernav 100ms cubic-bezier(.4,.1,.6,.9) 2;
-    }
-    @keyframes balanciernav {
-        25% {       
-            transform: translateX(1%);
-        }
-        75% {       
-            transform: translateX(1% * -1);
-        }
+        transform: scale(1.6);
+    
     }
     #Navigation--noMarge {
         margin-right: 1px;
@@ -87,19 +90,27 @@ header {
     color: white;
 }
 
-/* content text LEFT */
-.Container01 {
-    margin-top: 13em;
+/* ###### Container text and pix ###### */
+.container01 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ###### content text LEFT ###### */
+.helloWorld {
+    position: relative;
+    top: 13em;
     margin-left: 0.5em;
     float: left;
+    max-height: 260px;
 
-    .headerhone {
+    & > h1 {
         font-size: 3.5em;
         font-weight: 550;
         font-family: 'Josefin Sans', sans-serif;
         text-shadow: 0px 0px 3.5px $bluesky;      
     }
-    .headerhtwo {
+    & > h2 {
         font-size: 1.625em;
         font-weight: normal;
         font-style: italic;
@@ -109,12 +120,11 @@ header {
     }
 }
 
-/* Button contact LEFT */
+/* ###### Button contact LEFT ###### */
 .contactMe {
     font-size: 0.855em; 
     background-color: white;
     padding: 0.063em;
-    display: inline-block;
     border-radius: 50px / 50px;
     width: 30%; 
     text-align: center;
@@ -123,35 +133,34 @@ header {
     box-shadow: 0px 0px 5px $bluesky;
     transform: scale(1);
     transition: transform 300ms;
-     & a:hover {
-         color: $bluesky;
-         text-decoration: none;
-         font-size: 1.07em;      
-     }
-     &:hover {
-         box-shadow: 0px 0px 15px $bluesky;
-         transform: scale(1.15);
-         animation: balanciercontact 100ms cubic-bezier(.4,.1,.6,.9) 2;
-         @keyframes balanciercontact {
-             25% {        
-                 transform: translateX(2%);
-             }
-             75% {        
-                 transform: translateX(2% * -1);
-             }
-         }
-     }
-     & a:link {
-         color: $bluesky;
-         text-decoration: none;      
-     }
-     & a:visited {
-         color: $bluesky;
-         text-decoration: none;
-     } 
- }
-
-/* picture MIDDLE/RIGHT */
-#pixProfil01 {
-    float: right; 
+        & a:hover {
+            color: $bluesky;
+            text-decoration: none;
+            font-size: 1.07em;
+            filter: saturate(200%);
+            -webkit-filter: saturate(200%);      
+        }
+        &:hover {
+            filter: saturate(200%);
+            -webkit-filter: saturate(200%);
+            box-shadow: 0px 0px 22px $bluesky;
+            transform: scale(1.15);
+            animation: balanciercontact 100ms cubic-bezier(.4,.1,.6,.9) 2;
+            @keyframes balanciercontact {
+                25% {        
+                    transform: translateX(2%);
+                }
+                75% {        
+                    transform: translateX(2% * -1);
+                }
+            }
+        }
+        & a:link {
+            color: $bluesky;
+            text-decoration: none;      
+    }
+    & a:visited {
+        color: $bluesky;
+        text-decoration: none;
+    } 
 }

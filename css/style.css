@@ -1,24 +1,28 @@
 /* - 1 one - */
-/* variable | color */
-/* FONT and BACKGROUND */
+/* ###### variable | color ###### */
+/* ###### FONT and BACKGROUND ###### */
+/* Background top */
 body {
   font-family: "Josefin Sans", "Lato", sans-serif;
-  background-image: url(../image/headerbanner.png);
-  background-position: top;
-  background-repeat: no-repeat;
+  background-image: url(../image/headerbanner.png), url(../image/centerbanner.png), url(../image/footerbanner.png), url(../image/Rectanglefinal.png);
+  background-position: 50% 0%, 50% 57.5%, 50% 103%, 50% 122.5%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 1920px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
+  background-attachment: scroll;
 }
 
-/* MARGIN page */
+/* ###### MARGIN page ###### */
 .bloc_page {
   margin: 0em 23.438em 0em;
 }
 
-/* Logo + text TOP/LEFT */
+/* ###### Logo + text TOP/LEFT ###### */
 #logo {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   position: relative;
+  max-width: 90px;
   bottom: 1.7em;
 }
 #logo > img {
@@ -31,7 +35,7 @@ body {
   text-shadow: 0px 0px 3.5px #6cb0f6;
 }
 
-/* Nav TOP/RIGHT */
+/* ###### Nav TOP/RIGHT ###### */
 nav {
   margin: 0em 23.438em 0em;
   text-shadow: 0px 0px 4px #6cb0f6;
@@ -59,19 +63,12 @@ nav a:hover {
 }
 
 .Navigation a:hover {
-  font-size: 1.3em;
   text-shadow: 0px 0px 20px #6cb0f6;
+  filter: saturate(900%);
+  -webkit-filter: saturate(900%);
 }
 .Navigation li:hover {
-  animation: balanciernav 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
-}
-@keyframes balanciernav {
-  25% {
-    transform: translateX(1%);
-  }
-  75% {
-    transform: translateX(-1%);
-  }
+  transform: scale(1.6);
 }
 .Navigation #Navigation--noMarge {
   margin-right: 1px;
@@ -81,19 +78,27 @@ header {
   color: white;
 }
 
-/* content text LEFT */
-.Container01 {
-  margin-top: 13em;
+/* ###### Container text and pix ###### */
+.container01 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ###### content text LEFT ###### */
+.helloWorld {
+  position: relative;
+  top: 13em;
   margin-left: 0.5em;
   float: left;
+  max-height: 260px;
 }
-.Container01 .headerhone {
+.helloWorld > h1 {
   font-size: 3.5em;
   font-weight: 550;
   font-family: "Josefin Sans", sans-serif;
   text-shadow: 0px 0px 3.5px #6cb0f6;
 }
-.Container01 .headerhtwo {
+.helloWorld > h2 {
   font-size: 1.625em;
   font-weight: normal;
   font-style: italic;
@@ -102,12 +107,11 @@ header {
   margin-top: 1.1em;
 }
 
-/* Button contact LEFT */
+/* ###### Button contact LEFT ###### */
 .contactMe {
   font-size: 0.855em;
   background-color: white;
   padding: 0.063em;
-  display: inline-block;
   border-radius: 50px/50px;
   width: 30%;
   text-align: center;
@@ -121,9 +125,13 @@ header {
   color: #6cb0f6;
   text-decoration: none;
   font-size: 1.07em;
+  filter: saturate(200%);
+  -webkit-filter: saturate(200%);
 }
 .contactMe:hover {
-  box-shadow: 0px 0px 15px #6cb0f6;
+  filter: saturate(200%);
+  -webkit-filter: saturate(200%);
+  box-shadow: 0px 0px 22px #6cb0f6;
   transform: scale(1.15);
   animation: balanciercontact 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
 }
@@ -144,76 +152,101 @@ header {
   text-decoration: none;
 }
 
-/* picture MIDDLE/RIGHT */
-#pixProfil01 {
-  float: right;
-}
-
 /* - 2 two - */
-/* variable | color */
-/* Div block description */
-.MiseEnPage {
+/* ###### variable | color ###### */
+.container02 {
   display: flex;
+  justify-content: space-between;
   position: relative;
-  top: 54em;
-  right: 24em;
+  max-height: 1100px;
+  top: 22em;
   z-index: 1;
-  /* Picture profil 02 LEFT */
+  /* ###### Picture profil 02 LEFT ###### */
 }
-.MiseEnPage .pixProfil02 {
+.container02 #pixProfil02 {
   position: relative;
-  right: 4.2em;
+  right: 2.2em;
+  max-width: 550px;
+  max-height: 938px;
 }
 
-/* text_bottom picture LEFT */
-.MiniDescription {
-  display: block;
-  position: relative;
-  z-index: 2;
-  top: 23.5em;
-  left: 14.5em;
-}
-.MiniDescription .MiniDescription li {
-  margin-bottom: 1.4em;
-}
-.MiniDescription .MiniDescription strong {
-  font-weight: 800;
-  text-decoration: underline;
-}
-
-.MiniDescription, .MiniDescriptionII {
+/* ###### text in bottom picture LEFT ###### */
+.textINpix {
   font-family: "Lato", "Josefin Sans", sans-serif;
   font-size: 1em;
   color: #232323;
-}
-
-.MiniDescriptionII {
-  display: block;
+  display: flex;
   position: relative;
-  z-index: 2;
-  top: 10.1em;
-  left: 3.5em;
+  bottom: 2em;
+  left: 3em;
+  z-index: 3;
+}
+.textINpix ul {
+  list-style-type: none;
+}
+.textINpix .ulLEFT {
+  position: relative;
+  bottom: 0.3em;
+  font-weight: bold;
+  padding: 0px;
+}
+.textINpix .ulLEFT > li {
+  margin-top: 1.1em;
+}
+.textINpix .ulRIGHT {
+  position: relative;
+  left: 3em;
+  padding: 0px;
+  max-width: 220px;
+}
+.textINpix .ulRIGHT > li {
+  margin-top: 1em;
 }
 
-/* link social network's LEFT */
+/* ###### link social network's LEFT ###### */
 .Rsociaux {
   display: flex;
-  position: absolute;
+  position: relative;
   z-index: 2;
-  top: 113em;
-  left: 27.9em;
-  /* NO MARGIN  */
+  max-width: 380px;
+  margin-right: 0;
+  top: 1em;
+  left: 3.75em;
+  /* ##### effect dark / light ##### */
+  /* ###### NO MARGIN ###### */
 }
 .Rsociaux a {
   margin-right: 8em;
 }
+.Rsociaux img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+.Rsociaux img:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: saturate(200%);
+  -webkit-filter: saturate(200%);
+}
 .Rsociaux #Nomarge2 {
-  margin-right: -30em;
+  margin-right: -8em;
   margin: 0;
   padding: 0;
 }
 
-/*DIV ALL TEXT RIGHT*/
+/* ###### ALL TEXT RIGHT ###### */
+article {
+  max-width: 580px;
+  max-height: 900px;
+}
+
 #textAll {
   position: relative;
   top: 3.1em;
@@ -223,12 +256,11 @@ header {
   font-size: 0.9em;
   font-weight: 350;
   text-align: justify;
+  max-width: 552px;
+  max-height: 135px;
 }
 #textAll > h2 {
   font-size: 2.8em;
-}
-
-.textOne {
   margin-bottom: 0.5em;
   margin-top: 1em;
   font-weight: 700;
@@ -247,7 +279,10 @@ header {
   font-size: 1.8em;
 }
 
-/* Picture % and skill text */
+/* ###### Picture [ % ] and skill text ###### */
+#blockTextAndPix {
+  max-height: 330px;
+}
 #blockTextAndPix img {
   z-index: 2;
   margin-top: 2.3em;
@@ -267,14 +302,14 @@ header {
   color: #616161;
 }
 
-/* download button cv */
+/* ###### download button cv ###### */
 .downloadCV {
   display: inline;
   position: absolute;
-  bottom: 12em;
-  left: 0em;
-  right: 0em;
   z-index: 3;
+  top: 46.7em;
+  left: -0.5em;
+  right: 0em;
   background-color: #6cb0f6;
   border-radius: 50px/50px;
   width: 30%;
@@ -303,11 +338,15 @@ header {
   color: #6cb0f6;
   text-decoration: none;
   font-size: 1.015em;
+  filter: saturate(200%);
+  -webkit-filter: saturate(200%);
 }
 .downloadCV:hover {
   box-shadow: 0px 0px 15px #6cb0f6;
   transform: scale(1.05);
   animation: balancierdl 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+  filter: saturate(200%);
+  -webkit-filter: saturate(200%);
 }
 .downloadCV a:link {
   color: #ffffff;
@@ -318,23 +357,12 @@ header {
 }
 
 /* - 3 three - */
-/* variable | color */
-/* background position */
-.fondclaire {
-  position: relative;
-  top: -1em;
-  z-index: 1;
-}
-.fondclaire img {
-  width: 100%;
-  height: 40em;
-}
-
-/* professional experience */
+/* ###### variable | color ###### */
+/* ###### professional experience ###### */
 #XPpro {
   display: block;
   position: relative;
-  top: 34em;
+  top: 9em;
   z-index: 2;
 }
 #XPpro img {
@@ -347,6 +375,7 @@ header {
   color: black;
   display: block;
   position: relative;
+  max-width: 400px;
   top: 2.9em;
 }
 #XPpro em {
@@ -367,6 +396,7 @@ header {
   margin-bottom: 4.5em;
   display: block;
   position: relative;
+  max-width: 300px;
   left: 0.3em;
   top: 3em;
 }
@@ -375,6 +405,7 @@ header {
   font-weight: 700;
   color: black;
   margin-bottom: 2em;
+  max-width: 150px;
 }
 #XPpro p {
   text-align: justify;
@@ -395,7 +426,7 @@ header {
   bottom: 0.8em;
 }
 
-/*Liste LEFT and RIGHT*/
+/* ###### List LEFT and RIGHT ###### */
 .Llist, .Rlist {
   display: inline-block;
   position: relative;
@@ -404,7 +435,7 @@ header {
   margin-top: 3em;
 }
 
-/* list Position */
+/* ###### list Position ###### */
 .Llist {
   left: 0.2em;
   bottom: 0em;
@@ -416,163 +447,136 @@ header {
 }
 
 /* - 4 four - */
-/* variable | color */
-/* MARGIN page */
-.bloc_page2 {
-  margin: 0em 23.438em 0em;
-}
-
-#myJob {
+/* ###### variable | color ###### */
+.myJob {
   text-decoration: none;
-  /* little nav */
+  position: relative;
+  top: 2em;
+  /* ###### little nav ###### */
+  /*##### link modifier margin ##### */
 }
-#myJob h2 {
+.myJob h2 {
   display: block;
   position: relative;
+  max-width: 780px;
   z-index: 2;
-  top: 7em;
+  top: 9em;
+  margin-left: 0.5em;
   font-size: 2.5em;
   color: black;
 }
-#myJob span {
+.myJob span {
   font-size: 1em;
   font-weight: 200;
   color: #727272;
 }
-#myJob strong {
+.myJob strong {
   font-size: 0.4em;
   font-weight: 500;
   color: #727272;
 }
-#myJob a {
+.myJob a {
   margin-right: 1.5em;
   color: #727272;
 }
-#myJob .Nomargelien {
-  margin-right: 0em;
+.myJob .link--modif {
+  margin-left: 3.5em;
 }
-#myJob a:hover {
+.myJob h2 a:hover {
   color: #6cb0f6;
   text-decoration: none;
-  font-size: 1.005em;
   text-shadow: 0px 0px 4px #6cb0f6;
 }
-#myJob a:link {
-  color: #727272;
+.myJob a:link {
+  color: #6cb0f6;
   text-decoration: none;
 }
-#myJob a:visited {
+.myJob a:visited {
   color: #727272;
   text-decoration: none;
 }
 
-/* picture project */
-.myProjectPix img {
-  border: 1px solid #727272;
-  border-color: 114, 114, 114, 0;
-  border-radius: 1em;
-}
-.myProjectPix a:hover {
-  opacity: 0.5;
-}
-.myProjectPix .imageLH {
-  display: flex;
+/* ###### video project ###### */
+.videoProject {
   position: relative;
-  top: 21.7em;
+  max-width: 1050px;
+  top: 25em;
 }
-.myProjectPix .imageLB {
-  display: flex;
-  position: relative;
-  top: 23em;
-}
-.myProjectPix .imageRH {
-  display: flex;
-  position: relative;
-  bottom: 73.4em;
-  left: 48em;
-  margin-right: 0em;
-}
-.myProjectPix .imageRB {
-  display: flex;
-  position: relative;
-  bottom: 72em;
-  left: 48.15em;
-  margin-right: 0em;
-}
-.myProjectPix .imageCENTER {
-  display: flex;
-  position: relative;
-  left: 23.8em;
-  bottom: 25.2em;
+.videoProject > video {
+  margin-left: 1.4em;
 }
 
 /* - 5 five - */
-/* variable | color */
+/* ###### variable | color ###### */
+/*
 #footerbanner {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  bottom: 60em;
-  z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 93em;
+    z-index: 1;
 }
-
-/* (img) three point */
+*/
+/* ###### (img) three point ###### */
+/*
 #Petitpoint {
-  display: flex;
-  position: relative;
-  z-index: 2;
-  float: right;
-  bottom: 79.5em;
-  right: 57.7em;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    float: right;
+    bottom: 112.5em;
+    right: 57.7em;
 }
-
+*/
 /* - 6 six - */
-/* variable | color */
-.bloc_page3 {
-  margin: 0em 23.438em 0em;
+/* ##### variable | color ##### */
+.container04 {
+  padding: auto;
+  margin: 1em;
+  position: relative;
+  bottom: 15em;
 }
-.bloc_page3 h2 {
+.container04 h2 {
   display: block;
   position: relative;
   z-index: 2;
-  bottom: 21em;
+  top: 40em;
   left: 0.3em;
   font-size: 2.5em;
   color: black;
 }
-.bloc_page3 h2 span {
+.container04 h2 span {
   font-size: 1em;
   font-weight: 200;
   color: #727272;
 }
-.bloc_page3 h2 em {
+.container04 h2 em {
   font-size: 0.4em;
   font-weight: 500;
   color: #727272;
 }
-.bloc_page3 h3 {
+.container04 h3 {
   display: block;
   position: relative;
   font-size: 0.8em;
   font-weight: 450;
   color: #727272;
   margin-bottom: 4.5em;
-  bottom: 63em;
+  top: 127em;
   left: 1.2em;
 }
 
-/*FORMULAIRE !*/
+/* ##### FORMULAIRE ##### !*/
 form {
   display: block;
   position: relative;
-  top: 51em;
+  top: 104em;
   width: 450px;
   padding: 1em;
   border: 1px solid #727272;
   border-color: 114, 114, 114, 0;
   border-radius: 1em;
-  margin-top: -100em;
+  margin-top: 0em;
 }
 form div + div {
   margin-top: 2.3em;
@@ -635,14 +639,14 @@ button:hover {
   }
 }
 
-/*text RIGHT */
+/* ##### text RIGHT ##### */
 .textedefin {
   display: block;
   position: relative;
   float: right;
-  margin-top: -50em;
-  top: 13.2em;
-  right: 6.2em;
+  margin-top: 0em;
+  top: 70.1em;
+  right: 3.2em;
   color: #727272;
   font-weight: 400;
 }
@@ -654,52 +658,43 @@ button:hover {
   display: block;
   position: relative;
   margin-top: 2.45em;
-  top: 16.5em;
-  left: 43em;
+  top: 68.8em;
+  left: 44em;
 }
 
 #correctionimg {
-  left: 43.3em;
+  left: 44.3em;
 }
 
 #correctionimg2 {
-  left: 43.1em;
+  left: 44.1em;
 }
 
-/*img MAP position*/
-#montigny {
+/* ##### img MAP position ##### */
+#map {
   display: flex;
   position: relative;
   float: right;
-  top: 77.1em;
-  margin-top: -100em;
-  right: 5em;
+  top: 74em;
+  margin-top: 0em;
+  left: 17em;
   border: 1px solid #727272;
   border-color: 114, 114, 114, 0;
   border-radius: 1em;
 }
 
-/* banner the end */
-#finish {
+#copyme {
   display: flex;
   position: relative;
-  width: 100%;
-  height: 100%;
-  bottom: 1.6em;
+  float: center;
+  top: 98em;
+  left: 29em;
 }
-
-.copyme {
-  display: flex;
-  position: relative;
-  float: right;
-  top: 1.2em;
-  right: 28em;
-}
-.copyme strong {
+#copyme strong {
   font-weight: 400;
   color: #727272;
 }
-.copyme em {
+#copyme em {
   font-style: italic;
   font-weight: 300;
   color: #727272;
