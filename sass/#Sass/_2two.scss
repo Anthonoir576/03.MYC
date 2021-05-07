@@ -4,54 +4,53 @@
 $bluesky: #6cb0f6;
 $gray: #727272;
 
-/* ###### Div block description ###### */
 .container02 {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 12em;
+    max-height: 1100px;
+    top: 22em;
     z-index: 1;
     /* ###### Picture profil 02 LEFT ###### */
-    .pixProfil02 {
+    #pixProfil02 {
         position: relative;
-        right: 4.2em;
+        right: 2.2em;
         max-width: 550px;
         max-height: 938px;
     }  
 }
 
-/* ###### text_bottom picture LEFT ###### */
-.MiniDescription p {   
-    display: flex;
-    position: relative;
-    max-width: 250px;
-    max-height: 57px;
-    z-index: 2;
-    bottom: 10em;
-    left: 12em;
-}
-
-.MiniDescription strong {
-font-weight: 800;
-text-decoration: underline;
-}  
-
-.MiniDescription, .MiniDescriptionII {
+/* ###### text in bottom picture LEFT ###### */
+.textINpix {
     font-family: 'Lato', 'Josefin Sans', sans-serif;
     font-size: 1em;
     color: #232323;
-    max-width: auto;
-    max-height: auto;
-}
-
-.MiniDescriptionII p {
     display: flex;
     position: relative;
-    max-width: 200px;
-    max-height: 90px;
-    z-index: 2;
-    bottom: 23.3em;
-    left: 1.5em;
+    bottom: 2em;
+    left: 3em;
+    z-index: 3;
+    & ul {
+        list-style-type: none;  
+    }
+    .ulLEFT {
+        position: relative;
+        bottom: 0.3em;
+        font-weight: bold;
+        padding: 0px;
+        & > li {
+            margin-top: 1.1em;
+        }    
+    }
+    .ulRIGHT {
+        position: relative;
+        left: 3em;
+        padding: 0px;
+        max-width: 220px;
+        & > li {
+            margin-top: 1em;
+        }
+    }       
 }
 
 /* ###### link social network's LEFT ###### */
@@ -60,10 +59,29 @@ text-decoration: underline;
     position: relative;
     z-index: 2;
     max-width: 380px;
-    bottom: 21em;
-    left: 1.8em;
+    margin-right: 0;
+    top: 1em;
+    left: 3.75em;
     & a {
         margin-right: 8em;
+    }
+    /* ##### effect dark / light ##### */
+    & img {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+    }
+    & img:hover {
+        transform: scale(1.2);
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: saturate(200%);
+        -webkit-filter: saturate(200%);
     }
     /* ###### NO MARGIN ###### */
     #Nomarge2 {
@@ -73,8 +91,7 @@ text-decoration: underline;
     }
 }
 
-/* ###### DIV ALL TEXT RIGHT ###### */
-
+/* ###### ALL TEXT RIGHT ###### */
 article {
     max-width: 580px;
     max-height: 900px;
@@ -112,7 +129,7 @@ article {
     font-size: 1.8em;
 }
 
-/* ###### Picture % and skill text ###### */
+/* ###### Picture [ % ] and skill text ###### */
 #blockTextAndPix {
     max-height: 330px;
     & img {
@@ -121,8 +138,6 @@ article {
         bottom: 0em;
     }
 }
-
-
 
 #skillText {
     display: block;
@@ -142,8 +157,8 @@ article {
     display: inline;
     position: absolute;
     z-index: 3;
-    top: 47em;
-    left: 0em;
+    top: 46.7em;
+    left: -0.5em;
     right: 0em;
     background-color: $bluesky;
     border-radius: 50px / 50px;
@@ -171,12 +186,16 @@ article {
     & a:hover {
         color: $bluesky;
         text-decoration: none;
-        font-size: 1.015em;      
+        font-size: 1.015em;
+        filter: saturate(200%);
+        -webkit-filter: saturate(200%);      
     }   
     &:hover {
         box-shadow: 0px 0px 15px $bluesky;
         transform: scale(1.05);
         animation: balancierdl 100ms cubic-bezier(.4,.1,.6,.9) 2;
+        filter: saturate(200%);
+        -webkit-filter: saturate(200%);
     }
     & a:link {
         color: #ffffff;
@@ -186,11 +205,3 @@ article {
         color: #ffffff;
     }
 }
-
-
-
-
-
-
-
-

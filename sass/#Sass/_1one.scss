@@ -4,12 +4,17 @@
 $bluesky: #6cb0f6;
 $gray: #727272;
 
+
 /* ###### FONT and BACKGROUND ###### */
+/* Background top */
 body {
     font-family: 'Josefin Sans', 'Lato', sans-serif;
-    background-image: url(../image/headerbanner.png);
-    background-position: top;
+    background-image: url(../image/headerbanner.png), url(../image/centerbanner.png), url(../image/footerbanner.png);
+    background-position: top, center, center;
+    background-position-x: center, 50%, center;
     background-repeat: no-repeat;
+    background-size: 1920px 940px;
+    background-attachment: scroll;
 }
 
 /* ###### MARGIN page ###### */
@@ -65,19 +70,13 @@ nav {
 
 .Navigation{
     & a:hover {
-        font-size: 1.3em;
         text-shadow: 0px 0px 20px $bluesky;
+        filter: saturate(900%);
+        -webkit-filter: saturate(900%);
     }
     & li:hover {
-        animation: balanciernav 100ms cubic-bezier(.4,.1,.6,.9) 2;
-    }
-    @keyframes balanciernav {
-        25% {       
-            transform: translateX(1%);
-        }
-        75% {       
-            transform: translateX(1% * -1);
-        }
+        transform: scale(1.6);
+    
     }
     #Navigation--noMarge {
         margin-right: 1px;
@@ -96,9 +95,11 @@ header {
 
 /* ###### content text LEFT ###### */
 .helloWorld {
-    margin-top: 13em;
+    position: relative;
+    top: 13em;
     margin-left: 0.5em;
     float: left;
+    max-height: 260px;
 
     & > h1 {
         font-size: 3.5em;
@@ -129,30 +130,34 @@ header {
     box-shadow: 0px 0px 5px $bluesky;
     transform: scale(1);
     transition: transform 300ms;
-     & a:hover {
-         color: $bluesky;
-         text-decoration: none;
-         font-size: 1.07em;      
-     }
-     &:hover {
-         box-shadow: 0px 0px 15px $bluesky;
-         transform: scale(1.15);
-         animation: balanciercontact 100ms cubic-bezier(.4,.1,.6,.9) 2;
-         @keyframes balanciercontact {
-             25% {        
-                 transform: translateX(2%);
-             }
-             75% {        
-                 transform: translateX(2% * -1);
-             }
-         }
-     }
-     & a:link {
-         color: $bluesky;
-         text-decoration: none;      
-     }
-     & a:visited {
-         color: $bluesky;
-         text-decoration: none;
-     } 
+        & a:hover {
+            color: $bluesky;
+            text-decoration: none;
+            font-size: 1.07em;
+            filter: saturate(200%);
+            -webkit-filter: saturate(200%);      
+        }
+        &:hover {
+            filter: saturate(200%);
+            -webkit-filter: saturate(200%);
+            box-shadow: 0px 0px 22px $bluesky;
+            transform: scale(1.15);
+            animation: balanciercontact 100ms cubic-bezier(.4,.1,.6,.9) 2;
+            @keyframes balanciercontact {
+                25% {        
+                    transform: translateX(2%);
+                }
+                75% {        
+                    transform: translateX(2% * -1);
+                }
+            }
+        }
+        & a:link {
+            color: $bluesky;
+            text-decoration: none;      
+    }
+    & a:visited {
+        color: $bluesky;
+        text-decoration: none;
+    } 
 }

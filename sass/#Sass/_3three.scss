@@ -1,25 +1,14 @@
 /* - 3 three - */
 
-/* variable | color */
+/* ###### variable | color ###### */
 $bluesky: #6cb0f6;
 $gray: #727272;
 
-/* background position */
-.fondclaire {
-    position: relative;
-    top: -1em;
-    z-index: 1;
-    & img {
-        width: 100%;
-        height: 40em;
-    }
-}
-
-/* professional experience */
+/* ###### professional experience ###### */
 #XPpro {
     display: block;
     position: relative;
-    top: 34em;
+    top: 3.5em;
     z-index: 2;
     & img {
         position: relative;
@@ -31,6 +20,7 @@ $gray: #727272;
         color: black;
         display: block;
         position: relative;
+        max-width: 400px;
         top: 2.9em;
     }
     
@@ -54,6 +44,7 @@ $gray: #727272;
         margin-bottom: 4.5em;
         display: block;
         position: relative;
+        max-width: 300px;
         left: 0.3em;
         top: 3em;
     }
@@ -63,6 +54,7 @@ $gray: #727272;
         font-weight: 700;
         color: black;
         margin-bottom: 2em;
+        max-width: 150px;
     }
     
     & p {
@@ -86,7 +78,7 @@ $gray: #727272;
     }
 }
 
-/*Liste LEFT and RIGHT*/
+/* ###### List LEFT and RIGHT ###### */
 .Llist, .Rlist {
     display: inline-block;
     position: relative;
@@ -95,7 +87,7 @@ $gray: #727272;
     }
 }
 
-/* list Position */
+/* ###### list Position ###### */
 .Llist {
     left: 0.2em;
     bottom: 0em;
