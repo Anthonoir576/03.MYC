@@ -6,6 +6,8 @@ $gray: #727272;
 
 .myJob {
     text-decoration: none;
+    position: relative;
+    top: 2em;
     & h2 {
         display: block;
         position: relative;
@@ -53,7 +55,6 @@ $gray: #727272;
         text-decoration: none;
     }
 }
-
 
 /* ###### video project ###### */
 .videoProject {

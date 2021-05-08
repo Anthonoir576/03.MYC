@@ -4,11 +4,10 @@
 /* Background top */
 body {
   font-family: "Josefin Sans", "Lato", sans-serif;
-  background-image: url(../image/headerbanner.png), url(../image/centerbanner.png), url(../image/footerbanner.png);
-  background-position: top, center, center;
-  background-position-x: center, 50%, center;
-  background-repeat: no-repeat;
-  background-size: 1920px 940px;
+  background-image: url(../image/headerbanner.png), url(../image/centerbanner.png), url(../image/footerbanner.png), url(../image/Rectanglefinal.png);
+  background-position: 50% 0%, 50% 57.5%, 50% 102%, 50% 122.5%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 1920px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
   background-attachment: scroll;
 }
 
@@ -363,7 +362,7 @@ article {
 #XPpro {
   display: block;
   position: relative;
-  top: 3.5em;
+  top: 9em;
   z-index: 2;
 }
 #XPpro img {
@@ -451,6 +450,8 @@ article {
 /* ###### variable | color ###### */
 .myJob {
   text-decoration: none;
+  position: relative;
+  top: 2em;
   /* ###### little nav ###### */
   /*##### link modifier margin ##### */
 }
@@ -517,58 +518,63 @@ article {
 }
 */
 /* ###### (img) three point ###### */
-/*
 #Petitpoint {
-    display: flex;
-    position: relative;
-    z-index: 2;
-    float: right;
-    bottom: 112.5em;
-    right: 57.7em;
-}
-*/
-/* - 6 six - */
-/* variable | color */
-.container04 {
-  padding: auto;
-  margin: 1em;
-  position: relative;
-}
-.container04 h2 {
-  display: block;
+  display: flex;
   position: relative;
   z-index: 2;
-  top: 40em;
+  float: right;
+  top: 60em;
+  right: 36.2em;
+}
+
+/* - 6 six - */
+/* ##### variable | color ##### */
+.theEnd {
+  position: relative;
+  top: 84.5rem;
+  height: 800px;
+  width: auto;
+}
+
+.theEnd {
+  padding: 0;
+}
+.theEnd h2 {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  z-index: 2;
+  top: 0em;
   left: 0.3em;
   font-size: 2.5em;
   color: black;
 }
-.container04 h2 span {
+.theEnd h2 span {
   font-size: 1em;
   font-weight: 200;
   color: #727272;
 }
-.container04 h2 em {
+.theEnd h2 em {
   font-size: 0.4em;
   font-weight: 500;
   color: #727272;
 }
-.container04 h3 {
+.theEnd h3 {
   display: block;
   position: relative;
   font-size: 0.8em;
   font-weight: 450;
   color: #727272;
   margin-bottom: 4.5em;
-  top: 130em;
+  top: 0em;
   left: 1.2em;
 }
 
-/*FORMULAIRE !*/
+/* ##### FORMULAIRE ##### !*/
 form {
   display: block;
   position: relative;
-  top: 106em;
+  top: 0em;
   width: 450px;
   padding: 1em;
   border: 1px solid #727272;
@@ -637,14 +643,13 @@ button:hover {
   }
 }
 
-/*text RIGHT */
+/* ##### text RIGHT ##### */
 .textedefin {
   display: block;
   position: relative;
   float: right;
-  margin-top: 0em;
-  top: 72.3em;
-  right: 3em;
+  bottom: 33.5rem;
+  right: 3.2em;
   color: #727272;
   font-weight: 400;
 }
@@ -652,56 +657,50 @@ button:hover {
   margin-top: 2.5em;
 }
 
+.iconEnd {
+  position: relative;
+  max-width: 100px;
+  left: 46em;
+  bottom: 35.1rem;
+}
 .iconEnd img {
   display: block;
   position: relative;
   margin-top: 2.45em;
-  top: 70.8em;
-  left: 44em;
 }
 
 #correctionimg {
-  left: 44.3em;
+  left: 0.3em;
 }
 
 #correctionimg2 {
-  left: 44.1em;
+  left: 0.1em;
 }
 
-/*img MAP position*/
+/* ##### img MAP position ##### */
 #map {
   display: flex;
   position: relative;
   float: right;
-  top: 76.1em;
-  margin-top: 0em;
+  bottom: 29.9rem;
   left: 17em;
   border: 1px solid #727272;
   border-color: 114, 114, 114, 0;
   border-radius: 1em;
 }
 
-/* banner the end */
-#finish {
-  display: flex;
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-  bottom: 1.6em;
-}
-
-.copyme {
-  display: flex;
+#copyme {
+  max-width: 300px;
   position: relative;
   float: center;
-  top: 100em;
+  bottom: 2.5rem;
   left: 29em;
 }
-.copyme strong {
+#copyme strong {
   font-weight: 400;
   color: #727272;
 }
-.copyme em {
+#copyme em {
   font-style: italic;
   font-weight: 300;
   color: #727272;

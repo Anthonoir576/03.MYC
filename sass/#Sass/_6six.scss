@@ -1,18 +1,23 @@
 /* - 6 six - */
 
-/* variable | color */
+/* ##### variable | color ##### */
 $bluesky: #6cb0f6;
 $gray: #727272;
 
-.container04 {
-    padding: auto;
-    margin: 1em;
+.theEnd {
     position: relative;
+    top: 84.5rem;
+    height: 800px;
+    width: auto;
+}
+.theEnd {
+    padding: 0;
     & h2 {
         display: block;
         position: relative;
+        max-width: 400px;
         z-index: 2;
-        top: 40em;
+        top: 0em;
         left: 0.3em;
         font-size: 2.5em;
         color: black;
@@ -34,16 +39,16 @@ $gray: #727272;
         font-weight: 450;
         color: $gray;
         margin-bottom: 4.5em;
-        top: 130em;
+        top: 0em;
         left: 1.2em;
     }
 }
 
-/*FORMULAIRE !*/
+/* ##### FORMULAIRE ##### !*/
 form {
     display: block;
     position: relative;
-    top: 106em;
+    top: 0em;
     width: 450px;
     padding: 1em;
     border: 1px solid $gray;
@@ -112,14 +117,13 @@ button {
     }
 }
 
-/*text RIGHT */
+/* ##### text RIGHT ##### */
 .textedefin {
     display: block;
     position: relative;
     float: right;
-    margin-top: -0em;
-    top: 72.3em;
-    right: 3em;
+    bottom: 33.5rem;
+    right: 3.2em;
     color: $gray;
     font-weight: 400;
     & p + p {
@@ -127,49 +131,45 @@ button {
     }
 }
 
-.iconEnd img {
-    display: block;
+.iconEnd {
     position: relative;
-    margin-top: 2.45em;
-    top: 70.8em;
-    left: 44em;
+    max-width: 100px;
+    left: 46em;
+    bottom: 35.1rem;
+    & img {
+        display: block;
+        position: relative;
+        margin-top: 2.45em;
+        
+        
+    }    
 }
 
 #correctionimg {
-    left: 44.3em;
+    left: 0.3em;
 }
 
 #correctionimg2 {
-    left: 44.1em;
+    left: 0.1em;
 }
 
-/*img MAP position*/
+/* ##### img MAP position ##### */
 #map {
     display: flex;
     position: relative;
     float: right;
-    top: 76.1em;
-    margin-top: -0em;
+    bottom: 29.9rem;
     left: 17em;
     border: 1px solid $gray;
     border-color: (114,114,114,0);
     border-radius: 1em;
 }
 
-/* banner the end */
-#finish {
-    display: flex;
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    bottom: 1.6em;
-}
-
-.copyme {
-    display: flex;
+#copyme {
+    max-width: 300px;
     position: relative;
     float: center;
-    top: 100em;
+    bottom: 2.5rem;
     left: 29em;
     & strong {
         font-weight: 400;

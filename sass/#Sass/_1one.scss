@@ -9,11 +9,14 @@ $gray: #727272;
 /* Background top */
 body {
     font-family: 'Josefin Sans', 'Lato', sans-serif;
-    background-image: url(../image/headerbanner.png), url(../image/centerbanner.png), url(../image/footerbanner.png);
-    background-position: top, center, center;
-    background-position-x: center, 50%, center;
-    background-repeat: no-repeat;
-    background-size: 1920px 940px;
+    background-image: url(../image/headerbanner.png),
+                      url(../image/centerbanner.png),
+                      url(../image/footerbanner.png),
+                      url(../image/Rectanglefinal.png);
+
+    background-position: 50% 0%, 50% 57.5%, 50% 102%, 50% 122.5%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 1920px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
     background-attachment: scroll;
 }
 
