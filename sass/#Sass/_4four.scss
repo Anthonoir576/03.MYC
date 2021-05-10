@@ -11,7 +11,7 @@ $gray: #727272;
     & h2 {
         display: block;
         position: relative;
-        max-width: 780px;
+        max-width: 950px;
         z-index: 2;
         top: 9em;
         margin-left: 0.5em;
@@ -33,10 +33,15 @@ $gray: #727272;
         margin-right: 1.5em;
         color: $gray;
     }
+    & em {
+        font-size: 2em;
+        color: black;
+        font-weight: 300;  
+    }
 
     /*##### link modifier margin ##### */
     .link--modif {
-        margin-left: 3.5em;
+        margin-left: 0.3em;
     }
 
     h2 a:hover {
