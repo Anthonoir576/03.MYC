@@ -5,7 +5,7 @@
 body {
   font-family: "Josefin Sans", "Lato", sans-serif;
   background-image: url(../image/headerbanner.png), url(../image/centerbanner.png), url(../image/footerbanner.png), url(../image/Rectanglefinal.png);
-  background-position: 50% 0%, 50% 57.5%, 50% 102%, 50% 122.5%;
+  background-position: 50% 0%, 50% 57.5%, 50% 102%, 50% 122%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 1920px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
   background-attachment: scroll;
@@ -458,7 +458,7 @@ article {
 .myJob h2 {
   display: block;
   position: relative;
-  max-width: 780px;
+  max-width: 950px;
   z-index: 2;
   top: 9em;
   margin-left: 0.5em;
@@ -479,8 +479,13 @@ article {
   margin-right: 1.5em;
   color: #727272;
 }
+.myJob em {
+  font-size: 2em;
+  color: black;
+  font-weight: 300;
+}
 .myJob .link--modif {
-  margin-left: 3.5em;
+  margin-left: 0.3em;
 }
 .myJob h2 a:hover {
   color: #6cb0f6;
@@ -644,37 +649,36 @@ button:hover {
 }
 
 /* ##### text RIGHT ##### */
-.textedefin {
-  display: block;
+.container03 {
+  display: flex;
   position: relative;
-  float: right;
-  bottom: 33.5rem;
-  right: 3.2em;
+  left: 47.5rem;
+  bottom: 32.5rem;
   color: #727272;
   font-weight: 400;
+  max-width: 550px;
 }
-.textedefin p + p {
-  margin-top: 2.5em;
-}
-
-.iconEnd {
-  position: relative;
-  max-width: 100px;
-  left: 46em;
-  bottom: 35.1rem;
-}
-.iconEnd img {
+.container03 .textedefin {
   display: block;
   position: relative;
-  margin-top: 2.45em;
 }
-
-#correctionimg {
-  left: 0.3em;
+.container03 .textedefin p + p {
+  margin-top: 2.5em;
 }
-
-#correctionimg2 {
-  left: 0.1em;
+.container03 .iconEnd {
+  position: relative;
+  max-width: 100px;
+}
+.container03 .iconEnd img {
+  display: block;
+  position: relative;
+  margin-top: 2.3em;
+  right: 1rem;
+  bottom: 1.4rem;
+}
+.container03 #correctionimg {
+  position: relative;
+  right: 0.7rem;
 }
 
 /* ##### img MAP position ##### */
@@ -683,7 +687,7 @@ button:hover {
   position: relative;
   float: right;
   bottom: 29.9rem;
-  left: 17em;
+  right: 1.5em;
   border: 1px solid #727272;
   border-color: 114, 114, 114, 0;
   border-radius: 1em;
@@ -693,7 +697,7 @@ button:hover {
   max-width: 300px;
   position: relative;
   float: center;
-  bottom: 2.5rem;
+  bottom: 3rem;
   left: 29em;
 }
 #copyme strong {
