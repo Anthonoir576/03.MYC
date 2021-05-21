@@ -176,16 +176,16 @@
                 
                 <form id="formulaire" action="traitement.php" method="post">
                     <div>
-                        <input type="text" id="name" name="user_name" placeholder="&ensp; Noms"/>
+                        <input type="text" id="name" name="user_name" min="3" max="20" placeholder="&ensp; Noms"/>
                     </div>
                     <div>
-                        <input type="email" id="mail" name="user_mail" placeholder="&ensp; E-mail"/>
+                        <input type="email" id="mail" name="user_mail" min="10" max="25" placeholder="&ensp; E-mail"/>
                     </div>
                     <div>
-                        <input type="text" id="objet" name="user_objet" placeholder="&ensp; Objet"/>
+                        <input type="text" id="objet" name="user_objet" min="5" max="25" placeholder="&ensp; Objet"/>
                     </div>
                     <div>
-                        <textarea id="msg" name="user_message" placeholder="&ensp; Message"></textarea>
+                        <textarea id="msg" name="user_message" min="10" max="500" placeholder="&ensp; Message"></textarea>
                     </div>
                     <div class="buttonEnd">
                         <button type="submit">VALIDER</button>
