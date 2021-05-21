@@ -176,16 +176,23 @@
                 
                 <form id="formulaire" action="traitement.php" method="post">
                     <div>
-                        <input type="text" required id="name" name="user_name" minlength="3" maxlength="20" placeholder="&ensp; Noms"/>
+                        <input type="text" required id="name" name="user_name" minlength="3" maxlength="20" 
+                        pattern="^[( )a-zA-Z]+$" placeholder="&ensp; Noms"/>
+                        <span>Veuillez entrer uniquement des lettres</span>
                     </div>
                     <div>
-                        <input type="email" required id="mail" name="user_mail" minlength="10" maxlength="25" placeholder="&ensp; E-mail"/>
+                        <input type="email" required id="mail" name="user_mail" minlength="10" maxlength="25"
+                        placeholder="&ensp; E-mail"/>
+                        <span>Veuillez entrer un e-mail valide</span>
                     </div>
                     <div>
-                        <input type="text" required id="objet" name="user_objet" minlength="5" maxlength="25" placeholder="&ensp; Objet"/>
+                        <input type="text" required id="objet" name="user_objet" minlength="5" maxlength="25"
+                        pattern="^[( )a-zA-Z]+$" placeholder="&ensp; Objet"/>
+                        <span>Veuillez entrer uniquement des lettres</span>
                     </div>
                     <div>
-                        <textarea id="msg" required name="user_message" minlength="10" maxlength="500" placeholder="&ensp; Message"></textarea>
+                        <textarea id="msg" required name="user_message" minlength="10" maxlength="500"
+                        placeholder="&ensp; Message"></textarea>
                     </div>
                     <div class="buttonEnd">
                         <button type="submit">VALIDER</button>
