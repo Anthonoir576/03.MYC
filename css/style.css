@@ -5,7 +5,7 @@
 body {
   font-family: "Josefin Sans", "Lato", sans-serif;
   background-image: url(../image/headerbanner.png), url(../image/centerbanner.png), url(../image/footerbanner.png), url(../image/Rectanglefinal.png);
-  background-position: 50% 0%, 50% 57.5%, 50% 102%, 50% 122%;
+  background-position: 50% 0%, 50% 57.5%, 50% 102%, 50% 122.3%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 1920px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
   background-attachment: scroll;
@@ -211,12 +211,12 @@ header {
   max-width: 380px;
   margin-right: 0;
   top: 1em;
-  left: 3.75em;
+  left: 1.9em;
   /* ##### effect dark / light ##### */
   /* ###### NO MARGIN ###### */
 }
 .Rsociaux a {
-  margin-right: 8em;
+  margin-right: 5.8em;
 }
 .Rsociaux img {
   filter: grayscale(100%);
@@ -485,7 +485,7 @@ article {
   font-weight: 300;
 }
 .myJob .link--modif {
-  margin-left: 0.3em;
+  margin-left: 3.5em;
 }
 .myJob h2 a:hover {
   color: #6cb0f6;
@@ -493,7 +493,7 @@ article {
   text-shadow: 0px 0px 4px #6cb0f6;
 }
 .myJob a:link {
-  color: #6cb0f6;
+  color: #727272;
   text-decoration: none;
 }
 .myJob a:visited {
@@ -529,7 +529,7 @@ article {
   z-index: 2;
   float: right;
   top: 60em;
-  right: 36.2em;
+  right: 35.5em;
 }
 
 /* - 6 six - */
@@ -695,6 +695,7 @@ button:hover {
 
 #copyme {
   max-width: 300px;
+  height: 25px;
   position: relative;
   float: center;
   bottom: 3rem;

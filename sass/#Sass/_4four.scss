@@ -41,7 +41,7 @@ $gray: #727272;
 
     /*##### link modifier margin ##### */
     .link--modif {
-        margin-left: 0.3em;
+        margin-left: 3.5em;
     }
 
     h2 a:hover {
@@ -51,7 +51,7 @@ $gray: #727272;
     }
 
     & a:link {
-        color: $bluesky;
+        color: $gray;
         text-decoration: none;      
     }
 
