@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
         <!-- two last link = font google -->
-        <script src="js/script.js"></script>
+        <script type="text/javaScript" src="js/script.js"></script>
                 
         <title>FALVOAnthony.fr</title>
     </head>
@@ -177,25 +177,25 @@
                 <form id="formulaire" action="traitement.php" method="post">
                     <div>
                         <input type="text" required id="name" name="user_name" minlength="3" maxlength="20" 
-                        pattern="^[( )a-zA-Z]+$" placeholder="&ensp; Noms"/>
+                        pattern="^[( )a-zA-Z]+$" placeholder="&ensp; Noms *"/>
                         <span>Veuillez entrer uniquement des lettres</span>
                     </div>
                     <div>
                         <input type="email" required id="mail" name="user_mail" minlength="10" maxlength="25"
-                        placeholder="&ensp; E-mail"/>
+                        placeholder="&ensp; E-mail *"/>
                         <span>Veuillez entrer un e-mail valide</span>
                     </div>
                     <div>
                         <input type="text" required id="objet" name="user_objet" minlength="5" maxlength="25"
-                        pattern="^[( )a-zA-Z]+$" placeholder="&ensp; Objet"/>
+                        pattern="^[( )a-zA-Z]+$" placeholder="&ensp; Objet *"/>
                         <span>Veuillez entrer uniquement des lettres</span>
                     </div>
                     <div>
                         <textarea id="msg" required name="user_message" minlength="10" maxlength="500"
-                        placeholder="&ensp; Message"></textarea>
+                        placeholder="&ensp; Message *"></textarea>
                     </div>
                     <div class="buttonEnd">
-                        <button type="submit">VALIDER</button>
+                        <button id ="valid-formulaire" type="submit">VALIDER</button>
                     </div>
                 </form>
                 <div class="container03">
