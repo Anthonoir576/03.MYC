@@ -5,9 +5,9 @@
 body {
   font-family: "Josefin Sans", "Lato", sans-serif;
   background-image: url(../image/headerbanner.png), url(../image/centerbanner.png), url(../image/footerbanner.png), url(../image/Rectanglefinal.png);
-  background-position: 50% 0%, 50% 57.5%, 50% 102%, 50% 122%;
+  background-position: 50% 0%, 50% 55%, 50% 102%, 50% 122%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 1920px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
+  background-size: 1930px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
   background-attachment: scroll;
 }
 
@@ -21,35 +21,35 @@ body {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  position: relative;
+  position: fixed;
+  top: -0.5rem;
   max-width: 90px;
-  bottom: 1.7em;
 }
 #logo > img {
   width: 35px;
   height: 30px;
 }
-#logo > h1 {
-  font-size: 2.263em;
+#logo > p {
+  font-size: 1.5em;
+  font-weight: 600;
   color: white;
   text-shadow: 0px 0px 3.5px #6cb0f6;
 }
 
 /* ###### Nav TOP/RIGHT ###### */
-nav {
-  margin: 0em 23.438em 0em;
+.navBar {
+  display: flex;
+  justify-content: flex-end;
   text-shadow: 0px 0px 4px #6cb0f6;
 }
-nav ul {
+.navBar ul {
   list-style-type: none;
   display: flex;
-  position: relative;
-  float: right;
 }
-nav li {
+.navBar li {
   margin-right: 117px;
 }
-nav a {
+.navBar a {
   font-size: 0.9em;
   color: #ffffff;
   padding-bottom: 10px;
@@ -57,20 +57,20 @@ nav a {
   font-style: normal;
   text-rendering: auto;
 }
-nav a:hover {
+.navBar a:hover {
   color: #eeeeee;
   border-bottom: 1.5px solid #ffffff;
 }
 
-.Navigation a:hover {
+.navBar a:hover {
   text-shadow: 0px 0px 20px #6cb0f6;
   filter: saturate(900%);
   -webkit-filter: saturate(900%);
 }
-.Navigation li:hover {
+.navBar li:hover {
   transform: scale(1.6);
 }
-.Navigation #Navigation--noMarge {
+.navBar #navBar--noMarge {
   margin-right: 1px;
 }
 
@@ -82,14 +82,19 @@ header {
 .container01 {
   display: flex;
   justify-content: space-between;
+  max-width: 1170px;
+  margin-left: 0em;
+  margin-top: 5.5em;
+  border: 1px solid rgba(255, 110, 166, 0.01);
+  border-radius: 5%;
+  box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.15);
+  padding: 25px;
 }
 
-/* ###### content text LEFT ###### */
+/* ###### container text LEFT ###### */
 .helloWorld {
-  position: relative;
-  top: 13em;
   margin-left: 0.5em;
-  float: left;
+  margin-top: 11em;
   max-height: 260px;
 }
 .helloWorld > h1 {
@@ -109,11 +114,11 @@ header {
 
 /* ###### Button contact LEFT ###### */
 .contactMe {
-  font-size: 0.855em;
+  font-size: 1em;
   background-color: white;
   padding: 0.063em;
   border-radius: 50px/50px;
-  width: 30%;
+  width: 170px;
   text-align: center;
   margin-top: 3.2em;
   color: #6cb0f6;
@@ -152,66 +157,66 @@ header {
   text-decoration: none;
 }
 
+/* ############### Responsive ################# */
 /* - 2 two - */
 /* ###### variable | color ###### */
 .container02 {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  margin-top: 15em;
   max-height: 1100px;
-  top: 22em;
   z-index: 1;
   /* ###### Picture profil 02 LEFT ###### */
 }
 .container02 #pixProfil02 {
-  position: relative;
-  right: 2.2em;
+  margin-right: 2.2em;
   max-width: 550px;
   max-height: 938px;
 }
 
 /* ###### text in bottom picture LEFT ###### */
-.textINpix {
+.pixProfil02--textAndNetworks {
   font-family: "Lato", "Josefin Sans", sans-serif;
   font-size: 1em;
   color: #232323;
   display: flex;
-  position: relative;
-  bottom: 2em;
-  left: 3em;
-  z-index: 3;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin-top: -24.5em;
+  margin-left: 2.4em;
 }
-.textINpix ul {
+.pixProfil02--textAndNetworks ul {
   list-style-type: none;
 }
-.textINpix .ulLEFT {
-  position: relative;
-  bottom: 0.3em;
+.pixProfil02--textAndNetworks .ulLEFT {
+  margin-top: 0.75em;
   font-weight: bold;
-  padding: 0px;
 }
-.textINpix .ulLEFT > li {
+.pixProfil02--textAndNetworks .ulLEFT > li {
   margin-top: 1.1em;
+  list-style-type: circle;
+  text-decoration: underline;
 }
-.textINpix .ulRIGHT {
-  position: relative;
-  left: 3em;
-  padding: 0px;
+.pixProfil02--textAndNetworks .ulRIGHT {
+  margin-left: 1.5em;
   max-width: 220px;
 }
-.textINpix .ulRIGHT > li {
+.pixProfil02--textAndNetworks .ulRIGHT > li {
   margin-top: 1em;
+}
+
+#noStyle {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /* ###### link social network's LEFT ###### */
 .Rsociaux {
   display: flex;
-  position: relative;
   z-index: 2;
-  max-width: 380px;
-  margin-right: 0;
-  top: 1em;
-  left: 1.9em;
+  max-width: 650px;
+  margin-top: 3.5em;
+  margin-left: 1.7em;
   /* ##### effect dark / light ##### */
   /* ###### NO MARGIN ###### */
 }
@@ -237,8 +242,6 @@ header {
 }
 .Rsociaux #Nomarge2 {
   margin-right: -8em;
-  margin: 0;
-  padding: 0;
 }
 
 /* ###### ALL TEXT RIGHT ###### */
@@ -248,8 +251,7 @@ article {
 }
 
 #textAll {
-  position: relative;
-  top: 3.1em;
+  margin-top: 5.8em;
 }
 #textAll > p {
   color: #727272;
@@ -284,16 +286,13 @@ article {
   max-height: 330px;
 }
 #blockTextAndPix img {
-  z-index: 2;
   margin-top: 2.3em;
-  bottom: 0em;
 }
 
 #skillText {
   display: block;
   position: relative;
   bottom: 21em;
-  z-index: 1;
 }
 #skillText p {
   margin-top: 3.9em;
@@ -304,15 +303,11 @@ article {
 
 /* ###### download button cv ###### */
 .downloadCV {
-  display: inline;
-  position: absolute;
-  z-index: 3;
-  top: 46.7em;
-  left: -0.5em;
-  right: 0em;
+  text-align: center;
   background-color: #6cb0f6;
-  border-radius: 50px/50px;
-  width: 30%;
+  border-radius: 50px;
+  width: 165px;
+  height: 50px;
   color: white;
   box-shadow: 0px 0px 5px #6cb0f6;
   transform: scale(1);
@@ -329,9 +324,8 @@ article {
 .downloadCV p {
   font-size: 1em;
   font-weight: 600;
-  text-align: center;
-  padding: 2% 0% 0% 0%;
-  border-width: 15px 15px 15px 15px;
+  margin-top: 3.5em;
+  padding-top: 1em;
   color: #ffffff;
 }
 .downloadCV a:hover {
@@ -359,91 +353,87 @@ article {
 /* - 3 three - */
 /* ###### variable | color ###### */
 /* ###### professional experience ###### */
-#XPpro {
-  display: block;
-  position: relative;
-  top: 9em;
+.XPpro--legend {
+  display: flex;
+  flex-direction: column;
+}
+
+.XPpro--legend {
+  margin-top: 20em;
   z-index: 2;
+  max-width: 400px;
 }
-#XPpro img {
-  position: relative;
-  top: 0.9em;
-  right: 3.5em;
-}
-#XPpro h2 {
+.XPpro--legend h2 {
   font-size: 2.5em;
   color: black;
-  display: block;
-  position: relative;
   max-width: 400px;
-  top: 2.9em;
 }
-#XPpro em {
+.XPpro--legend em {
   font-size: 0.4em;
   font-weight: 550;
   color: #727272;
 }
-#XPpro span {
+.XPpro--legend span {
   font-size: 1em;
   font-weight: 200;
   color: #727272;
 }
-#XPpro h3 {
+.XPpro--legend h3 {
   font-size: 0.9em;
   font-weight: 450;
   color: #727272;
-  margin-top: 8em;
-  margin-bottom: 4.5em;
-  display: block;
-  position: relative;
+  margin-top: 2em;
+  margin-bottom: -1.5em;
   max-width: 300px;
-  left: 0.3em;
-  top: 3em;
+}
+
+#XPpro {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5em;
+}
+#XPpro img {
+  position: relative;
+  right: 3.1em;
+  top: 1.2em;
+  margin-top: 0.9em;
+  margin-right: 0em;
 }
 #XPpro h4 {
-  font-size: 1.5em;
+  font-size: 1.9em;
   font-weight: 700;
   color: black;
   margin-bottom: 2em;
-  max-width: 150px;
+  max-width: 250px;
+}
+#XPpro h4:hover {
+  transform: scale(1.1);
 }
 #XPpro p {
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 350;
   color: #727272;
-  position: relative;
-  left: 3.5em;
-  top: 2em;
+  margin-left: 3.5em;
+  margin-top: 2em;
 }
 #XPpro strong {
-  text-align: justify;
-  font-size: 1.4em;
+  position: relative;
+  right: 1.8em;
+  font-size: 1.45em;
   font-weight: 550;
   color: black;
-  position: relative;
-  right: 2em;
-  bottom: 0.8em;
+}
+#XPpro span {
+  border: 1px solid black;
+  padding: 8px 10px 3px 10px;
+  border-radius: 10px;
+  box-shadow: 3px 6px 18px -1px rgba(0, 0, 0, 0.15);
 }
 
 /* ###### List LEFT and RIGHT ###### */
-.Llist, .Rlist {
-  display: inline-block;
-  position: relative;
-}
 .Llist p + p, .Rlist p + p {
   margin-top: 3em;
-}
-
-/* ###### list Position ###### */
-.Llist {
-  left: 0.2em;
-  bottom: 0em;
-}
-
-.Rlist {
-  left: 22em;
-  top: 0.2em;
 }
 
 /* - 4 four - */

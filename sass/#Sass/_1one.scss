@@ -14,45 +14,48 @@ body {
                       url(../image/footerbanner.png),
                       url(../image/Rectanglefinal.png);
 
-    background-position: 50% 0%, 50% 57.5%, 50% 102%, 50% 122%;
+    background-position: 50% 0%, 50% 55%, 50% 102%, 50% 122%;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 1920px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
+    background-size: 1930px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
     background-attachment: scroll;
+
+    
 }
 
 /* ###### MARGIN page ###### */
-.bloc_page {
-    margin: 0em 23.438em 0em;
-}
+
+  .bloc_page {
+      margin: 0em 23.438em 0em;
+  }
 
 /* ###### Logo + text TOP/LEFT ###### */ 
 #logo {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    position: relative;
+    position: fixed;
+    top: -0.5rem;
     max-width: 90px;
-    bottom: 1.7em;
     & > img {
         width: 35px;
         height: 30px;
     }
-    & > h1 {
-        font-size: 2.263em;
+    & > p {
+        font-size: 1.5em;
+        font-weight: 600;
         color: white;
         text-shadow: 0px 0px 3.5px $bluesky;
     }
 }
 
 /* ###### Nav TOP/RIGHT ###### */
-nav {
-    margin: 0em 23.438em 0em;
+.navBar {  
+    display: flex;
+    justify-content: flex-end;
     text-shadow: 0px 0px 4px $bluesky;
     & ul {
         list-style-type: none;
-        display: flex;
-        position: relative;
-        float: right;
+        display: flex;          
     }
     & li {
         margin-right: 117px;
@@ -71,7 +74,7 @@ nav {
     }
 }
 
-.Navigation{
+.navBar{
     & a:hover {
         text-shadow: 0px 0px 20px $bluesky;
         filter: saturate(900%);
@@ -81,7 +84,7 @@ nav {
         transform: scale(1.6);
     
     }
-    #Navigation--noMarge {
+    #navBar--noMarge {
         margin-right: 1px;
     }
 }
@@ -94,16 +97,22 @@ header {
 .container01 {
     display: flex;
     justify-content: space-between;
+    max-width: 1170px;
+    margin-left: 0em;
+    margin-top: 5.5em;
+    // ###################################################### --> wait for test card MAIN
+    border: 1px solid rgba(255, 110, 166, 0.01);
+    border-radius: 5%;
+    box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.15);
+    padding: 25px;
 }
 
-/* ###### content text LEFT ###### */
+/* ###### container text LEFT ###### */
 .helloWorld {
-    position: relative;
-    top: 13em;
+  
     margin-left: 0.5em;
-    float: left;
+    margin-top: 11em;
     max-height: 260px;
-
     & > h1 {
         font-size: 3.5em;
         font-weight: 550;
@@ -122,13 +131,14 @@ header {
 
 /* ###### Button contact LEFT ###### */
 .contactMe {
-    font-size: 0.855em; 
+    font-size: 1em; 
     background-color: white;
     padding: 0.063em;
     border-radius: 50px / 50px;
-    width: 30%; 
+    width: 170px;  
     text-align: center;
     margin-top: 3.2em;
+    
     color: $bluesky;
     box-shadow: 0px 0px 5px $bluesky;
     transform: scale(1);
@@ -164,3 +174,5 @@ header {
         text-decoration: none;
     } 
 }
+
+/* ############### Responsive ################# */

@@ -8,51 +8,76 @@
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
         <!-- two last link = font google -->
-        <script type="text/javaScript" src="js/script.js"></script>
+        <script src="js/script.js"></script>
                 
         <title>FALVOAnthony.fr</title>
     </head>
 
     <!--1 one-->
     <body>
-        <!-- Nav MENU --> 
-        <nav class="Navigation">
-            <ul>
-                <li><a href="#pixProfil02">En savoir plus...</a></li>
-                <li><a href="#XPpro">Compétence</a></li>
-                <li><a href="#linkPortfolio">Portfolio</a></li>
-                <li id="Navigation--noMarge"><a href="#copyme">Contact</a></li>
-            </ul>
-        </nav>
         <!-- Logo + text Af. -->
         <div id="logo">
-            <img src="image/mylogo.png" alt="Logo My Concept"/>
-            <h1> &thinsp;Af.</h1>    
+            <img src="image/mylogo.png" alt="Logo My Concept"/> <p> &thinsp;Af.</p>    
         </div>
-
         <!-- MARGIN page -->
-        <div class="bloc_page"> 
-            
-            <!-- Text Header LEFT + Picture RIGHT -->
-            <header class="container01">  
-                <div class="helloWorld">
-                    <h1>FALVO Anthony</h1>
-                    <h2>Étudiant développeur Front-end</h2>
-                    <div class="contactMe">
-                        <p><a href="#copyme">Contactez-moi</a></p>
-                    </div>
-                </div>
-                <div>
-                    <img src="image/photoHEADd.png" alt="Photo FALVO Anthony"/>    
-                </div>          
-            </header>
+        <div class="bloc_page">      
+                <!-- Nav MENU --> 
+                <nav class="navBar">
+                    <ul>
+                        <li><a href="#pixProfil02">En savoir plus...</a></li>
+                        <li><a href="#XPpro">Compétence</a></li>
+                        <li><a href="#linkPortfolio">Portfolio</a></li>
+                        <li id="navBar--noMarge"><a href="#copyme">Contact</a></li>
+                    </ul>
+                </nav>
 
+            <main>
+                <header>
+                    <!-- Text Header LEFT + Picture RIGHT -->
+                    <div class="container01">  
+                        <div class="helloWorld">
+                            <h1>FALVO Anthony</h1>
+                            <h2>Étudiant développeur Front-end</h2>
+                            <div class="contactMe">
+                                <p><a href="#copyme">Contactez-moi</a></p>
+                            </div>
+                        </div>
+                        <div class="pictureHeader">
+                            <img src="image/photoHEADd.png" alt="Photo FALVO Anthony"/>    
+                        </div>          
+                    </div>
+                </header>
+            </main> 
             <!--2 two-->    
             <!-- div LEFT / RIGHT -->
             <div class="container02">
                 <aside>
                     <div id="pixProfil02">
                         <img src="image/blocPresentation.png" alt="Anthony FALVO"/>
+                    </div>
+                    <!-- text + picture social network's -->
+                    <div class="pixProfil02--textAndNetworks">
+                        <ul class="ulLEFT">
+                            <li><strong>Nom / Prénom</strong></li>
+                            <li><strong>Date de naissance</strong></li> 
+                            <li><span><strong>Adresse</strong></span></li>
+                            <li id="noStyle">&nbsp;</li>
+                            <li><strong>Téléphone</strong></li> 
+                            <li><strong>E-mail</strong></li>
+                        </ul>
+                        <ul class="ulRIGHT">
+                            <li>: FALVO Anthony</li>
+                            <li>: 25 Juin 1993</li>
+                            <li>: 269 rue du capitaine wazny Montigny-en-ostrevent, 59182, France</li>
+                            <li>: 07.27.76.52.92</li>
+                            <li>: anthony.falvo.pro@gmail.com</li>
+                        </ul>
+                        <div class="Rsociaux">
+                            <div><a href="https://www.facebook.com/anthony.falvo.399/"><img src="image/f.png" alt="reseaux sociaux"/></a></div>
+                            <div><a href="https://www.linkedin.com/in/anthony-falvo-25657020a/"><img src="image/lkn.png" alt="reseaux sociaux"/></a></div>
+                            <div><a href="https://www.freecodecamp.org/anthonoir576"><img src="image/fcc.png" alt="reseaux sociaux"/></a></div>
+                            <div><a href="https://github.com/Anthonoir576" id="Nomarge2"><img src="image/gthb2.png" alt="reseaux sociaux"/></a></div>
+                        </div>       
                     </div>
                 </aside>
 
@@ -91,40 +116,15 @@
                     </div>
                 </article>
             </div>
-            <!-- text + picture social network's -->
-            <aside>
-                <div class="textINpix">
-                    <ul class="ulLEFT">
-                       <li><strong>Nom / Prénom</strong></li>
-                       <li><strong>Date de naissance</strong></li> 
-                       <li><span><strong>Adresse</strong></span></li>
-                       <li>&nbsp;</li>
-                       <li><strong>Téléphone</strong></li> 
-                       <li><strong>E-mail</strong></li>
-                    </ul>
-                    <ul class="ulRIGHT">
-                        <li>: FALVO Anthony</li>
-                        <li>: 25 Juin 1993</li>
-                        <li>: 269 rue du capitaine wazny Montigny-en-ostrevent, 59182, France</li>
-                        <li>: 07.27.76.52.92</li>
-                        <li>: anthony.falvo.pro@gmail.com</li>
-                    </ul>
-                </div>   
-                <div class="Rsociaux">
-                    <div><a href="https://www.facebook.com/anthony.falvo.399/"><img src="image/f.png" alt="reseaux sociaux"/></a></div>
-                    <div><a href="https://www.linkedin.com/in/anthony-falvo-25657020a/"><img src="image/lkn.png" alt="reseaux sociaux"/></a></div>
-                    <div><a href="https://www.freecodecamp.org/anthonoir576"><img src="image/fcc.png" alt="reseaux sociaux"/></a></div>
-                    <div><a href="https://github.com/Anthonoir576" id="Nomarge2"><img src="image/gthb2.png" alt="reseaux sociaux"/></a></div>
-                </div>                
-            </aside>  
 
             <!--3 three-->
-            <div id="XPpro">
+            <div class="XPpro--legend">
                 <h2>Résumé <span>/</span> <em>Experience professionnelle</em></h2>
                 <h3> Experience globale dans le monde du travail.</h3>
-                
+            </div>
+            <div id="XPpro">                
                 <div class="Llist">
-                    <h4>Experience</h4>
+                    <h4>&bull; <span>Experience</span></h4>
                     <p><img src="image/icon01.png" alt="icon book"/><strong>2019 - 2021</strong><br/>
                     Pilote de ligne, Gestion de l’équipe, et de la production.</p>                    
                     <p><img src="image/icon02.png" alt="icon check list"/><strong>2015 - 2018</strong><br/>
@@ -133,7 +133,7 @@
                     Armée de terre, BTP, et logistique.</p>
                 </div>
                 <div class="Rlist">
-                    <h4>Formation</h4>
+                    <h4>&bull; <span>Formation</span></h4>
                     <p><img src="image/icon01.png" alt="icon book"/><strong>2021 - Développeur web</strong><br/>
                     Formation de développeur web en autodidacte</p>
                     <p><img src="image/icon02.png" alt="icon check list"/><strong>2019 - R-408</strong><br/>
@@ -217,7 +217,7 @@
                     <p><strong>Copyright 2021 &copy; -</strong> <em>Made in Me :)</em></p>
                 </div>                
             </footer>         
-        </div> <!-- BLOCK PAGE FOR MARGIN -->               
+        </div>  <!--BLOCK PAGE FOR MARGIN -->               
     </body>
     <!--END-->
 </html>
