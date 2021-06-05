@@ -1,0 +1,101 @@
+/* - 3 three - */
+
+/* ###### variable | color ###### */
+$bluesky: #6cb0f6;
+$gray: #727272;
+
+/* ###### professional experience ###### */
+.XPpro--legend {
+    display: flex;
+    flex-direction: column;
+}
+
+.XPpro--legend {
+    margin-top: 20em;
+    z-index: 2;
+    max-width: 400px;
+    & h2 {
+        font-size: 2.5em;
+        color: black;
+        max-width: 400px;
+    }
+    
+    & em {
+        font-size: 0.4em;
+        font-weight: 550;
+        color: $gray;
+    }
+    
+    & span {
+        font-size: 1em;
+        font-weight: 200;
+        color: $gray;
+    }
+    
+    & h3 {
+        font-size: 0.9em;
+        font-weight: 450;
+        color: $gray;
+        margin-top: 2em;
+        margin-bottom: -1.5em;
+        max-width: 300px;
+    }
+}
+
+#XPpro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+    & img {
+        position: relative;
+        right: 3.1em;
+        top: 1.2em;
+        margin-top: 0.9em;
+        margin-right: 0em;
+    }
+    
+    & h4 {
+        font-size: 1.9em;
+        font-weight: 700;
+        color: black;
+        margin-bottom: 2em;
+        max-width: 250px;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+    & p {
+        text-align: justify;
+        font-size: 1em;
+        font-weight: 350;
+        color: $gray;
+        margin-left: 3.5em;
+        margin-top: 2em;
+    }
+    
+    & strong {
+        position: relative;
+        right: 1.8em;
+        font-size: 1.45em;
+        font-weight: 550;
+        color: black;
+        
+    }
+    // border EXPERIENCE/FORMATION
+    & span {
+        border: 1px solid black;
+        padding: 8px 10px 3px 10px;
+        border-radius: 10px;
+        box-shadow: 3px 6px 18px -1px rgba($color: #000000, $alpha: 0.15);
+     
+    }
+}
+
+/* ###### List LEFT and RIGHT ###### */
+.Llist, .Rlist {
+    & p + p {
+        margin-top: 3em;
+    }
+}
+

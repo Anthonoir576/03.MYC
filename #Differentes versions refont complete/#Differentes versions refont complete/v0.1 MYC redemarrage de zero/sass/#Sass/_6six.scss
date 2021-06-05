@@ -1,0 +1,228 @@
+/* - 6 six - */
+
+/* ##### variable | color ##### */
+$bluesky: #6cb0f6;
+$gray: #727272;
+
+.theEnd {
+    position: relative;
+    top: 84.5rem;
+    height: 800px;
+    width: auto;
+}
+.theEnd {
+    padding: 0;
+    & h2 {
+        display: block;
+        position: relative;
+        max-width: 400px;
+        z-index: 2;
+        top: 0em;
+        left: 0.3em;
+        font-size: 2.5em;
+        color: black;
+        & span {
+            font-size: 1em;
+            font-weight: 200;
+            color: $gray;
+        }
+        & em {
+            font-size: 0.4em;
+            font-weight: 500;
+            color: $gray;
+        }
+    }
+    & h3 {
+        display: block;
+        position: relative;
+        font-size: 0.8em;
+        font-weight: 450;
+        color: $gray;
+        margin-bottom: 4.5em;
+        top: 0em;
+        left: 1.2em;
+    }
+}
+
+/* ##### FORMULAIRE ##### !*/
+form {
+    display: block;
+    position: relative;
+    top: 0em;
+    width: 450px;
+    padding: 1em;
+    border: 1px solid $gray;
+    border-color: (114,114,114,0);
+    border-radius: 1em;
+    margin-top: -0em;
+    & div + div {
+        margin-top: 2.3em;
+    }  
+}
+  
+input, textarea { 
+    font: 1em sans-serif;
+    width: 450px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #cfcfcf;
+    &:focus  {
+        outline: none;
+        border: 2.5px solid $bluesky;
+    }
+}
+
+/* effect red in form:invalid */
+input:invalid:hover {	
+    border:1px solid rgb(255, 0, 0, 0.4);
+    background-color: rgb(255, 0, 0, 0.05);
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+    transform: translate3d(0, 0, 0)
+}    
+@keyframes shake {
+    10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+    transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+    transform: translate3d(4px, 0, 0);
+    }
+}
+
+form span{
+    opacity: 0; 
+    visibility: hidden;
+    position: relative;
+    top: 0.7em;     
+    }
+        
+form input:invalid ~ span {   
+    display:flex;
+    color:red; 
+    transition:.4s opacity linear     
+}
+    
+form input:invalid:hover ~ span {  
+    visibility:visible;
+    opacity:1   
+}
+
+
+textarea {
+    vertical-align: top;
+    height: 10em;
+}
+
+.buttonEnd {
+    padding-left: 0px;
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    bottom: 0.5em;
+    background-color: rgba(108,176,246,0.80);
+    border-radius: 50px 50px;
+    border-color: $bluesky;
+    width: 25%;
+    height: 40px;
+    padding: 0% 0% 0% 0%;
+    color: white;
+    border-style: none;
+    font-weight: 600;
+    transform: scale(1);
+    transition: transform 200ms, background-color 250ms;
+    transition-delay: 0, 150ms;
+    /*transition: transform 200ms ease-in;
+    transition: transform 400ms ease-out;*/
+    transition-timing-function: cubic-bezier(.50,.58,.8,3.04);
+    &:hover {
+        transform: scale(1.055, 1.055);
+        background-color: $bluesky;
+        box-shadow: 0px 0px 11px $bluesky;
+        animation: balancierbutton 100ms cubic-bezier(.4,.1,.6,.9) 2;
+    }
+    @keyframes balancierbutton {
+        25% {        
+            transform: translateX(2%);
+        }
+        75% {        
+            transform: translateX(2% * -1);
+        }
+    }
+}
+
+/* ##### text RIGHT ##### */
+
+.container03 {
+    display: flex;
+    position: relative;
+    left: 47.5rem;
+    bottom: 32.5rem;
+    color: $gray;
+    font-weight: 400;
+    max-width: 550px;
+    .textedefin {
+        display: block;
+        position: relative;
+        & p + p {
+            margin-top: 2.5em;
+        }
+    }
+    .iconEnd {
+        position: relative;
+        max-width: 100px;
+        & img {
+            display: block;
+            position: relative;
+            margin-top: 2.30em;
+            right: 1rem;
+            bottom: 1.4rem;
+        }    
+    }
+    #correctionimg {
+        position: relative;
+        right:0.7rem;
+    }
+}
+
+/* ##### img MAP position ##### */
+#map {
+    display: flex;
+    position: relative;
+    float: right;
+    bottom: 29.9rem;
+    right: 1.5em;
+    border: 1px solid $gray;
+    border-color: (114,114,114,0);
+    border-radius: 1em;
+}
+
+#copyme {
+    max-width: 300px;
+    height: 25px;
+    position: relative;
+    float: center;
+    bottom: 3rem;
+    left: 29em;
+    & strong {
+        font-weight: 400;
+        color: $gray;
+    }
+    & em {
+        font-style: italic;
+        font-weight: 300;
+        color: $gray;
+    }    
+}
+
+/* END */
