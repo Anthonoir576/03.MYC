@@ -143,6 +143,10 @@ header {
   }
 }
 
+.header-picture {
+  filter: drop-shadow(0 -6mm 4mm rgba(160, 0, 210, 0.5));
+}
+
 .header-picture-arrow {
   display: flex;
   justify-content: center;
@@ -152,7 +156,8 @@ header {
   height: 14px;
 }
 
-/*.header-text {
+/*
+.header-text {
     -webkit-animation-name: bounceInLeft;
     animation-name: bounceInLeft;
     -webkit-animation-duration: 1s;

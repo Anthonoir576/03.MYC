@@ -225,6 +225,14 @@ header {
     }
 }
 
+// Effect picture HEADER
+.header-picture {
+
+    // EFFET sur la photo / prend pas en compte le box, mais le contour de la photo sans transparence
+    filter: drop-shadow(0 -6mm 4mm rgba(160, 0, 210, 0.5)); 
+
+}
+
 // ASIDE arrow content config -- (fleche d'animation)
 .header-picture-arrow {
 
@@ -245,10 +253,9 @@ header {
 
 
 
-
 // TEST POUR EFFET !!!!
-
-/*.header-text {
+/*
+.header-text {
     -webkit-animation-name: bounceInLeft;
     animation-name: bounceInLeft;
     -webkit-animation-duration: 1s;
@@ -447,7 +454,7 @@ header {
     transform: perspective(400px);
     }
     }    
-*/    
+*/  
   
 // arrow anime
 /*
