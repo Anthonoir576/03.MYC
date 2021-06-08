@@ -1,21 +1,51 @@
 /* - 1 one - */
 
 // property variable
+// variable color
 $bluesky: #6cb0f6;
 $gray: #727272;
+$centerbanner: #f8f9fb;
 
 // global property -- ( propriété de l'ensemble du doc )
 * {
 
     box-sizing: border-box;
+    
+}
+
+// SCROLL BAR (a revoir !) 
+::-webkit-scrollbar {
+
+    width: 8px;
+    height: 8px;
+
+}
+::-webkit-scrollbar-thumb {
+
+// #e66465 14% FIRST COLOR
+background: linear-gradient(13deg, #9198E5 14%,#9198E5 64%);
+border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb:hover{
+
+background: linear-gradient(13deg, #c7ceff 14%, 64%);
+
+}
+::-webkit-scrollbar-track{
+
+background: hsl(0, 0%, 100%);
+border-radius: 10px;
+box-shadow: inset 7px 10px 12px #f0f0f0;
 
 }
 
 // property of HTML / BODY -- ( propriété du body )
 html, body {
 
-    // cut default margin
+    // cut default margin and padding
     margin: 0;
+    padding: 0;
     overflow-x: hidden; // enleve la bar de scroll en en cas de depassement
 
 }
@@ -40,7 +70,7 @@ header {
 }
 
 // LOGO config -- (logo en haut a gauche)
-.header-logo {
+.logo {
 
     display: flex;
     margin: 3.2px;
@@ -68,12 +98,12 @@ header {
 }
 
 // NAV config -- (barre de navigation)
-.header--logo_nav-bar {
+.logo_nav-bar {
 
     margin: 0 15em;
     
 
-    .header-nav-bar {
+    .nav-bar {
         
         display: flex;
         justify-content: flex-end;
@@ -134,7 +164,7 @@ header {
 }
 
 // HEADER - TEXT and PICTURE config -- (photo + description)
-.header--text_picture {
+.text_picture {
 
     display: flex;
     justify-content: space-between;
@@ -234,20 +264,103 @@ header {
 }
 
 // ASIDE arrow content config -- (fleche d'animation)
-.header-picture-arrow {
+.picture-arrow {
 
     display: flex;
     justify-content: center;
+    margin-bottom: 1.7em;
 
     & img {
 
         width: 28px;
         height: 14px;
+        opacity: 0.4;
 
     }
 
 }
 
+// ANIMATION arrow 
+.picture-arrow img {
+
+    
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-duration: 1s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    
+    
+    @-webkit-keyframes bounce {
+        0%, 20%, 53%, 80%, 100% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+
+        }
+        40%, 43% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            -webkit-transform: translate3d(0, -30px, 0);
+            transform: translate3d(0, -30px, 0);
+
+        }
+        70% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+
+        }
+        90% {
+
+            -webkit-transform: translate3d(0,-4px,0);
+            transform: translate3d(0,-4px,0);
+        }
+    }
+    
+    @keyframes bounce {
+        0%, 20%, 53%, 80%, 100% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+
+        }
+        40%, 43% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            -webkit-transform: translate3d(0, -30px, 0);
+            transform: translate3d(0, -30px, 0);
+
+        }
+        70% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+
+        }
+        90% {
+
+            -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
+            
+        }
+    } 
+
+}
 
 
 
@@ -321,16 +434,16 @@ header {
     } 
 
 
-.header-nav-bar {
-    -webkit-animation-name: header-nav-bar;
-    animation-name: header-nav-bar;
+.nav-bar {
+    -webkit-animation-name: nav-bar;
+    animation-name: nav-bar;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
     }
-    @keyframes header-nav-bar {
+    @keyframes nav-bar {
     0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -358,7 +471,7 @@ header {
     transform: none;
     }
     }
-    @keyframes header-nav-bar {
+    @keyframes nav-bar {
     0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -394,6 +507,7 @@ header {
     animation-name: header-picture;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
+    animation-delay: 550ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
@@ -454,87 +568,4 @@ header {
     transform: perspective(400px);
     }
     }    
-*/  
-  
-// arrow anime
-/*
-.header-picture-arrow img {
-
-    
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-transform-origin: center bottom;
-    -ms-transform-origin: center bottom;
-    transform-origin: center bottom;
-    -webkit-animation-duration: 1s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    
-    @-webkit-keyframes bounce {
-        0%, 20%, 53%, 80%, 100% {
-
-            -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-
-        }
-        40%, 43% {
-
-            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-            -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0);
-
-        }
-        70% {
-
-            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-            -webkit-transform: translate3d(0, -15px, 0);
-            transform: translate3d(0, -15px, 0);
-
-        }
-        90% {
-
-            -webkit-transform: translate3d(0,-4px,0);
-            transform: translate3d(0,-4px,0);
-
-        }
-    }
-    
-    @keyframes bounce {
-        0%, 20%, 53%, 80%, 100% {
-
-            -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-
-        }
-        40%, 43% {
-
-            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-            -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0);
-
-        }
-        70% {
-
-            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-            -webkit-transform: translate3d(0, -15px, 0);
-            transform: translate3d(0, -15px, 0);
-
-        }
-        90% {
-            -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
-        }
-    } 
-
-}
-
 */
