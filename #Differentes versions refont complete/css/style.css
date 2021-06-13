@@ -488,6 +488,24 @@ aside .about-text_networks .about-networks {
   display: flex;
   justify-content: space-around;
   margin: 20px 0 15px 0;
+  /* ##### effect dark / light ##### */
+}
+aside .about-text_networks .about-networks img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+aside .about-text_networks .about-networks img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: saturate(200%);
+  -webkit-filter: saturate(200%);
 }
 
 article {
@@ -510,15 +528,16 @@ article .aboutMe h3 {
 article .aboutMe h4 {
   font-size: 25px;
   font-weight: 400;
-  margin: 45px 0 50px 0;
+  margin: 0px 0 38px 0;
   color: black;
   width: 260px;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 10px 10px;
 }
-article .aboutMe p {
-  margin: 0 0 50px 0;
+article .aboutMe > p {
+  margin: 0 0 0 0;
+  height: 190px;
   text-align: justify;
   color: #727272;
   font-weight: 300;
@@ -536,7 +555,7 @@ article .aboutMe p {
   background: #6cb0f6;
 }
 .skill-bars .bar {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .skill-bars .bar:first-child {
   margin-top: 0px;
@@ -545,13 +564,13 @@ article .aboutMe p {
   margin-bottom: 25px;
 }
 .skill-bars .bar .info span {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 16px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
 }
 .skill-bars .bar .progress-line {
-  height: 7px;
+  height: 4px;
   width: 100%;
   background: #f0f0f0;
   position: relative;
@@ -578,6 +597,7 @@ article .aboutMe p {
   transform: scaleX(0);
   transform-origin: left;
   background: #6cb0f6;
+  box-shadow: 0 1px 15px 0px #6cb0f6;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 .skill-bars .bar .progress-line.htmlcss span {
@@ -587,10 +607,10 @@ article .aboutMe p {
   width: 40%;
 }
 .skill-bars .bar .progress-line.sql span {
-  width: 30%;
+  width: 25%;
 }
 .skill-bars .bar .progress-line.design span {
-  width: 90%;
+  width: 95%;
 }
 .skill-bars .progress-line span::before {
   position: absolute;
@@ -612,6 +632,7 @@ article .aboutMe p {
   right: 0;
   font-weight: 300;
   background: #6cb0f6;
+  box-shadow: 0 0 4px 0 #6cb0f6;
   color: #fff;
   padding: 5px 10px;
   font-size: 13px;
@@ -631,10 +652,10 @@ article .aboutMe p {
   content: "40 %";
 }
 .skill-bars .progress-line.sql span::after {
-  content: "30 %";
+  content: "25 %";
 }
 .skill-bars .progress-line.design span::after {
-  content: "90 %";
+  content: "95 %";
 }
 .skill-bars .nameskill {
   position: relative;
@@ -644,16 +665,24 @@ article .aboutMe p {
 
 .aboutMe-downloadcv a {
   display: block;
-  margin: 3.3em 0em 0em 0.2em;
-  max-width: 160px;
+  margin: 1.6em 0 0 0;
+  max-width: 170px;
+  max-height: 80px;
   font-size: 18px;
   font-weight: 400;
-  border: 1.65px solid #6cb0f6;
+  border: 1.65px solid white;
   border-radius: 17px;
-  background-color: white;
-  color: #6cb0f6;
+  background-color: #6cb0f6;
+  color: white;
   text-align: center;
   text-decoration: none;
+}
+.aboutMe-downloadcv a p {
+  text-align: center;
+  margin: 0;
+  padding: 18px 15px;
+  color: white;
+  font-weight: 600;
 }
 .aboutMe-downloadcv a:hover {
   transform: scale(1.1);
