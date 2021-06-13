@@ -665,12 +665,12 @@ article .aboutMe > p {
 
 .aboutMe-downloadcv a {
   display: block;
-  margin: 1.6em 0 0 0;
+  margin: 1.8em 0 0 0;
   max-width: 170px;
   max-height: 80px;
   font-size: 18px;
   font-weight: 400;
-  border: 1.65px solid white;
+  border: 1.5px solid white;
   border-radius: 17px;
   background-color: #6cb0f6;
   color: white;
@@ -680,7 +680,7 @@ article .aboutMe > p {
 .aboutMe-downloadcv a p {
   text-align: center;
   margin: 0;
-  padding: 18px 15px;
+  padding: 16px 15px;
   color: white;
   font-weight: 600;
 }
