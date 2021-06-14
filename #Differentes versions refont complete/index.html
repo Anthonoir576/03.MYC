@@ -1,21 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="fr-FR">
-
-    <!-- beginning write text -->
     <head>
-        <meta charset="UTF-8"/>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
 
         <script src="js/script.js"></script>
                 
         <title>Falvo.Enterprise.com</title>
     </head>
+
+    <!--
+        - REVOIR ENCRAGE DU NAV, et VERIF LES ALL LINKS
+        - FINIR LA M.E.P DU SITE 'refonte complete'.
+
+
+
+    -->
 
     <!--1 one-->
     <body>
@@ -57,7 +62,7 @@
         </header>
 
         <!--2 two-->    
-        <!-- div LEFT / RIGHT -->
+        <!-- div type Container -->
         <div class="about">
             <aside>
                 <figure id="about-picture">
@@ -68,7 +73,7 @@
                     <table class="about-text">
                         <tr>
                             <td>
-                                <strong>Nom / Prénom</strong>
+                                &bull; <strong> Nom / Prénom</strong>
                             </td>
                             <td>
                                 : FALVO Anthony
@@ -76,7 +81,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <strong>Date de naissance</strong>
+                                &bull; <strong>Date de naissance</strong>
                             </td>
                             <td>
                                 : 25 Juin 1993
@@ -84,7 +89,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <strong>Adresse</strong>
+                                &bull; <strong>Adresse</strong>
                             </td>
                             <td>
                                 : 269 rue du capitaine wazny<br /> Montigny-en-ostrevent,<br /> 59182, France
@@ -92,7 +97,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <strong>Téléphone</strong>
+                                &bull; <strong>Téléphone</strong>
                             </td>
                             <td>
                                 : 07.27.76.52.92 
@@ -100,7 +105,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <strong>E-mail</strong>
+                                &bull; <strong>E-mail</strong>
                             </td>
                             <td>
                                 : anthony.falvo.pro@gmail.com
@@ -131,12 +136,12 @@
                     dans l’audio, traitement, mixage, mastering. Concernant Photoshop, je l’utilise depuis 2008 environs,
                     et quelque notion en traitement vidéo sous after effect depuis 2014. 
                     </p>                
-                    <h4>&bull; Mes compétences :</h4>                            
+                    <h4>&bull; Mes compétences</h4>                            
                     
                     <div class="skill-bars">
                         <div class="bar">
                             <div class="info">
-                                <span class="nameskill">HTML 5 / CSS 3</span>
+                                <span class="nameskill">HTML 5 / CSS 3 / Animation CSS</span>
                             </div>
                             <div class="progress-line htmlcss">
                                 <span></span>
@@ -144,7 +149,7 @@
                         </div>
                         <div class="bar">
                             <div class="info">
-                                <span class="nameskill">JAVASCRIPT</span>
+                                <span class="nameskill">JavaScript</span>
                             </div>
                             <div class="progress-line js">
                                 <span></span>
@@ -160,7 +165,7 @@
                         </div>
                         <div class="bar">
                             <div class="info">
-                                <span class="nameskill">Photoshop / After Effect / FL studio</span>
+                                <span class="nameskill">Adobe P.S / Adobe A.E / FL studio</span>
                             </div>
                             <div class="progress-line design">
                                 <span></span>
@@ -176,31 +181,53 @@
         </div>
 
         <!--3 three-->
-        <div class="XPpro-legend">
-            <h2>Résumé <span>/</span> <em>Experience professionnelle</em></h2>
-            <h3> Experience globale dans le monde du travail.</h3>
-        </div>
-        <div id="XPpro--list--left_right">                
-            <div class="XPpro-list-left">
-                <h4>&bull; <span>Experience</span></h4>
-                <p><img src="image/icon01.png" alt="icon book"/><strong>2019 - 2021</strong><br/>
-                Pilote de ligne, Gestion de l’équipe, et de la production.</p>                    
-                <p><img src="image/icon02.png" alt="icon check list"/><strong>2015 - 2018</strong><br/>
-                Agent de sécurité privé.</p>
-                <p><img src="image/icon03.png" alt="diploma"/><strong>2011 - 2015</strong><br/>
-                Armée de terre, BTP, et logistique.</p>
+        <main>
+            <div class="EXP">
+                <div class="EXP-legend">
+                    <h2>Résumé <span>/</span> <em>Experience professionnelle :</em></h2>
+                    <h3> Experience globale dans le monde du travail.</h3>
+                </div>
+                <div id="EXP-list">                
+                    <div class="EXP-list-L">
+                        <h4>&bull; Experience :</h4>
+                        <div class="EXP-items"> 
+                            <img src="image/icon01.png" alt="icon book"/>
+                            <p><strong>2019 - 2021</strong><br/>
+                            Pilote de ligne, Gestion de l’équipe, et de la production.</p>
+                        </div>   
+                        <div class="EXP-items">
+                            <img src="image/icon02.png" alt="icon check list"/>
+                            <p><strong>2015 - 2018</strong><br/>
+                            Agent de sécurité privé.</p>
+                        </div>
+                        <div class="EXP-items">      
+                            <img src="image/icon03.png" alt="diploma"/>
+                            <p><strong>2011 - 2015</strong><br/>
+                            Armée de terre, BTP, et logistique.</p>
+                        </div>  
+                    </div>
+                    <div class="EXP-list-R">
+                        <h4>&bull; Formation :</h4>
+                        <div class="EXP-items">
+                            <img src="image/icon01.png" alt="icon book"/>
+                            <p><strong>2021 - Développeur web</strong><br/>
+                            Formation de développeur web en autodidacte</p>
+                        </div>
+                        <div class="EXP-items">
+                        <img src="image/icon02.png" alt="icon check list"/>
+                        <p><strong>2019 - R-408</strong><br/>
+                            Formation montage-démontage d’un echafaudage fixe.</p>
+                        </div>
+                        <div class="EXP-items">
+                            <img src="image/icon03.png" alt="diploma"/>
+                            <p><strong>2010 - Fin de scolarité </strong><br/>
+                            Fin de scolarité, avec pour seul diplome le brevet des collèges.</p>
+                        </div>
+                    </div>   
+                </div>  
             </div>
-            <div class="XPpro-list-right">
-                <h4>&bull; <span>Formation</span></h4>
-                <p><img src="image/icon01.png" alt="icon book"/><strong>2021 - Développeur web</strong><br/>
-                Formation de développeur web en autodidacte</p>
-                <p><img src="image/icon02.png" alt="icon check list"/><strong>2019 - R-408</strong><br/>
-                Formation montage-démontage d’un echafaudage fixe.</p>
-                <p><img src="image/icon03.png" alt="diploma"/><strong>2010 - Fin de scolarité </strong><br/>
-                Fin de scolarité, avec pour seul diplome le brevet des collèges.</p>
-            </div>   
-        </div>  
-        
+        </main>
+   
         <!--4 four-->
         <div class="myworks-legend">
             <h2> Mon travail <span>/</span> <strong><a href="#">Tous les projets</a></strong>

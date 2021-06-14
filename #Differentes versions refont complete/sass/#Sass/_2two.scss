@@ -11,7 +11,7 @@ $centerbanner: #f8f9fb;
 
     display: flex;
     justify-content: center;
-    margin: 6.5em 10em 5em 10em;
+    margin: 6.5em 10em 10em 10em;
 
     font-family: 'Josefin Sans', 'Lato', sans-serif;
 
@@ -41,7 +41,7 @@ aside {
         & .about-text {
     
             width: 470px;
-            padding: 30px 0 0 40px;
+            padding: 30px 0 0 35px;
             border-spacing: 5px 0.5rem;
             
             font-family: 'Lato', 'Josefin Sans', sans-serif;
@@ -52,6 +52,7 @@ aside {
                 font-weight: 900;
                 text-decoration: underline;
                 text-underline-position: under;
+                text-align: left;
 
             }
 
@@ -113,8 +114,8 @@ article {
             font-weight: 700;
             margin: 0;
             
-
             letter-spacing: 10px;
+            white-space: nowrap;
 
         }
 
@@ -122,18 +123,23 @@ article {
 
             font-size: 22px;
             font-weight: 400;
-            margin: 35px 0 65px 0;
+            margin: 35px 0 43px 0;
             color: $gray;
+
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px 10px;
+            width: 342px;
 
         }
 
         & h4 {
 
-            font-size: 25px;
+            font-size: 22px;
             font-weight: 400;
             margin: 0px 0 38px 0;
-            color: black;
-            width: 260px;
+            color: $gray;
+            width: 220px;
 
             border: 1px solid rgba(0, 0, 0, 0.2);
             border-radius: 5px;
@@ -359,7 +365,7 @@ article {
         font-size: 18px;
         font-weight: 400;
         border: 1.5px solid white;
-        border-radius: 17px;
+        border-radius: 10px;
         background-color: $bluesky;
         color: white;
         text-align: center;
@@ -413,3 +419,4 @@ article {
     }
 
 }
+

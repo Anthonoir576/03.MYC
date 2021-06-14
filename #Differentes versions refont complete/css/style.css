@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(13deg, #9198E5 14%, #9198E5 64%);
+  background: linear-gradient(13deg, #6cb0f6 14%, #6cb0f6 64%);
   border-radius: 10px;
 }
 
@@ -449,7 +449,7 @@ header {
 .about {
   display: flex;
   justify-content: center;
-  margin: 6.5em 10em 5em 10em;
+  margin: 6.5em 10em 10em 10em;
   font-family: "Josefin Sans", "Lato", sans-serif;
 }
 
@@ -468,7 +468,7 @@ aside .about-text_networks {
 }
 aside .about-text_networks .about-text {
   width: 470px;
-  padding: 30px 0 0 40px;
+  padding: 30px 0 0 35px;
   border-spacing: 5px 0.5rem;
   font-family: "Lato", "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -477,6 +477,7 @@ aside .about-text_networks .about-text strong {
   font-weight: 900;
   text-decoration: underline;
   text-underline-position: under;
+  text-align: left;
 }
 aside .about-text_networks hr {
   width: 90%;
@@ -518,19 +519,24 @@ article .aboutMe h2 {
   font-weight: 700;
   margin: 0;
   letter-spacing: 10px;
+  white-space: nowrap;
 }
 article .aboutMe h3 {
   font-size: 22px;
   font-weight: 400;
-  margin: 35px 0 65px 0;
+  margin: 35px 0 43px 0;
   color: #727272;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px 10px;
+  width: 342px;
 }
 article .aboutMe h4 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   margin: 0px 0 38px 0;
-  color: black;
-  width: 260px;
+  color: #727272;
+  width: 220px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 10px 10px;
@@ -671,7 +677,7 @@ article .aboutMe > p {
   font-size: 18px;
   font-weight: 400;
   border: 1.5px solid white;
-  border-radius: 17px;
+  border-radius: 10px;
   background-color: #6cb0f6;
   color: white;
   text-align: center;
@@ -715,6 +721,89 @@ article .aboutMe > p {
 }
 
 /* - 3 three - */
+.EXP {
+  background: #f8f9fb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6em 20em 6em 20em;
+  margin-bottom: 10em;
+}
+.EXP-legend h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  margin: 0 0 40px 0;
+  font-style: italic;
+  white-space: nowrap;
+}
+.EXP-legend h2::first-letter {
+  letter-spacing: 0;
+  font-size: 50px;
+  color: #7272728c;
+  font-weight: 600;
+}
+.EXP-legend h2 span {
+  color: #727272;
+  font-size: 35px;
+  font-weight: 300;
+}
+.EXP-legend h2 em {
+  color: #727272;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  font-style: normal;
+}
+.EXP-legend h3 {
+  margin: 0 0 100px 0;
+  color: #727272;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  font-style: italic;
+}
+
+#EXP-list {
+  display: flex;
+  justify-content: space-between;
+}
+#EXP-list h4 {
+  font-size: 28px;
+  margin: 0px 0 80px 0;
+}
+#EXP-list p {
+  font-size: 18px;
+  color: #727272;
+  font-weight: 300;
+  min-height: 110px;
+  margin: 0 0 0 15px;
+}
+#EXP-list strong {
+  display: inline-block;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.EXP-items {
+  display: flex;
+}
+.EXP-items img {
+  max-width: 40px;
+  max-height: 40px;
+  flex-grow: 1;
+  margin-top: 5px;
+}
+
+.EXP-list-L {
+  margin-right: 3em;
+}
+
 /* - 4 four - */
 /* - 5 five - */
 /* - 6 six - */

@@ -23,7 +23,8 @@ $centerbanner: #f8f9fb;
 ::-webkit-scrollbar-thumb {
 
 // #e66465 14% FIRST COLOR
-background: linear-gradient(13deg, #9198E5 14%,#9198E5 64%);
+// background: linear-gradient(13deg, #9198E5 14%,#9198E5 64%);
+background: linear-gradient(13deg, $bluesky 14%, $bluesky 64%);
 border-radius: 10px;
 
 }
