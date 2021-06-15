@@ -1,2 +1,109 @@
 /* - 4 four - */
 
+// variable color
+$bluesky: #6cb0f6;
+$gray: #727272;
+$centerbanner: #f8f9fb;
+
+.carousel {
+
+    & ul {
+
+        margin: 0 0 1.5rem;
+        padding: 0;
+    
+    }
+    
+    & li {
+    
+        display: inline-block;
+    
+    }
+
+}
+
+
+.carousel-items {
+
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+
+}
+
+.carousel-item {
+
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+    
+    & .card {
+
+        border: 1px solid #bac6d3;
+        border-radius: 8px;
+        padding: 1rem;
+        width: 700px;
+    
+        & .carousel-img {
+            height: auto;
+            margin-bottom: .5rem;
+            max-width: calc(100% + 2rem);
+            width: 700px;
+            position: relative;
+            left: -1rem;
+            right: -1rem;
+        }
+    
+        & .card-content {
+    
+            & a {
+        
+                color: inherit;
+                transition: 0.25s all ease-in-out;
+        
+            }
+            
+            & a.button {
+        
+                align-items: center;
+                background-color: $bluesky;
+                border: 1px solid white;
+                border-radius: 4px;
+                color: white;
+                cursor: pointer;
+                display: inline-flex;
+                padding: 0.25rem 0.75rem;
+                text-decoration: none;
+                transition: all 0.25s ease-in-out;
+        
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    .carousel-item {
+        flex-basis: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+
+    .carousel-item {
+        flex-basis: 325px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+
+    .carousel-item {
+        flex-basis: 450px;
+    }
+}
+
+//@media screen and (min-width: 1600px) {}
+
