@@ -812,16 +812,16 @@ article .aboutMe > p {
   justify-content: center;
 }
 .project h2 {
-  margin: 0 0 100px 0;
+  margin: 0 0 0.5em 0;
 }
 .project a {
   text-decoration: inherit;
   color: #727272;
-  font-size: 20px;
-  margin-left: 140px;
-  padding: 9px 10px;
+  font-size: 15px;
+  margin-left: 25px;
+  padding: 9px 10px 9px 12px;
   border: 1px solid transparent;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 .project a:hover {
   color: #6cb0f6;
@@ -830,7 +830,7 @@ article .aboutMe > p {
   filter: saturate(900%);
   -webkit-filter: saturate(300%);
   transform: scale(1.1);
-  padding: 9px 10px;
+  padding: 9px 10px 9px 12px;
   box-shadow: 0 0 40px 1px rgba(108, 176, 246, 0.2);
 }
 
@@ -844,9 +844,9 @@ li {
 
 .slider {
   position: relative;
-  width: 75%;
-  height: 80vh;
-  margin: 0 auto 10em auto;
+  width: 60%;
+  height: 65vh;
+  margin: 0 auto 24em auto;
 }
 
 .slider_item {
@@ -877,15 +877,14 @@ li {
   visibility: visible;
   transform-origin: left center;
   transform: translate3d(0, 0, 0) rotateY(0deg) scaleX(1);
+  padding: 0 2em 2em 2em;
 }
 
 .slider_img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   position: relative;
   overflow: hidden;
-  border: 3px solid #6cb0f6;
-  border-radius: 15px;
 }
 
 .c-img-w-full {
@@ -895,28 +894,107 @@ li {
   width: 100%;
   height: auto;
   transform: translate3d(-50%, -50%, 0);
+  border: 3px solid #6cb0f6;
+  border-radius: 15px;
+}
+
+.iconNew {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10%;
+  height: auto;
+  z-index: 9999;
 }
 
 figcaption {
   display: block;
 }
 
-.wo-h3 {
-  margin-top: 6rem;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+.h3 {
+  margin-top: 4.8rem;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.8rem;
   border-bottom: 1px solid #6cb0f6;
 }
-
-.c-label {
+.h3 .c-label {
   display: inline-block;
   color: #eee;
   background-color: rgba(108, 176, 246, 0.9);
+  border-radius: 5px;
   line-height: 1;
   padding: 0.5em 0.9em;
   margin-right: 0.5em;
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+.credit {
+  color: #727272;
+  line-height: 2em;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.moreinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 20px;
+}
+.moreinfo strong {
+  border: 1px solid #6cb0f6;
+  border-radius: 3px;
+  background-color: #6cb0f6;
+  color: white;
+  padding: 7px 7px 5px 7px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.moreinfo a {
+  text-decoration: none;
+  color: #6cb0f6;
+}
+.moreinfo a:hover {
+  text-decoration: underline;
+}
+.moreinfo > a:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px 0px #6cb0f6;
+  filter: saturate(900%);
+  -webkit-filter: saturate(300%);
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+}
+.moreinfo > a p {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+  background-color: #6cb0f6;
+  border: 0.5px solid white;
+  border-radius: 5px;
+  padding: 10px 15px;
 }
 
 .view-sm {
@@ -926,9 +1004,10 @@ figcaption {
 .slider_nav {
   position: absolute;
   left: 0;
-  top: 61%;
+  top: 95%;
   width: 100%;
   transform: translate3d(0, -50%, 0);
+  z-index: 99999;
 }
 
 .slider_nav_item.prev {
@@ -955,7 +1034,7 @@ figcaption {
   content: "";
   display: block;
   position: absolute;
-  left: 1rem;
+  left: 0.7rem;
   top: 55%;
   width: 1rem;
   height: 1px;
@@ -1001,7 +1080,7 @@ figcaption {
 .slider_indicator {
   position: absolute;
   left: 0;
-  top: 63%;
+  top: 94%;
   width: 100%;
   text-align: center;
   margin-top: 1em;
@@ -1053,6 +1132,7 @@ figcaption {
 .slider__container {
   height: 100%;
   position: relative;
+  top: -3.5em;
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1175,8 +1255,11 @@ figcaption {
 
 .slider__txt {
   color: white;
+  font-size: 18px;
   margin-bottom: 3rem;
-  max-width: 300px;
+  max-width: 415px;
+  font-weight: 300;
+  line-height: 1.2em;
 }
 
 @-webkit-keyframes check {
@@ -1203,6 +1286,7 @@ figcaption {
   max-width: 250px;
   max-height: auto;
   border-radius: 50%;
+  border: 2px solid #6cb0f6;
 }
 
 /* - 6 six - */

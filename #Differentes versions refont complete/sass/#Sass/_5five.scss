@@ -16,11 +16,12 @@ $centerbanner: #f8f9fb;
 
 }
 
-// test 
+// test  
 .slider__container {
 
   height: 100%;
   position: relative;
+  top: -3.5em;               // A Vérifier 
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -178,8 +179,12 @@ $centerbanner: #f8f9fb;
 .slider__txt {
 
   color: rgb(255, 255, 255);
+  font-size: 18px;
   margin-bottom: 3rem;
-  max-width: 300px;
+  max-width: 415px;
+  font-weight: 300;
+
+  line-height: 1.2em;
 
 }
 
@@ -223,5 +228,6 @@ $centerbanner: #f8f9fb;
   max-width: 250px;
   max-height: auto;
   border-radius: 50%;
+  border: 2px solid $bluesky;
 
 }

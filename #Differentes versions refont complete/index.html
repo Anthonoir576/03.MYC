@@ -11,7 +11,7 @@
 
         <script src="js/script.js"></script>
                 
-        <title>Falvo.Enterprise.com</title>
+        <title>FalvoEnterprise.com</title>
     </head>
 
     <!--
@@ -19,7 +19,7 @@
         - FINIR LA M.E.P DU SITE 'refonte complete'.
         - RENAME LES ELEMENTS DANS LE HTML
 
-
+        - Alert click sur : cv, et autre lien mort a enlever une fois config
     -->
 
     <!--1 one-->
@@ -172,9 +172,9 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="aboutMe-downloadcv">
-                        <a href="#"><p>Télécharger C.V</p></a>
+                        <a href="#" onclick="return confirm ('En cours de maintenance')"><p>Télécharger C.V</p></a>
                     </div>
                 </div>
             </article>
@@ -231,139 +231,172 @@
         <!--4 four-->
         <div class="project EXP-legend">
             <h2> Mon travail <span>/</span></h2>
-            <strong><a href="#">Tous les projets</a><a href="#">Projet personnel</a><a href="#" id="project-nav-link">Projet client</a></strong>
+            <strong><a href="#" onclick="return confirm ('En cours de maintenance')">Tous les projets</a><a href="#" onclick="return confirm ('En cours de maintenance')">Projets clients</a><a href="#" id="project-nav-link" onclick="return confirm ('En cours de maintenance')">Projets personnels</a><a href="#" onclick="return confirm ('En cours de maintenance')">Projets études</a></strong>
         </div>
 
-        <input type="radio" class="inputNONE" id="s-1" name="slider-control" checked="checked">
-        <input type="radio" class="inputNONE" id="s-2" name="slider-control">
-        <input type="radio" class="inputNONE" id="s-3" name="slider-control">
-        <input type="radio" class="inputNONE" id="s-4" name="slider-control">
-        <input type="radio" class="inputNONE" id="s-5" name="slider-control">
-        <input type="radio" class="inputNONE" id="s-6" name="slider-control">
-        <input type="radio" class="inputNONE" id="s-7" name="slider-control">
+        <!-- CONTENT MY WEB PROJECT-->
+        <div class="allProject">
+            <input type="radio" class="inputNONE" id="s-1" name="slider-control" checked="checked">
+            <input type="radio" class="inputNONE" id="s-2" name="slider-control">
+            <input type="radio" class="inputNONE" id="s-3" name="slider-control">
+            <input type="radio" class="inputNONE" id="s-4" name="slider-control">
+            <input type="radio" class="inputNONE" id="s-5" name="slider-control">
+            <input type="radio" class="inputNONE" id="s-6" name="slider-control">
+            <input type="radio" class="inputNONE" id="s-7" name="slider-control">
 
-        <div class="slider">
+            <div class="slider">
 
-            <figure class="slider_item img-1">
-                <div class="slider_img">
-                    <img class="c-img-w-full" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="">
-                </div>
-                <figcaption class="wo-caption">
-                    <h3 class="wo-h3"><div class="c-label">heeee</div><br class="view-sm mb-s">heee</h3>
-                        <ul class="wo-credit">
-                            <li>aaaaaaaaaaaaaaaaaa</li>
-                            <li>bbbbbbbbbbbbbbbbbbbbbbb</li>
-                            <li>cccccc<span class="c-txt-s">dddddddddddd</span></li>
-                        </ul>
-                </figcaption>
-            </figure>
+                <figure class="slider_item img-1">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/g2.JPG" alt="project grafikart number 2" />
+                        <!--<img class="iconNew" src="image/iconnew.png" alt="icon new project" />-->
+                    </div>
+                    
+                    <figcaption class="caption">
+                        <h3 class="h3"><div class="c-label">N&deg; 1</div><br class="view-sm mb-s">Projet d'étude n&deg; 02 'GRAFIKART'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 02 sur le site de <a href="https://grafikart.fr/" target="_blank"> grafikart </a>:</li>
+                                <li>THÈME : Réalisez un site web de type réseau social</li>        
+                            </ul>
+                            <a href="https://youtu.be/kyayc5eI_k8" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
 
-            <figure class="slider_item img-2">
-                <div class="slider_img">
-                    <img class="c-img-w-full" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="">
-                </div>
-                <figcaption class="wo-caption">
-                    <h3 class="wo-h3">aaaaaaaaaaa</h3>
-                    <ul class="wo-credit">
-                        <li>bbbbbbbbbbbbb</li>
-                        <li>ccccccccccccc</li>
-                        <li>ddddddddddddddddddddddd</li>
-                    </ul>
-                </figcaption>
-            </figure>
+                <figure class="slider_item img-2">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/g1.JPG" alt="project grafikart number 1" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 01 'GRAFIKART'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 01 sur le site de <a href="https://grafikart.fr/" target="_blank"> grafikart </a>:</li>
+                                <li>THÈME : Réalisez un site web de type blog</li>        
+                            </ul>
+                            <a href="https://youtu.be/Zain6-MO_pY" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
 
-            <figure class="slider_item img-3">
-                <div class="slider_img">
-                    <img class="c-img-w-full" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="">
-                </div>
-                <figcaption class="wo-caption">
-                    <h3 class="wo-h3">aaaaaaaaaaaaaa</h3>
-                    <ul class="wo-credit">
-                        <li>bbbbbbbbbbbbb</li>
-                        <li>ccccccccccccc</li>
-                        <li>ddddddddd</li></ul>
-                </figcaption>
-            </figure>
+                <figure class="slider_item img-3">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/fcc5.JPG" alt="Project in freecodecamp number 5" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 05 'FreeCodeCamp'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 05 sur le site de <a href="https://www.freecodecamp.org/anthonoir576" target="_blank"> FreeCodeCamp </a>:</li>
+                                <li>THÈME : Réalisez un site web de type Porte-folio</li>        
+                            </ul>
+                            <a href="https://youtu.be/C6TmvV0W-v8" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
 
-            <figure class="slider_item img-4">
-                <div class="slider_img">
-                    <img class="c-img-w-full" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="">
-                </div>
-                <figcaption class="wo-caption">
-                    <h3 class="wo-h3">aaaaaaaaaaaaaa</h3>
-                    <ul class="wo-credit">
-                        <li>bbbbbbbbbbbbb</li>
-                        <li>ccccccccccccc</li>
-                        <li>ddddddddd</li></ul>
-                </figcaption>
-            </figure>
-            <figure class="slider_item img-5">
-                <div class="slider_img">
-                    <img class="c-img-w-full" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="">
-                </div>
-                <figcaption class="wo-caption">
-                    <h3 class="wo-h3">aaaaaaaaaaaaaa</h3>
-                    <ul class="wo-credit">
-                        <li>bbbbbbbbbbbbb</li>
-                        <li>ccccccccccccc</li>
-                        <li>ddddddddd</li></ul>
-                </figcaption>
-            </figure>
-            <figure class="slider_item img-6">
-                <div class="slider_img">
-                    <img class="c-img-w-full" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="">
-                </div>
-                <figcaption class="wo-caption">
-                    <h3 class="wo-h3">aaaaaaaaaaaaaa</h3>
-                    <ul class="wo-credit">
-                        <li>bbbbbbbbbbbbb</li>
-                        <li>ccccccccccccc</li>
-                        <li>ddddddddd</li></ul>
-                </figcaption>
-            </figure>
-            <figure class="slider_item img-7">
-                <div class="slider_img">
-                    <img class="c-img-w-full" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="">
-                </div>
-                <figcaption class="wo-caption">
-                    <h3 class="wo-h3">aaaaaaaaaaaaaa</h3>
-                    <ul class="wo-credit">
-                        <li>bbbbbbbbbbbbb</li>
-                        <li>ccccccccccccc</li>
-                        <li>ddddddddd</li></ul>
-                </figcaption>
-            </figure>
+                <figure class="slider_item img-4">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/fcc4.JPG" alt="Project in freecodecamp number 4" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 04 'FreeCodeCamp'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 04 sur le site de <a href="https://www.freecodecamp.org/anthonoir576" target="_blank"> FreeCodeCamp </a>:</li>
+                                <li>THÈME : Réalisez un site web de documentation (exemple : type MDN) </li>        
+                            </ul>
+                            <a href="https://youtu.be/Jl1G0SC3kx8" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
 
-            <div class="slider_nav"> 
-                <label class="slider_nav_item s-nav-1 prev" for="s-3"></label>
-                <label class="slider_nav_item s-nav-1 next" for="s-2"></label>
-                <label class="slider_nav_item s-nav-2 prev" for="s-1"></label>
-                <label class="slider_nav_item s-nav-2 next" for="s-3"></label>
-                <label class="slider_nav_item s-nav-3 prev" for="s-2"></label>
-                <label class="slider_nav_item s-nav-3 next" for="s-4"></label>
-                <label class="slider_nav_item s-nav-4 prev" for="s-3"></label>
-                <label class="slider_nav_item s-nav-4 next" for="s-5"></label>
-                <label class="slider_nav_item s-nav-5 prev" for="s-4"></label>
-                <label class="slider_nav_item s-nav-5 next" for="s-6"></label>
-                <label class="slider_nav_item s-nav-6 prev" for="s-5"></label>
-                <label class="slider_nav_item s-nav-6 next" for="s-7"></label>
-                <label class="slider_nav_item s-nav-7 prev" for="s-6"></label>
-                <label class="slider_nav_item s-nav-7 next" for="s-1"></label>
+                <figure class="slider_item img-5">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/fcc3.JPG" alt="Project in freecodecamp number 3" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 03 'FreeCodeCamp'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 03 sur le site de <a href="https://www.freecodecamp.org/anthonoir576" target="_blank"> FreeCodeCamp </a>:</li>
+                                <li>THÈME : Réalisez un site web de type vitrine, et inclure un formulaire de contact</li>        
+                            </ul>
+                            <a href="https://youtu.be/Vs1HSKCNrpo" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="slider_item img-6">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/fcc2.JPG" alt="Project in freecodecamp number 2" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 02 'FreeCodeCamp'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 02 sur le site de <a href="https://www.freecodecamp.org/anthonoir576" target="_blank"> FreeCodeCamp </a>:</li>
+                                <li>THÈME : Réalisez un formulaire de contact, page unique</li>        
+                            </ul>
+                            <a href="https://youtu.be/fYCsV_XvYUI" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="slider_item img-7">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/fcc1.JPG" alt="Project in freecodecamp number 1" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 01 'FreeCodeCamp'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 01 sur le site de <a href="https://www.freecodecamp.org/anthonoir576" target="_blank"> FreeCodeCamp </a>:</li>
+                                <li>THÈME : Réalisez une page web, sur le thème en mémoire de .. </li>        
+                            </ul>
+                            <a href="https://youtu.be/0gmMklaLi_s" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <div class="slider_nav"> 
+                    <label class="slider_nav_item s-nav-1 prev" for="s-3"></label>
+                    <label class="slider_nav_item s-nav-1 next" for="s-2"></label>
+                    <label class="slider_nav_item s-nav-2 prev" for="s-1"></label>
+                    <label class="slider_nav_item s-nav-2 next" for="s-3"></label>
+                    <label class="slider_nav_item s-nav-3 prev" for="s-2"></label>
+                    <label class="slider_nav_item s-nav-3 next" for="s-4"></label>
+                    <label class="slider_nav_item s-nav-4 prev" for="s-3"></label>
+                    <label class="slider_nav_item s-nav-4 next" for="s-5"></label>
+                    <label class="slider_nav_item s-nav-5 prev" for="s-4"></label>
+                    <label class="slider_nav_item s-nav-5 next" for="s-6"></label>
+                    <label class="slider_nav_item s-nav-6 prev" for="s-5"></label>
+                    <label class="slider_nav_item s-nav-6 next" for="s-7"></label>
+                    <label class="slider_nav_item s-nav-7 prev" for="s-6"></label>
+                    <label class="slider_nav_item s-nav-7 next" for="s-1"></label>
+                </div>
+
+                <div class="slider_indicator">
+                    <div class="slider-indi indi-1"></div>
+                    <div class="slider-indi indi-2"></div>
+                    <div class="slider-indi indi-3"></div>
+                    <div class="slider-indi indi-4"></div>
+                    <div class="slider-indi indi-5"></div>
+                    <div class="slider-indi indi-6"></div>
+                    <div class="slider-indi indi-7"></div>
+                </div>
+                
             </div>
-
-            <div class="slider_indicator">
-                <div class="slider-indi indi-1"></div>
-                <div class="slider-indi indi-2"></div>
-                <div class="slider-indi indi-3"></div>
-                <div class="slider-indi indi-4"></div>
-                <div class="slider-indi indi-5"></div>
-                <div class="slider-indi indi-6"></div>
-                <div class="slider-indi indi-7"></div>
-            </div>
-            
-        </div>
+        </div>    
  
-
         <!--5 five-->          
         <div class="cover">
 
@@ -377,19 +410,25 @@
                 <div class="slider__inner">
                   <div class="slider__contents"><img src="image/slide1.jpg" class="slider__image slider__picture" />
                     <h2 class="slider__caption">Développeur passionné</h2>
-                    <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                    <p class="slider__txt">Marre des développeurs qui ont toujours la "flemme" ? Vos dev's, disparaissent comme par magie, lorsqu'une nouvelle tâche est demandée ?<br /><br />
+                        N'attendait plus !<br /><br />
+                        Travaillez maintenant, avec un vrai passionné !</p>
                   </div>
                   <div class="slider__contents"><img src="image/slide2.jpg" class="slider__image slider__picture" />
                     <h2 class="slider__caption">Technologie de pointe !</h2>
-                    <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                    <p class="slider__txt">Utilisation des dernières technologies de pointe !
+                        Notamment grâce à une passion hors norme et un professionnalisme en veille technologique.</p>
                   </div>
                   <div class="slider__contents"><img src="image/slide3.jpg" class="slider__image slider__picture" />
                     <h2 class="slider__caption">Espace de travail <br /> professionnelle</h2>
-                    <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                    <p class="slider__txt">La pointe de la technologie en matière de hardware,
+                    software, et confort de travail.<br /><br /> Afin d'optimiser les performances sur vos projets.</p>
                   </div>
                   <div class="slider__contents"><img src="image/slide4.jpg" class="slider__image slider__picture" />
                     <h2 class="slider__caption">Allons boire un café ?</h2>
-                    <p class="slider__txt">Nous pourrons parler plus amplement de vos projets dans le domaine du web, de votre structure, entreprise ou autre activité. <br /><br /> Qui sait !<br /><br /> Nous travaillerons peut-être ensemble !</p>
+                    <p class="slider__txt">Les entretiens d'embauche sont dépassés !<br /><br />
+                        Prenons un café et voyons comment faire progresser votre structure.
+                     </p>
                   </div>
                 </div>
             </div>
