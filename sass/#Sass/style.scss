@@ -1,3 +1,4 @@
+// VIEWPORT 1 - 6 ;
 @import "_1one.scss";
 @import "_2two.scss";
 @import "_3three.scss";
@@ -5,4 +6,10 @@
 @import "_5five.scss";
 @import "_6six.scss";
 
+// RESPONSIVE ;
+@import "_responsiveWEB.scss";
+@import "_responsiveTABLETTE.scss";
+@import "_responsiveMOBILE.scss";
+
+// Dont use for now
 @import "../Utils/_variables.scss";

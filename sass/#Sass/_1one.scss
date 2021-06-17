@@ -1,178 +1,581 @@
 /* - 1 one - */
 
-/* ###### variable | color ###### */
+// property variable
+// variable color
 $bluesky: #6cb0f6;
 $gray: #727272;
+$centerbanner: #f8f9fb;
 
+// global property -- ( propriété de l'ensemble du doc )
+* {
 
-/* ###### FONT and BACKGROUND ###### */
-/* Background top */
-body {
+    box-sizing: border-box;
+    
+}
+
+// SCROLL BAR (a revoir !) 
+::-webkit-scrollbar {
+
+    width: 8px;
+    height: 8px;
+
+}
+::-webkit-scrollbar-thumb {
+
+// #e66465 14% FIRST COLOR
+// background: linear-gradient(13deg, #9198E5 14%,#9198E5 64%);
+background: linear-gradient(13deg, $bluesky 14%, $bluesky 64%);
+border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb:hover{
+
+background: linear-gradient(13deg, #c7ceff 14%, 64%);
+
+}
+::-webkit-scrollbar-track{
+
+background: hsl(0, 0%, 100%);
+border-radius: 10px;
+box-shadow: inset 7px 10px 12px #f0f0f0;
+
+}
+
+// property of HTML / BODY -- ( propriété du body )
+html, body {
+
+    // cut default margin and padding
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; // enleve la bar de scroll en en cas de depassement
+
     font-family: 'Josefin Sans', 'Lato', sans-serif;
-    background-image: url(../image/headerbanner.png),
-                      url(../image/centerbanner.png),
-                      url(../image/footerbanner.png),
-                      url(../image/Rectanglefinal.png);
 
-    background-position: 50% 0%, 50% 55%, 50% 102%, 50% 122%;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 1930px 940px, 1920px 750px, 1920px 670px, 1920px 2px;
-    background-attachment: scroll;
-
-    
 }
 
-/* ###### MARGIN page ###### */
-
-  .bloc_page {
-      margin: 0em 23.438em 0em;
-  }
-
-/* ###### Logo + text TOP/LEFT ###### */ 
-#logo {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    position: fixed;
-    top: -0.5rem;
-    max-width: 90px;
-    & > img {
-        width: 35px;
-        height: 30px;
-    }
-    & > p {
-        font-size: 1.5em;
-        font-weight: 600;
-        color: white;
-        text-shadow: 0px 0px 3.5px $bluesky;
-    }
-}
-
-/* ###### Nav TOP/RIGHT ###### */
-.navBar {  
-    display: flex;
-    justify-content: flex-end;
-    text-shadow: 0px 0px 4px $bluesky;
-    & ul {
-        list-style-type: none;
-        display: flex;          
-    }
-    & li {
-        margin-right: 117px;
-    }
-    & a {
-        font-size: 0.9em;
-        color: #ffffff;
-        padding-bottom: 10px;
-        text-decoration: none;
-        font-style: normal;
-        text-rendering: auto;
-        &:hover {
-            color: #eeeeee;
-            border-bottom: 1.5px solid #ffffff;
-        }
-    }
-}
-
-.navBar{
-    & a:hover {
-        text-shadow: 0px 0px 20px $bluesky;
-        filter: saturate(900%);
-        -webkit-filter: saturate(900%);
-    }
-    & li:hover {
-        transform: scale(1.6);
-    
-    }
-    #navBar--noMarge {
-        margin-right: 1px;
-    }
-}
-
+// HEADER config - background and size -- ( Fond d'écran personnalisé )
 header {
-    color: white;
+
+    //background-image: url(../image/headerbanner.png);
+    //background: linear-gradient(60deg, #ffdc80, #fcaf45, #f77737, #f56040, #FD1D1D, #E1306C, #c13584, #833AB4, #5851db, #405DE6);
+
+    background: linear-gradient(60deg, #ffdc80, #fcaf45, #f77737, #f56040, #FD1D1D, #E1306C, #c13584 60%, #833AB4, #5851db , #405DE6 120%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-width: 100vw;
+    height: 100vh;
+
+    // FONT 
+    font-family: 'Josefin Sans', 'Lato', sans-serif;
+    color: rgb(255, 255, 255);
+
 }
 
-/* ###### Container text and pix ###### */
-.container01 {
+
+// ##################################### TOP BAR #####################################
+// LOGO config -- (logo en haut a gauche)
+.topbar-logo {
+
+    display: flex;
+    margin: 3.2px;
+    position: fixed;
+    left: 0em;
+
+    & img {
+
+        // logo size
+        width: 30px;
+        height: 30px;
+
+    }
+
+    & p {
+ 
+        margin: 0;
+        margin-top: 3.5px;
+
+        font-size: 24px;
+        text-shadow: 0px 0px 0.25em $bluesky;
+
+    }
+
+}
+
+// NAV config -- (barre de navigation)
+.topbar {
+
+    margin: 0 15em;
+    
+
+    .topbar-nav {
+        
+        display: flex;
+        justify-content: flex-end;
+        
+        & ul {
+
+            display: flex;
+            padding: 0;
+            padding-top: 1em;
+
+        }
+
+        & li {
+
+            list-style-type: none;
+            margin-left: 6em;
+            border: none;
+            font-weight: 300;
+            letter-spacing: 1px;
+
+            &:hover {
+
+                transform: scale(1.4);
+
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-underline-position: under;
+
+            }
+
+            &:first-child {
+
+                margin-left: 0;
+
+            }
+
+        }
+
+        & a {
+
+            color: white;
+            text-decoration: none;
+            font-size: 19px;
+            
+            &:hover {
+                
+                text-shadow: 1px 0px 10px white;
+                color: $bluesky;
+                filter: saturate(900%);
+                -webkit-filter: saturate(300%); 
+
+            }
+
+        }
+
+    }
+
+}
+
+// ##################################### HEADER #####################################
+// HEADER - TEXT and PICTURE config -- (photo + description)
+.header {
+
     display: flex;
     justify-content: space-between;
-    max-width: 1170px;
-    margin-left: 0em;
-    margin-top: 5.5em;
-    // ###################################################### --> wait for test card MAIN
-    border: 1px solid rgba(255, 110, 166, 0.01);
-    border-radius: 5%;
-    box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.15);
-    padding: 25px;
-}
+    margin: 6.5em 15em 5em 15em;
 
-/* ###### container text LEFT ###### */
-.helloWorld {
-  
-    margin-left: 0.5em;
-    margin-top: 11em;
-    max-height: 260px;
-    & > h1 {
-        font-size: 3.5em;
-        font-weight: 550;
-        font-family: 'Josefin Sans', sans-serif;
-        text-shadow: 0px 0px 3.5px $bluesky;      
-    }
-    & > h2 {
-        font-size: 1.625em;
-        font-weight: normal;
-        font-style: italic;
-        font-family: 'Lato', sans-serif;
-        margin-bottom: 3px;
-        margin-top: 1.1em;
-    }
-}
+    // HEADER text 
+    & div {
+   
+        margin-top: 9.5em;
 
-/* ###### Button contact LEFT ###### */
-.contactMe {
-    font-size: 1em; 
-    background-color: white;
-    padding: 0.063em;
-    border-radius: 50px / 50px;
-    width: 170px;  
-    text-align: center;
-    margin-top: 3.2em;
-    
-    color: $bluesky;
-    box-shadow: 0px 0px 5px $bluesky;
-    transform: scale(1);
-    transition: transform 300ms;
-        & a:hover {
+        font-size: 21.5px;
+
+        & h2 {
+
+            font-size: 24px;
+            font-weight: 300;
+            padding-left: 0.1em;
+            margin: 0;
+
+            font-family: 'Lato', 'Josefin Sans',  sans-serif;
+            text-shadow: 0px 0px 3.5px $bluesky;
+            letter-spacing: 1px;
+
+            white-space: nowrap; // empeche le retour a la ligne 
+
+        }
+
+        & h1 {
+
+            font-size: 56px;
+            font-weight: 550;
+            margin: 0 0 37.5px 0;
+            
+            text-shadow: 0px 0px 3.5px $bluesky;
+            letter-spacing: 0.5px;
+
+            white-space: nowrap; // empeche le retour a la ligne 
+        }
+
+            & a {
+
+            display: block;
+            
+            margin: 3.3em 0em 0em 0.2em;
+            max-width: 160px;
+            
+            font-size: 18px;
+            font-weight: 400;
+            border: 1.65px solid $bluesky;
+            border-radius: 17px;
+            background-color: white;
             color: $bluesky;
+            text-align: center;
             text-decoration: none;
-            font-size: 1.07em;
-            filter: saturate(200%);
-            -webkit-filter: saturate(200%);      
-        }
-        &:hover {
-            filter: saturate(200%);
-            -webkit-filter: saturate(200%);
-            box-shadow: 0px 0px 22px $bluesky;
-            transform: scale(1.15);
-            animation: balanciercontact 100ms cubic-bezier(.4,.1,.6,.9) 2;
-            @keyframes balanciercontact {
-                25% {        
-                    transform: translateX(2%);
+
+            &:hover {
+
+                transform: scale(1.1);
+                box-shadow: 0px 0px 30px 0px $bluesky;
+                filter: saturate(900%);
+                -webkit-filter: saturate(300%); 
+
+
+                // EFFECT ROTATION BUTTON
+                -webkit-transform-origin: top center;
+                -ms-transform-origin: top center;
+                transform-origin: top center;
+                -webkit-animation-name: swing;
+                animation-name: swing;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+            
+                @keyframes swing {
+
+                    20% {
+                    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+                    transform: rotate3d(0, 0, 1, 15deg);
+                    }
+                    40% {
+                    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+                    transform: rotate3d(0, 0, 1, -10deg);
+                    }
+                    60% {
+                    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+                    transform: rotate3d(0, 0, 1, 5deg);
+                    }
                 }
-                75% {        
-                    transform: translateX(2% * -1);
-                }
-            }
+            }  
         }
-        & a:link {
-            color: $bluesky;
-            text-decoration: none;      
     }
-    & a:visited {
-        color: $bluesky;
-        text-decoration: none;
-    } 
 }
 
-/* ############### Responsive ################# */
+// Effect picture HEADER
+.header-picture {
+
+    // EFFET sur la photo / prend pas en compte le box, mais le contour de la photo sans transparence
+    filter: drop-shadow(0 -6mm 4mm rgba(160, 0, 210, 0.5)); 
+
+}
+
+// ASIDE arrow content config -- (fleche d'animation)
+.header-arrow {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.7em;
+
+    & img {
+
+        width: 28px;
+        height: 14px;
+        opacity: 0.4;
+
+    }
+
+}
+
+// ANIMATION arrow 
+.header-arrow img {
+
+    
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-duration: 1s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    
+    
+    @-webkit-keyframes bounce {
+        0%, 20%, 53%, 80%, 100% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+
+        }
+        40%, 43% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            -webkit-transform: translate3d(0, -30px, 0);
+            transform: translate3d(0, -30px, 0);
+
+        }
+        70% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+
+        }
+        90% {
+
+            -webkit-transform: translate3d(0,-4px,0);
+            transform: translate3d(0,-4px,0);
+        }
+    }
+    
+    @keyframes bounce {
+        0%, 20%, 53%, 80%, 100% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+
+        }
+        40%, 43% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            -webkit-transform: translate3d(0, -30px, 0);
+            transform: translate3d(0, -30px, 0);
+
+        }
+        70% {
+
+            -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+
+        }
+        90% {
+
+            -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
+            
+        }
+    } 
+
+}
+
+
+
+
+
+// TEST POUR EFFET !!!!
+/*
+.header-text {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes bounceInLeft {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+    }
+    75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes bounceInLeft {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+    }
+    75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+
+.topbar-nav {
+    -webkit-animation-name: topbar-nav;
+    animation-name: topbar-nav;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    }
+    @keyframes topbar-nav {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+    }
+    90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes topbar-nav {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+    }
+    90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+.header-picture {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: header-picture;
+    animation-name: header-picture;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-delay: 550ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    }
+    @-webkit-keyframes header-picture {
+    0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0;
+    }
+    40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    }
+    60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    }
+    }
+    @keyframes header-picture {
+    0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0;
+    }
+    40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    }
+    60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    }
+    }    
+*/

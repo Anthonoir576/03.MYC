@@ -1,101 +1,144 @@
 /* - 3 three - */
 
-/* ###### variable | color ###### */
+// property variable
+// variable color
 $bluesky: #6cb0f6;
 $gray: #727272;
+$centerbanner: #f8f9fb;
 
-/* ###### professional experience ###### */
-.XPpro--legend {
+// Container EXP
+.EXP {
+
+    background: $centerbanner;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-width: 100vw;
+    height: 90vh;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    
+    padding: 6em 20em 6em 20em;
+    margin-bottom: 10em;
+
+    &-legend {
+
+        //margin: 0 0 29px 185px;
+        
+        & h2 {
+
+            font-size: 40px;
+            letter-spacing: 2px;
+            font-weight: 900;
+            margin: 0 0 40px 0;
+            font-style: italic;
+
+            white-space: nowrap;
+
+            &::first-letter {
+
+                letter-spacing: 0;
+                font-size: 50px;
+                color: #7272728c;
+                font-weight: 600;
+                font-style: normal;
+
+            }
+
+            & span {
+
+                color: $gray;
+                font-size: 35px;
+                font-weight: 300;
+
+            }
+
+            & em {
+
+                color: $gray;
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: 10px;
+                font-style: normal;
+
+            }
+
+        }
+
+
+        & h3 {
+
+            margin: 0 0 100px 0 ;
+            color: $gray;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+            font-style: italic;
+
+        }
+
+    }
+
 }
 
-.XPpro--legend {
-    margin-top: 20em;
-    z-index: 2;
-    max-width: 400px;
-    & h2 {
-        font-size: 2.5em;
-        color: black;
-        max-width: 400px;
-    }
-    
-    & em {
-        font-size: 0.4em;
-        font-weight: 550;
-        color: $gray;
-    }
-    
-    & span {
-        font-size: 1em;
-        font-weight: 200;
-        color: $gray;
-    }
-    
-    & h3 {
-        font-size: 0.9em;
-        font-weight: 450;
-        color: $gray;
-        margin-top: 2em;
-        margin-bottom: -1.5em;
-        max-width: 300px;
-    }
-}
+// List LEFT and RIGHT <-- Container EXP
+#EXP-list {
 
-#XPpro {
     display: flex;
     justify-content: space-between;
-    margin-top: 5em;
-    & img {
-        position: relative;
-        right: 3.1em;
-        top: 1.2em;
-        margin-top: 0.9em;
-        margin-right: 0em;
-    }
-    
+
     & h4 {
-        font-size: 1.9em;
-        font-weight: 700;
-        color: black;
-        margin-bottom: 2em;
-        max-width: 250px;
-        &:hover {
-            transform: scale(1.1);
-        }
+
+        font-size: 28px;
+        margin: 0px 0 80px 0;
+
     }
-    
+
     & p {
-        text-align: justify;
-        font-size: 1em;
-        font-weight: 350;
+
+        font-size: 18px;
         color: $gray;
-        margin-left: 3.5em;
-        margin-top: 2em;
+        font-weight: 300;
+
+        min-height: 110px;
+        margin:0 0 0 15px;
+
     }
-    
+
     & strong {
-        position: relative;
-        right: 1.8em;
-        font-size: 1.45em;
-        font-weight: 550;
+
+        display: inline-block;
+
         color: black;
-        
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+
     }
-    // border EXPERIENCE/FORMATION
-    & span {
-        border: 1px solid black;
-        padding: 8px 10px 3px 10px;
-        border-radius: 10px;
-        box-shadow: 3px 6px 18px -1px rgba($color: #000000, $alpha: 0.15);
-     
+
+}
+
+// Items IMG and P <-- Container EXP
+.EXP-items {
+
+    display: flex;
+    
+    & img {
+
+        max-width: 40px;
+        max-height: 40px;
+        flex-grow: 1;
+       
+        margin-top: 5px;
+
     }
 }
 
-/* ###### List LEFT and RIGHT ###### */
-.Llist, .Rlist {
-    & p + p {
-        margin-top: 3em;
-    }
+// List LEFT Modifier <-- Container EXP
+.EXP-list-L {
+
+    margin-right: 3em;
+
 }
 

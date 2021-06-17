@@ -1,223 +1,510 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-
-    <!-- beginning write text -->
     <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
-        <!-- two last link = font google -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
         <script src="js/script.js"></script>
                 
-        <title>FALVOAnthony.fr</title>
+        <title>FalvoEnterprise.com</title>
     </head>
+
+    <!--
+        - REVOIR ENCRAGE DU NAV, et VERIF LES ALL LINKS
+        - FINIR LA M.E.P DU SITE 'refonte complete'.
+        - RENAME LES ELEMENTS DANS LE HTML
+
+        - Alert click sur : cv, et autre lien mort a enlever une fois config
+    -->
 
     <!--1 one-->
     <body>
-        <!-- Logo + text Af. -->
-        <div id="logo">
-            <img src="image/mylogo.png" alt="Logo My Concept"/> <p> &thinsp;Af.</p>    
-        </div>
-        <!-- MARGIN page -->
-        <div class="bloc_page">      
+        <header>
+            <div class="topbar">
+
+                <!-- Logo + text Af. -->
+                <div class="topbar-logo">
+                    <img src="image/mylogo.png" alt="Logo My Concept"/> 
+                    <p> &thinsp;Af.</p>    
+                </div>  
+
                 <!-- Nav MENU --> 
-                <nav class="navBar">
-                    <ul>
-                        <li><a href="#pixProfil02">En savoir plus...</a></li>
-                        <li><a href="#XPpro">Compétence</a></li>
-                        <li><a href="#linkPortfolio">Portfolio</a></li>
-                        <li id="navBar--noMarge"><a href="#copyme">Contact</a></li>
+                <nav class="topbar-nav">
+                    <ul> 
+                        <li><a href="#presentation-picture">En savoir plus...</a></li>
+                        <li><a href="#XPpro--list--left_right">Compétence</a></li>
+                        <li><a href="#myworks-nav-link">Portfolio</a></li>
+                        <li><a href="#footer-copyright">Contact</a></li>
                     </ul>
                 </nav>
 
-            <main>
-                <header>
-                    <!-- Text Header LEFT + Picture RIGHT -->
-                    <div class="container01">  
-                        <div class="helloWorld">
-                            <h1>FALVO Anthony</h1>
-                            <h2>Étudiant développeur Front-end</h2>
-                            <div class="contactMe">
-                                <p><a href="#copyme">Contactez-moi</a></p>
+            </div>
+
+            <!-- Text Header LEFT + Picture RIGHT --> 
+            <div class="header">  
+                <div class="header-text"> 
+                    <h1>FALVO Anthony</h1>
+                    <h2>Étudiant développeur Front-end</h2>
+                    <a href="#footer-copyright"><p>Contactez-moi</p></a>
+                </div> 
+                <img src="image/photoHEADd.png" class="header-picture" alt="Photo FALVO Anthony"/>    
+            </div>
+
+            <div class="header-arrow">
+                <img src="image/arrow.png" class="arrow" alt="arrow down"/>   
+            </div> 
+
+        </header>
+
+        <!--2 two-->    
+        <!-- div type Container -->
+        <div class="about">
+            <aside>
+                <figure id="about-picture">
+                    <img src="image/blocPresentationrefonte.png" alt="Anthony FALVO"/>
+                </figure>
+                <!-- text +  social network's picture -->
+                <div class="about-text_networks">  
+                    <table class="about-text">
+                        <tr>
+                            <td>
+                                &bull; <strong> Nom / Prénom</strong>
+                            </td>
+                            <td>
+                                : FALVO Anthony
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &bull; <strong>Date de naissance</strong>
+                            </td>
+                            <td>
+                                : 25 Juin 1993
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &bull; <strong>Adresse</strong>
+                            </td>
+                            <td>
+                                : 269 rue du capitaine wazny<br /> Montigny-en-ostrevent,<br /> 59182, France
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &bull; <strong>Téléphone</strong>
+                            </td>
+                            <td>
+                                : 07.27.76.52.92 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &bull; <strong>E-mail</strong>
+                            </td>
+                            <td>
+                                : anthony.falvo.pro@gmail.com
+                            </td>
+                        </tr>
+                    </table>
+                    <hr />
+                    <div class="about-networks">
+                        <div><a href="https://www.facebook.com/anthony.falvo.399/"><img src="image/f.png" alt="reseaux sociaux"/></a></div>
+                        <div><a href="https://www.linkedin.com/in/anthony-falvo-25657020a/"><img src="image/lkn.png" alt="reseaux sociaux"/></a></div>
+                        <div><a href="https://www.freecodecamp.org/anthonoir576"><img src="image/fcc.png" alt="reseaux sociaux"/></a></div>
+                        <div><a href="https://github.com/Anthonoir576" id="Nomarge2"><img src="image/gthb2.png" alt="reseaux sociaux"/></a></div>
+                    </div>       
+                </div>
+            </aside>
+
+            <!-- Article text -->
+            <article>
+                <div class="aboutMe">                      
+                    <h2>FALVO Anthony</h2>
+                    <h3>Étudiant développeur Front-end</h3>                  
+                    <p>Étudiant en développement front-end, basé sur les éléments :
+                    HTML 5, CSS 3, JavaScript ainsi que les connaissances basique sur la partie back -end,
+                    avec PHP, MySQL. Le programme comporte l’apprentissage et l’utilisation de GIT / GitHub
+                    dans les projets. La mise en place de l’environnement de travail, découpez et interprétez une
+                    maquette. Les langages essentiels cité ci-dessus, l’optimisation SEO, le responsive avec Bootstrap,
+                    Node.js, Express, MongoDB et Vue.js. Petit plus ! Je possède d’une expérience d’une quinzaine d’années
+                    dans l’audio, traitement, mixage, mastering. Concernant Photoshop, je l’utilise depuis 2008 environs,
+                    et quelque notion en traitement vidéo sous after effect depuis 2014. 
+                    </p>                
+                    <h4>&bull; Mes compétences</h4>                            
+                    
+                    <div class="skill-bars">
+                        <div class="bar">
+                            <div class="info">
+                                <span class="nameskill">HTML 5 / CSS 3 / Animation CSS</span>
+                            </div>
+                            <div class="progress-line htmlcss">
+                                <span></span>
                             </div>
                         </div>
-                        <div class="pictureHeader">
-                            <img src="image/photoHEADd.png" alt="Photo FALVO Anthony"/>    
-                        </div>          
-                    </div>
-                </header>
-            </main> 
-            <!--2 two-->    
-            <!-- div LEFT / RIGHT -->
-            <div class="container02">
-                <aside>
-                    <div id="pixProfil02">
-                        <img src="image/blocPresentation.png" alt="Anthony FALVO"/>
-                    </div>
-                    <!-- text + picture social network's -->
-                    <div class="pixProfil02--textAndNetworks">
-                        <ul class="ulLEFT">
-                            <li><strong>Nom / Prénom</strong></li>
-                            <li><strong>Date de naissance</strong></li> 
-                            <li><span><strong>Adresse</strong></span></li>
-                            <li id="noStyle">&nbsp;</li>
-                            <li><strong>Téléphone</strong></li> 
-                            <li><strong>E-mail</strong></li>
-                        </ul>
-                        <ul class="ulRIGHT">
-                            <li>: FALVO Anthony</li>
-                            <li>: 25 Juin 1993</li>
-                            <li>: 269 rue du capitaine wazny Montigny-en-ostrevent, 59182, France</li>
-                            <li>: 07.27.76.52.92</li>
-                            <li>: anthony.falvo.pro@gmail.com</li>
-                        </ul>
-                        <div class="Rsociaux">
-                            <div><a href="https://www.facebook.com/anthony.falvo.399/"><img src="image/f.png" alt="reseaux sociaux"/></a></div>
-                            <div><a href="https://www.linkedin.com/in/anthony-falvo-25657020a/"><img src="image/lkn.png" alt="reseaux sociaux"/></a></div>
-                            <div><a href="https://www.freecodecamp.org/anthonoir576"><img src="image/fcc.png" alt="reseaux sociaux"/></a></div>
-                            <div><a href="https://github.com/Anthonoir576" id="Nomarge2"><img src="image/gthb2.png" alt="reseaux sociaux"/></a></div>
-                        </div>       
-                    </div>
-                </aside>
-
-                <!-- Article text -->
-                <article>
-                    <div id="textAll">                      
-                        <h2 class="textOne">FALVO Anthony</h2>
-                        <h3 class="textTwo">Étudiant développeur Front-end</h3>                  
-                        <p>Étudiant en développement front-end, basé sur les éléments :
-                        HTML 5, CSS 3, JavaScript ainsi que les connaissances basique sur la partie back -end,
-                        avec PHP, MySQL. Le programme comporte l’apprentissage et l’utilisation de GIT / GitHub
-                        dans les projets. La mise en place de l’environnement de travail, découpez et interprétez une
-                        maquette. Les langages essentiels cité ci-dessus, l’optimisation SEO, le responsive avec Bootstrap,
-                        Node.js, Express, MongoDB et Vue.js. Petit plus ! Je possède d’une expérience d’une quinzaine d’années
-                        dans l’audio, traitement, mixage, mastering. Concernant Photoshop, je l’utilise depuis 2008 environs,
-                        et quelque notion en traitement vidéo sous after effect depuis 2014. 
-                        </p>                
-                        <h3 class="textThree">&bull; Mes compétences :</h3>                            
-                        <div id="blockTextAndPix">                                  
-                            <div id="skillPix">
-                                <img src="image/80p.png" alt="80 %"/>
-                                <img src="image/80p.png" alt="80 %"/>
-                                <img src="image/50p.png" alt="50 %"/>
-                                <img src="image/80p.png" alt="80 %"/>    
-                            </div>  
-                            <div id="skillText">
-                                <p> HTML 5 / CSS 3 / JavaScript </p>
-                                <p> PHP / SQL (MySQL) </p>
-                                <p> Référencement SEO </p>
-                                <p> P.S / A.Effect / FL studio 20.7 </p>
-                            </div>  
+                        <div class="bar">
+                            <div class="info">
+                                <span class="nameskill">JavaScript</span>
+                            </div>
+                            <div class="progress-line js">
+                                <span></span>
+                            </div>
                         </div>
-                        <div class="downloadCV">
-                            <a href="#"><p>Télécharger C.V</p></a>
+                        <div class="bar">
+                            <div class="info">
+                                <span class="nameskill">SQL / PHP</span>
+                            </div>
+                            <div class="progress-line sql">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span class="nameskill">Adobe P.S / Adobe A.E / FL studio</span>
+                            </div>
+                            <div class="progress-line design">
+                                <span></span>
+                            </div>
                         </div>
                     </div>
-                </article>
-            </div>
-
-            <!--3 three-->
-            <div class="XPpro--legend">
-                <h2>Résumé <span>/</span> <em>Experience professionnelle</em></h2>
-                <h3> Experience globale dans le monde du travail.</h3>
-            </div>
-            <div id="XPpro">                
-                <div class="Llist">
-                    <h4>&bull; <span>Experience</span></h4>
-                    <p><img src="image/icon01.png" alt="icon book"/><strong>2019 - 2021</strong><br/>
-                    Pilote de ligne, Gestion de l’équipe, et de la production.</p>                    
-                    <p><img src="image/icon02.png" alt="icon check list"/><strong>2015 - 2018</strong><br/>
-                    Agent de sécurité privé.</p>
-                    <p><img src="image/icon03.png" alt="diploma"/><strong>2011 - 2015</strong><br/>
-                    Armée de terre, BTP, et logistique.</p>
+                    
+                    <div class="aboutMe-downloadcv">
+                        <a href="#" onclick="return confirm ('En cours de maintenance')"><p>Télécharger C.V</p></a>
+                    </div>
                 </div>
-                <div class="Rlist">
-                    <h4>&bull; <span>Formation</span></h4>
-                    <p><img src="image/icon01.png" alt="icon book"/><strong>2021 - Développeur web</strong><br/>
-                    Formation de développeur web en autodidacte</p>
-                    <p><img src="image/icon02.png" alt="icon check list"/><strong>2019 - R-408</strong><br/>
-                    Formation montage-démontage d’un echafaudage fixe.</p>
-                    <p><img src="image/icon03.png" alt="diploma"/><strong>2010 - Fin de scolarité </strong><br/>
-                    Fin de scolarité, avec pour seul diplome le brevet des collèges.</p>
-                </div>   
-            </div>  
-            
-            <!--4 four-->
-            <div class="myJob">
-                <h2> Mon travail <span>/</span> <strong><a href="#" class="link--modif">Tous les projets</a></strong>
-                <strong><a href="#">Projet personnel</a></strong> <strong><a href="#" id="linkPortfolio">Projet client</a></strong></h2>
+            </article>
+        </div>
+
+        <!--3 three-->
+        <main>
+            <div class="EXP">
+                <div class="EXP-legend">
+                    <h2>Résumé <span>/</span> <em>Experience professionnelle :</em></h2>
+                    <h3> Experience globale dans le monde du travail.</h3>
+                </div>
+                <div id="EXP-list">                
+                    <div class="EXP-list-L">
+                        <h4>&bull; Experience :</h4>
+                        <div class="EXP-items"> 
+                            <img src="image/icon01.png" alt="icon book"/>
+                            <p><strong>2019 - 2021</strong><br/>
+                            Pilote de ligne, Gestion de l’équipe, et de la production.</p>
+                        </div>   
+                        <div class="EXP-items">
+                            <img src="image/icon02.png" alt="icon check list"/>
+                            <p><strong>2015 - 2018</strong><br/>
+                            Agent de sécurité privé.</p>
+                        </div>
+                        <div class="EXP-items">      
+                            <img src="image/icon03.png" alt="diploma"/>
+                            <p><strong>2011 - 2015</strong><br/>
+                            Armée de terre, BTP, et logistique.</p>
+                        </div>  
+                    </div>
+                    <div class="EXP-list-R">
+                        <h4>&bull; Formation :</h4>
+                        <div class="EXP-items">
+                            <img src="image/icon01.png" alt="icon book"/>
+                            <p><strong>2021 - Développeur web</strong><br/>
+                            Formation de développeur web en autodidacte</p>
+                        </div>
+                        <div class="EXP-items">
+                        <img src="image/icon02.png" alt="icon check list"/>
+                        <p><strong>2019 - R-408</strong><br/>
+                            Formation montage-démontage d’un echafaudage fixe.</p>
+                        </div>
+                        <div class="EXP-items">
+                            <img src="image/icon03.png" alt="diploma"/>
+                            <p><strong>2010 - Fin de scolarité </strong><br/>
+                            Fin de scolarité, avec pour seul diplome le brevet des collèges.</p>
+                        </div>
+                    </div>   
+                </div>  
             </div>
-            <div class="videoProject">
-                <video controls width="500">
-                    <source src="image/3emeprojet.mp4" type="video/mp4" />
-                </video>
-                <video controls width="500">
-                    <source src="image/3emeprojet.mp4" type="video/mp4" />
-                </video>
-                <video controls width="500">
-                    <source src="image/3emeprojet.mp4" type="video/mp4" />
-                </video>
-                <video controls width="500">
-                    <source src="image/3emeprojet.mp4" type="video/mp4" />
-                </video>
-            </div> 
+        </main>
+   
+        <!--4 four-->
+        <div class="project EXP-legend">
+            <h2> Mon travail <span>/</span></h2>
+            <strong><a href="#" onclick="return confirm ('En cours de maintenance')">Tous les projets</a><a href="#" onclick="return confirm ('En cours de maintenance')">Projets clients</a><a href="#" id="project-nav-link" onclick="return confirm ('En cours de maintenance')">Projets personnels</a><a href="#" onclick="return confirm ('En cours de maintenance')">Projets études</a></strong>
+        </div>
 
-            <!--5 five-->          
-            <div id="Petitpoint">
-                <img src="image/petitpoint.png" alt="Petit point"/>  
-            </div> 
+        <!-- CONTENT MY WEB PROJECT-->
+        <div class="allProject">
+            <input type="radio" class="inputNONE" id="s-1" name="slider-control" checked="checked">
+            <input type="radio" class="inputNONE" id="s-2" name="slider-control">
+            <input type="radio" class="inputNONE" id="s-3" name="slider-control">
+            <input type="radio" class="inputNONE" id="s-4" name="slider-control">
+            <input type="radio" class="inputNONE" id="s-5" name="slider-control">
+            <input type="radio" class="inputNONE" id="s-6" name="slider-control">
+            <input type="radio" class="inputNONE" id="s-7" name="slider-control">
 
-            <!--6 six--> 
-            <footer class="theEnd">                
+            <div class="slider">
+
+                <figure class="slider_item img-1">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/g2.JPG" alt="project grafikart number 2" />
+                        <!--<img class="iconNew" src="image/iconnew.png" alt="icon new project" />-->
+                    </div>
+                    
+                    <figcaption class="caption">
+                        <h3 class="h3"><div class="c-label">N&deg; 1</div><br class="view-sm mb-s">Projet d'étude n&deg; 02 'GRAFIKART'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 02 sur le site de <a href="https://grafikart.fr/" target="_blank"> grafikart </a>:</li>
+                                <li>THÈME : Réalisez un site web de type réseau social</li>        
+                            </ul>
+                            <a href="https://youtu.be/kyayc5eI_k8" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="slider_item img-2">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/g1.JPG" alt="project grafikart number 1" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 01 'GRAFIKART'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 01 sur le site de <a href="https://grafikart.fr/" target="_blank"> grafikart </a>:</li>
+                                <li>THÈME : Réalisez un site web de type blog</li>        
+                            </ul>
+                            <a href="https://youtu.be/Zain6-MO_pY" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="slider_item img-3">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/fcc5.JPG" alt="Project in freecodecamp number 5" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 05 'FreeCodeCamp'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 05 sur le site de <a href="https://www.freecodecamp.org/anthonoir576" target="_blank"> FreeCodeCamp </a>:</li>
+                                <li>THÈME : Réalisez un site web de type Porte-folio</li>        
+                            </ul>
+                            <a href="https://youtu.be/C6TmvV0W-v8" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="slider_item img-4">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/fcc4.JPG" alt="Project in freecodecamp number 4" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 04 'FreeCodeCamp'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 04 sur le site de <a href="https://www.freecodecamp.org/anthonoir576" target="_blank"> FreeCodeCamp </a>:</li>
+                                <li>THÈME : Réalisez un site web de documentation (exemple : type MDN) </li>        
+                            </ul>
+                            <a href="https://youtu.be/Jl1G0SC3kx8" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="slider_item img-5">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/fcc3.JPG" alt="Project in freecodecamp number 3" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 03 'FreeCodeCamp'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 03 sur le site de <a href="https://www.freecodecamp.org/anthonoir576" target="_blank"> FreeCodeCamp </a>:</li>
+                                <li>THÈME : Réalisez un site web de type vitrine, et inclure un formulaire de contact</li>        
+                            </ul>
+                            <a href="https://youtu.be/Vs1HSKCNrpo" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="slider_item img-6">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/fcc2.JPG" alt="Project in freecodecamp number 2" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 02 'FreeCodeCamp'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 02 sur le site de <a href="https://www.freecodecamp.org/anthonoir576" target="_blank"> FreeCodeCamp </a>:</li>
+                                <li>THÈME : Réalisez un formulaire de contact, page unique</li>        
+                            </ul>
+                            <a href="https://youtu.be/fYCsV_XvYUI" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="slider_item img-7">
+                    <div class="slider_img">
+                        <img class="c-img-w-full" src="image/fcc1.JPG" alt="Project in freecodecamp number 1" />
+                    </div>
+                    <figcaption class="caption">
+                        <h3 class="h3">Projet d'étude n&deg; 01 'FreeCodeCamp'</h3>
+                        <div class="moreinfo">
+                            <ul class="credit">
+                                <li>Projet dans la catégorie <strong>HTML 5 / CSS 3</strong></li> 
+                                <li>Projet d'étude numéro 01 sur le site de <a href="https://www.freecodecamp.org/anthonoir576" target="_blank"> FreeCodeCamp </a>:</li>
+                                <li>THÈME : Réalisez une page web, sur le thème en mémoire de .. </li>        
+                            </ul>
+                            <a href="https://youtu.be/0gmMklaLi_s" target="_blank"><p> En savoir plus </p></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <div class="slider_nav"> 
+                    <label class="slider_nav_item s-nav-1 prev" for="s-3"></label>
+                    <label class="slider_nav_item s-nav-1 next" for="s-2"></label>
+                    <label class="slider_nav_item s-nav-2 prev" for="s-1"></label>
+                    <label class="slider_nav_item s-nav-2 next" for="s-3"></label>
+                    <label class="slider_nav_item s-nav-3 prev" for="s-2"></label>
+                    <label class="slider_nav_item s-nav-3 next" for="s-4"></label>
+                    <label class="slider_nav_item s-nav-4 prev" for="s-3"></label>
+                    <label class="slider_nav_item s-nav-4 next" for="s-5"></label>
+                    <label class="slider_nav_item s-nav-5 prev" for="s-4"></label>
+                    <label class="slider_nav_item s-nav-5 next" for="s-6"></label>
+                    <label class="slider_nav_item s-nav-6 prev" for="s-5"></label>
+                    <label class="slider_nav_item s-nav-6 next" for="s-7"></label>
+                    <label class="slider_nav_item s-nav-7 prev" for="s-6"></label>
+                    <label class="slider_nav_item s-nav-7 next" for="s-1"></label>
+                </div>
+
+                <div class="slider_indicator">
+                    <div class="slider-indi indi-1"></div>
+                    <div class="slider-indi indi-2"></div>
+                    <div class="slider-indi indi-3"></div>
+                    <div class="slider-indi indi-4"></div>
+                    <div class="slider-indi indi-5"></div>
+                    <div class="slider-indi indi-6"></div>
+                    <div class="slider-indi indi-7"></div>
+                </div>
+                
+            </div>
+        </div>    
+ 
+        <!--5 five-->          
+        <div class="cover">
+
+            <div class="slider__container">
+                <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+                <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+                <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+                <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+
+                <!-- Slider picture About me : -->
+                <div class="slider__inner">
+                  <div class="slider__contents"><img src="image/slide1.jpg" class="slider__image slider__picture" />
+                    <h2 class="slider__caption">Développeur passionné</h2>
+                    <p class="slider__txt">Marre des développeurs qui ont toujours la "flemme" ? Vos dev's, disparaissent comme par magie, lorsqu'une nouvelle tâche est demandée ?<br /><br />
+                        N'attendait plus !<br /><br />
+                        Travaillez maintenant, avec un vrai passionné !</p>
+                  </div>
+                  <div class="slider__contents"><img src="image/slide2.jpg" class="slider__image slider__picture" />
+                    <h2 class="slider__caption">Technologie de pointe !</h2>
+                    <p class="slider__txt">Utilisation des dernières technologies de pointe !
+                        Notamment grâce à une passion hors norme et un professionnalisme en veille technologique.</p>
+                  </div>
+                  <div class="slider__contents"><img src="image/slide3.jpg" class="slider__image slider__picture" />
+                    <h2 class="slider__caption">Espace de travail <br /> professionnelle</h2>
+                    <p class="slider__txt">La pointe de la technologie en matière de hardware,
+                    software, et confort de travail.<br /><br /> Afin d'optimiser les performances sur vos projets.</p>
+                  </div>
+                  <div class="slider__contents"><img src="image/slide4.jpg" class="slider__image slider__picture" />
+                    <h2 class="slider__caption">Allons boire un café ?</h2>
+                    <p class="slider__txt">Les entretiens d'embauche sont dépassés !<br /><br />
+                        Prenons un café et voyons comment faire progresser votre entreprise.
+                     </p>
+                  </div>
+                </div>
+            </div>
+
+        </div> 
+
+        <!--6 six--> 
+        <div class="footer">    
+            <div class="footer-legend">
+
                 <h2> Message&thinsp; <span>/</span> <em>&thinsp; Ecrire un petit mot ?</em></h2>
                 <h3>hésitez pas à m’envoyer un petit message<br/> de soutien, ou de suggestion.
                 Merci :)</h3>
-                
-                <form id="formulaire" action="traitement.php" method="post">
-                    <div>
+
+            </div>            
+
+            
+            <div class="footer-form_contact">
+
+                <form class="formulaire" action="traitement.php" method="post">
+                    <div class="spaceform">
                         <input type="text" required id="name" name="user_name" minlength="3" maxlength="20" 
                         pattern="^[( )a-zA-Z]+$" placeholder="&ensp; Noms *"/>
                         <span>Veuillez entrer uniquement des lettres</span>
                     </div>
-                    <div>
+                    <div class="spaceform">
                         <input type="email" required id="mail" name="user_mail" minlength="10" maxlength="25"
                         placeholder="&ensp; E-mail *"/>
                         <span>Veuillez entrer un e-mail valide</span>
                     </div>
-                    <div>
+                    <div class="spaceform">
                         <input type="text" required id="objet" name="user_objet" minlength="5" maxlength="25"
                         pattern="^[( )a-zA-Z]+$" placeholder="&ensp; Objet *"/>
                         <span>Veuillez entrer uniquement des lettres</span>
                     </div>
-                    <div>
+                    <div class="spaceform">
                         <textarea id="msg" required name="user_message" minlength="10" maxlength="500"
                         placeholder="&ensp; Message *"></textarea>
                     </div>
-                    <div class="buttonEnd">
+                    <div class="buttonsubmit">
                         <button id ="valid-formulaire" type="submit">VALIDER</button>
                     </div>
                 </form>
-                <div class="container03">
-                    <div class="iconEnd">
-                        <img src="image/02.png" alt="telephone" id="correctionimg2"/>
-                        <img src="image/03.png" alt="e-mail"/>
-                        <img src="image/01.png" alt="adresse" id="correctionimg"/>
+
+                <div class="contact-text_map">
+        
+                    <div class="contact-text">
+                        <div class="icontxt">
+                            <img src="image/02.png" alt="telephone" />
+                            <p>07.27.76.52.92</p>
+                        </div>
+
+                        <div class="icontxt">
+                            <img src="image/03.png" alt="e-mail"/>
+                            <p>anthony.falvo.pro@gmail.com</p>
+                        </div>    
+
+                        <div class="icontxt">
+                            <img src="image/01.png" alt="adresse" />
+                            <p>269 Rue du capitaine wazny,<br/> 59182,
+                            Montigny-en-Ostrevent, France</p>
+                        </div>
+
                     </div>
-                    <div class="textedefin">
-                        <p>07.27.76.52.92</p>
-                        <p>anthony.falvo.pro@gmail.com</p>
-                        <p>269 Rue du capitaine wazny, 59182,<br/>
-                        MONTIGNY-EN-OSTREVENT, FRANCE</p>
-                    </div>
+
+                    <iframe class="MAP" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20359.153255147678!2d3.165719540537278!3d50.36852805927621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2c6167184d777%3A0x40af13e81645fa0!2sMontigny-en-Ostrevent!5e0!3m2!1sfr!2sfr!4v1623908762042!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
                 </div>
-                <img id="map" src="image/montigny3.png" alt="montigny-en-ostrevent"/>        
-                <!-- last footer-->        
-                <div id="copyme">
-                    <p><strong>Copyright 2021 &copy; -</strong> <em>Made in Me :)</em></p>
-                </div>                
-            </footer>         
-        </div>  <!--BLOCK PAGE FOR MARGIN -->               
+            </div>
+        </div>
+        <!-- last footer--> 
+        <footer>
+            <div id="footer-copyright">
+                <p><strong>Copyright 2021 &copy; - </strong> <em> FALVO Enterprise </em> </p>
+            </div>     
+        </footer>          
     </body>
     <!--END-->
 </html>
