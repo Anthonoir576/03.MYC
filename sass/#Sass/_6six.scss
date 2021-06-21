@@ -52,6 +52,7 @@ $centerbanner: #f8f9fb;
                 font-weight: 400;
                 letter-spacing: 10px;
                 font-style: normal;
+                margin-left: 1.8em;
 
             }
 
@@ -107,12 +108,6 @@ $centerbanner: #f8f9fb;
 
         height: 150px;
         margin-bottom: 2em;
-
-    }
-
-    & .buttonsubmit {
-
-        margin: 1em 1.8em;
 
     }
 
@@ -186,9 +181,11 @@ $centerbanner: #f8f9fb;
 // Button Submit
 .buttonsubmit {
 
+    margin: 1em 1.5em;
+
     & button {
 
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
         border: 1.5px solid white;
         border-radius: 10px;
@@ -198,7 +195,7 @@ $centerbanner: #f8f9fb;
         color: white;
         text-align: center;
 
-        padding: 0.5em 0.5em 0.4em 0.5em;
+        padding: 0.5em 0.7em 0.4em 0.7em;
 
         &:hover {
 
@@ -250,6 +247,7 @@ $centerbanner: #f8f9fb;
 
     & .contact-text {
 
+        color: $gray;
 
         & .icontxt {
 
@@ -296,7 +294,7 @@ $centerbanner: #f8f9fb;
 
 
 // FOOTER COPYRIGHT 
-#footer-copyright {
+.footer-copyright {
 
     width: 100%;
     height: auto;

@@ -15,11 +15,11 @@
     </head>
 
     <!--
-        - REVOIR ENCRAGE DU NAV, et VERIF LES ALL LINKS
-        - FINIR LA M.E.P DU SITE 'refonte complete'.
-        - RENAME LES ELEMENTS DANS LE HTML
-
-        - Alert click sur : cv, et autre lien mort a enlever une fois config
+        - config mail 
+        - animation -SCROLL
+                    -effet ecriture pc
+                    -chargement avec acceptation avant page home
+        - Responsive
     -->
 
     <!--1 one-->
@@ -35,22 +35,26 @@
 
                 <!-- Nav MENU --> 
                 <nav class="topbar-nav">
-                    <ul> 
-                        <li><a href="#presentation-picture">En savoir plus...</a></li>
-                        <li><a href="#XPpro--list--left_right">Compétence</a></li>
-                        <li><a href="#myworks-nav-link">Portfolio</a></li>
-                        <li><a href="#footer-copyright">Contact</a></li>
+                    <ul>
+                        <li><a href="#nav-link-1">En savoir plus...</a></li>
+                        <li><a href="#nav-link-2">Compétence</a></li>
+                        <li><a href="#nav-link-3">Portfolio</a></li>
+                        <li><a href="#nav-link-4">Contact</a></li>
                     </ul>
                 </nav>
 
             </div>
 
-            <!-- Text Header LEFT + Picture RIGHT --> 
+            <!-- Text Header LEFT + Picture RIGHT -->
             <div class="header">  
-                <div class="header-text"> 
-                    <h1>FALVO Anthony</h1>
-                    <h2>Étudiant développeur Front-end</h2>
-                    <a href="#footer-copyright"><p>Contactez-moi</p></a>
+                <div class="header-text">
+                    <span class="responsive1">
+                        <h1>FALVO Anthony</h1>
+                        <h2>Étudiant développeur Front-end</h2>
+                    </span>
+                    <span class="responsive1">
+                        <a href="#nav-link-4"><p>Contactez-moi</p></a>
+                    </span>        
                 </div> 
                 <img src="image/photoHEADd.png" class="header-picture" alt="Photo FALVO Anthony"/>    
             </div>
@@ -58,14 +62,13 @@
             <div class="header-arrow">
                 <img src="image/arrow.png" class="arrow" alt="arrow down"/>   
             </div> 
-
         </header>
 
         <!--2 two-->    
         <!-- div type Container -->
         <div class="about">
             <aside>
-                <figure id="about-picture">
+                <figure id="nav-link-1">
                     <img src="image/blocPresentationrefonte.png" alt="Anthony FALVO"/>
                 </figure>
                 <!-- text +  social network's picture -->
@@ -182,7 +185,7 @@
 
         <!--3 three-->
         <main>
-            <div class="EXP">
+            <div class="EXP" id="nav-link-2">
                 <div class="EXP-legend">
                     <h2>Résumé <span>/</span> <em>Experience professionnelle :</em></h2>
                     <h3> Experience globale dans le monde du travail.</h3>
@@ -229,7 +232,7 @@
         </main>
    
         <!--4 four-->
-        <div class="project EXP-legend">
+        <div class="project EXP-legend" id="nav-link-3">
             <h2> Mon travail <span>/</span></h2>
             <strong><a href="#" onclick="return confirm ('En cours de maintenance')">Tous les projets</a><a href="#" onclick="return confirm ('En cours de maintenance')">Projets clients</a><a href="#" id="project-nav-link" onclick="return confirm ('En cours de maintenance')">Projets personnels</a><a href="#" onclick="return confirm ('En cours de maintenance')">Projets études</a></strong>
         </div>
@@ -416,7 +419,7 @@
                   </div>
                   <div class="slider__contents"><img src="image/slide2.jpg" class="slider__image slider__picture" />
                     <h2 class="slider__caption">Technologie de pointe !</h2>
-                    <p class="slider__txt">Utilisation des dernières technologies de pointe !
+                    <p class="slider__txt">Utilisation des dernières technologies de pointe ! <br /><br />
                         Notamment grâce à une passion hors norme et un professionnalisme en veille technologique.</p>
                   </div>
                   <div class="slider__contents"><img src="image/slide3.jpg" class="slider__image slider__picture" />
@@ -439,7 +442,7 @@
         <div class="footer">    
             <div class="footer-legend">
 
-                <h2> Message&thinsp; <span>/</span> <em>&thinsp; Ecrire un petit mot ?</em></h2>
+                <h2> Message&thinsp; <span>/</span> <em> Ecrire un petit mot ?</em></h2>
                 <h3>hésitez pas à m’envoyer un petit message<br/> de soutien, ou de suggestion.
                 Merci :)</h3>
 
@@ -501,7 +504,7 @@
         </div>
         <!-- last footer--> 
         <footer>
-            <div id="footer-copyright">
+            <div class="footer-copyright" id="nav-link-4">
                 <p><strong>Copyright 2021 &copy; - </strong> <em> FALVO Enterprise </em> </p>
             </div>     
         </footer>          
