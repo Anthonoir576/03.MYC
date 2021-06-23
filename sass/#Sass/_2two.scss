@@ -1,198 +1,422 @@
 /* - 2 two - */
 
-/* ###### variable | color ###### */
+// property variable
+// variable color
 $bluesky: #6cb0f6;
 $gray: #727272;
+$centerbanner: #f8f9fb;
 
-.container02 {
+// Container ABOUT ME : 
+.about {
+
     display: flex;
-    justify-content: space-between;
-    margin-top: 15em;
-    max-height: 1100px;
-    z-index: 1;
-    /* ###### Picture profil 02 LEFT ###### */
-    #pixProfil02 {
-        margin-right: 2.2em;
-        max-width: 550px;
-        max-height: 938px;
-    }  
+    justify-content: center;
+    margin: 6.5em 10em 10em 10em;
+
+    font-family: 'Josefin Sans', 'Lato', sans-serif;
+
 }
 
-/* ###### text in bottom picture LEFT ###### */
-.pixProfil02--textAndNetworks {
-    font-family: 'Lato', 'Josefin Sans', sans-serif;
-    font-size: 1em;
-    color: #232323;  
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 600px;
-    margin-top: -24.5em;
-    margin-left: 2.4em;
-    & ul {
-        list-style-type: none;  
+// Container --> LEFT
+aside {
+
+    margin-right: 100px;
+
+    & figure {
+
+        margin: 0;
+
     }
-    .ulLEFT {
-        margin-top: 0.75em;
-        font-weight: bold;
-        & > li {
-            margin-top: 1.1em;
-            list-style-type: circle;
-            text-decoration: underline;
-        }    
-    }
-    .ulRIGHT {
-        margin-left: 1.5em;
-        max-width: 220px;
-        & > li {
-            margin-top: 1em;
-        }
-    }       
-}
 
-// delete li style CIRCLE 
-#noStyle {
-    list-style-type: none;
-    text-decoration: none;
-}
+    & .about-text_networks {
 
-/* ###### link social network's LEFT ###### */
-.Rsociaux {
-    display: flex;
-    z-index: 2;
-    max-width: 650px;
-    margin-top: 3.5em;
-    margin-left: 1.7em;
+        width: 470px;
     
-    & a {
-        margin-right: 5.8em;
-    }
-    /* ##### effect dark / light ##### */
-    & img {
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-    }
-    & img:hover {
-        transform: scale(1.2);
-        filter: grayscale(0%);
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        filter: saturate(200%);
-        -webkit-filter: saturate(200%);
-    }
-    /* ###### NO MARGIN ###### */
-    #Nomarge2 {
-        margin-right: -8em;
+        border: 1px solid white;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 2px 5px 20px 0px rgb(11, 50, 94, .20);
+    
+        margin-top: -5px;
+    
+        & .about-text {
+    
+            width: 470px;
+            padding: 30px 0 0 35px;
+            border-spacing: 5px 0.5rem;
+            
+            font-family: 'Lato', 'Josefin Sans', sans-serif;
+            font-weight: 400;
+
+            & strong {
+
+                font-weight: 900;
+                text-decoration: underline;
+                text-underline-position: under;
+                text-align: left;
+
+            }
+
+        }
+
+        & hr {
+
+            width: 90%;
+            opacity: .2;
+            margin: 45px 20px 0 23px;
+            text-align: center;
+
+        }
+
+        & .about-networks {
+    
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0 15px 0;
+
+            /* ##### effect dark / light ##### */
+            & img {
+                filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+                -ms-filter: grayscale(100%);
+                -o-filter: grayscale(100%);
+            }
+            & img:hover {
+                transform: scale(1.1);
+                filter: grayscale(0%);
+                -webkit-filter: grayscale(0%);
+                -moz-filter: grayscale(0%);
+                -ms-filter: grayscale(0%);
+                -o-filter: grayscale(0%);
+                filter: saturate(200%);
+                -webkit-filter: saturate(200%);
+
+            }
+    
+        }
     }
 }
 
-/* ###### ALL TEXT RIGHT ###### */
+// Container --> RIGHT
 article {
-    max-width: 580px;
-    max-height: 900px;
+
+    padding: 94px 0 0 0;
+
+    width: 700px;
+    height: 900px;
+
+    & .aboutMe {
+
+        
+        & h2 {
+
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+            
+            letter-spacing: 10px;
+            white-space: nowrap;
+
+        }
+
+        & h3 {
+
+            font-size: 22px;
+            font-weight: 400;
+            margin: 35px 0 43px 0;
+            color: $gray;
+
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px 10px;
+            width: 342px;
+
+        }
+
+        & h4 {
+
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0px 0 38px 0;
+            color: $gray;
+            width: 220px;
+
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px 10px;
+
+        }
+
+        & > p {
+
+            margin: 0 0 0 0;
+            height: 190px;
+            text-align: justify;
+            color: $gray;
+            font-weight: 300;
+
+        }
+
+    }
 }
 
-#textAll {
+// SKILL BAR ANIMATION <-- Container RIGHT
+.skill-bars {
+
+    padding: 0px 30px 15px 30px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+
+
+    ::selection {
+
+        color: #fff;
+        background: $bluesky;
     
-    margin-top: 5.8em;
-    & > p {
-    color: $gray;
-    font-size: 0.9em;
-    font-weight: 350;
-    text-align: justify;
-    max-width: 552px;
-    max-height: 135px;
     }
-    & > h2 {
-    font-size: 2.8em;
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-    font-weight: 700;
+    
+    & .bar {
+    
+        margin: 15px 0;
+
+        &:first-child {
+    
+            margin-top: 0px;
+        
+        }
+
+        & .info {
+    
+            margin-bottom: 25px;
+        
+        }
+        
+        & .info span {
+        
+            font-weight: 200;
+            font-size: 16px;
+            opacity: 0;
+            animation: showText 0.5s 1s linear forwards;
+        
+        }
+
+        & .progress-line {
+    
+            height: 4px;
+            width: 100%;
+            background: #f0f0f0;
+            position: relative;
+            transform: scaleX(0);
+            transform-origin: left;
+            border-radius: 10px;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                        0 1px rgba(255,255,255,0.8);
+            animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+        
+        }
+    
     }
-}
-
-.textTwo {
-    margin-bottom: 2em;
-    font-size: 1.25em;
-    color: #686868;
-    font-weight: 400;
-}
-
-.textThree {
-    margin-top: 2em;
-    margin-bottom: 0.5em;
-    font-size: 1.8em;
-}
-
-/* ###### Picture [ % ] and skill text ###### */
-#blockTextAndPix {
-    max-height: 330px;
-    & img {
-        margin-top: 2.3em;
+    
+    @keyframes showText {
+    
+        100% {
+    
+            opacity: 1;
+    
+        }
     }
-}
-
-#skillText {
-    display: block;
-    position: relative;
-    bottom: 21em;
-    & p {
-        margin-top: 3.9em;
+     
+    @keyframes animate {
+    
+        100% {
+    
+            transform: scaleX(1);
+    
+        }
+    }
+    
+    .bar .progress-line span {
+    
+        height: 100%;
+        position: absolute;
+        border-radius: 10px;
+        transform: scaleX(0);
+        transform-origin: left;
+        background: $bluesky;
+        box-shadow: 0 1px 15px 0px $bluesky;
+        animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    
+    }
+    
+    .bar .progress-line.htmlcss span {
+    
+        width: 90%;
+    
+    }
+    
+    .bar .progress-line.js span {
+    
+        width: 40%;
+    
+    }
+    
+    .bar .progress-line.sql span {
+    
+        width: 25%;
+    
+    }
+    
+    .bar .progress-line.design span {
+    
+        width: 95%;
+    
+    }
+    
+    .progress-line span::before {
+    
+        position: absolute;
+        content: "";
+        top: -10px;
+        right: 0;
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-top-color: $bluesky;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+    
+    }
+    
+    .progress-line span::after {
+    
+        position: absolute;
+        top: -28px;
+        right: 0;
         font-weight: 300;
-        font-style: oblique;
-        color: #616161;
+        background: $bluesky;
+        box-shadow: 0 0 4px 0 $bluesky;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 13px;
+        border-radius: 3px;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+    
     }
+    
+    @keyframes showText2 {
+    
+        100% {
+    
+            opacity: 1;
+    
+        }
+    }
+    
+    .progress-line.htmlcss span::after {
+    
+        content: "90 %";
+    
+    }
+    
+    .progress-line.js span::after {
+    
+        content: "40 %";
+    
+    }
+    
+    .progress-line.sql span::after {
+    
+        content: "25 %";
+    
+    }
+    
+    .progress-line.design span::after {
+    
+        content: "95 %";
+    
+    }
+    
+    .nameskill {
+    
+        position: relative;
+        top: 18px;
+        color: #727272;
+
+    }
+    
 }
 
-/* ###### download button cv ###### */
-.downloadCV {
-    text-align: center;
-    background-color: $bluesky;
-    border-radius: 50px;
-    width: 165px;
-    height: 50px;
-    color: white;
-    box-shadow: 0px 0px 5px $bluesky; 
-    transform: scale(1);
-    transition: transform 300ms;
-    @keyframes balancierdl {
-        25% {        
-            transform: translateX(2%);
-        }
-        75% {        
-            transform: translateX(2% * -1);
-        }
-    }
-    & p {
-        font-size: 1em;
-        font-weight: 600;
-        margin-top: 3.5em;
-        padding-top: 1em;
-        color: #ffffff;
-    }
-    & a:hover {
-        color: $bluesky;
+// download CV button <-- Container RIGHT
+.aboutMe-downloadcv {
+
+    & a {
+
+        display: block;
+        
+        margin: 1.8em 0 0 0;
+        max-width: 170px;
+        max-height: 80px;
+
+        font-size: 17px;
+        font-weight: 400;
+        border: 1.5px solid white;
+        border-radius: 10px;
+        background-color: $bluesky;
+        color: white;
+        text-align: center;
         text-decoration: none;
-        font-size: 1.015em;
-        filter: saturate(200%);
-        -webkit-filter: saturate(200%);      
-    }   
-    &:hover {
-        box-shadow: 0px 0px 15px $bluesky;
-        transform: scale(1.05);
-        animation: balancierdl 100ms cubic-bezier(.4,.1,.6,.9) 2;
-        filter: saturate(200%);
-        -webkit-filter: saturate(200%);
+
+        & p {
+
+            text-align: center;
+            margin: 0;
+            padding: 16px 15px;
+            color: white;
+            font-weight: 600;
+
+        }
+
+        &:hover {
+
+            transform: scale(1.1);
+            box-shadow: 0px 0px 30px 0px $bluesky;
+            filter: saturate(900%);
+            -webkit-filter: saturate(300%); 
+
+
+            // EFFECT ROTATION BUTTON
+            -webkit-transform-origin: top center;
+            -ms-transform-origin: top center;
+            transform-origin: top center;
+            -webkit-animation-name: swing;
+            animation-name: swing;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        
+            @keyframes swing {
+
+                20% {
+                -webkit-transform: rotate3d(0, 0, 1, 15deg);
+                transform: rotate3d(0, 0, 1, 15deg);
+                }
+                40% {
+                -webkit-transform: rotate3d(0, 0, 1, -10deg);
+                transform: rotate3d(0, 0, 1, -10deg);
+                }
+                60% {
+                -webkit-transform: rotate3d(0, 0, 1, 5deg);
+                transform: rotate3d(0, 0, 1, 5deg);
+                }
+            }
+        }  
     }
-    & a:link {
-        color: #ffffff;
-        text-decoration: none;      
-    }
-    & a:visited {
-        color: #ffffff;
-    }
+
 }
+

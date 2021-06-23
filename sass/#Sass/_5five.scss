@@ -1,26 +1,234 @@
 /* - 5 five - */
 
-/* ###### variable | color ###### */
+// variable color
 $bluesky: #6cb0f6;
 $gray: #727272;
+$centerbanner: #f8f9fb;
 
-/*
-#footerbanner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    bottom: 93em;
-    z-index: 1;
+.cover {
+
+    background: linear-gradient(60deg, #ffdc80, #fcaf45, #f77737, #f56040, #FD1D1D, #E1306C, #c13584 60%, #833AB4, #5851db , #405DE6 120%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-width: 100vw;
+    height: 85vh;
+    min-height: 925px;
+
 }
-*/
 
-/* ###### (img) three point ###### */
+// test  
+.slider__container {
 
-#Petitpoint {
-    display: flex;
-    position: relative;
-    z-index: 2;
-    float: right;
-    top: 60em;
-    right: 35.5em;
+  height: 100%;
+  position: relative;
+  top: -3.5em;               // A Vérifier 
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+}
+
+.slider__nav {
+
+  width: 12px;
+  height: 12px;
+  margin: 2rem 12px;
+  border-radius: 50%;
+  z-index: 10;
+  outline: 6px solid rgb(255, 255, 255);
+  outline-offset: -6px;
+  box-shadow: 0 0 0 0 rgba(108, 176, 246), 0 0 0 0 rgba(108, 176, 246, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.slider__nav:checked {
+
+  -webkit-animation: check 0.4s linear forwards;
+  animation: check 0.4s linear forwards;
+
+}
+
+.slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+
+  left: 0%;
+
+}
+
+.slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+
+  left: -100%;
+
+}
+
+.slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+
+  left: -200%;
+
+}
+
+.slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+
+  left: -300%;
+
+}
+
+// ALL SLIDE
+.slider__inner {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+
+}
+
+// CONTENT SLIDE
+.slider__contents {
+
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+}
+
+// INPUT COLOR
+.slider__image {
+
+  font-size: 2.7rem;
+  color: #2196F3;
+
+}
+
+// TITLE
+.slider__caption {
+
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  color: $bluesky;
+  line-height: 1.4em;
+  
+
+  &::after {
+
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $bluesky;
+
+    margin: 1em 0 0.5em 0;
+    
+
+
+  }
+
+}
+
+// TEXTE
+.slider__txt {
+
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-bottom: 3rem;
+  max-width: 415px;
+  font-weight: 300;
+
+  line-height: 1.2em;
+
+}
+
+@-webkit-keyframes check {
+
+  50% {
+
+  outline-color: $bluesky;
+  box-shadow: 0 0 0 12px $bluesky, 0 0 0 36px rgba(108, 176, 246, 0.2);
+
+  }
+
+  100% {
+
+  outline-color: $bluesky;
+  box-shadow: 0 0 0 0 $bluesky, 0 0 0 0 rgba(108, 176, 246, 0);
+
+  }
+}
+
+@keyframes check {
+
+  50% {
+
+  outline-color: $bluesky;
+  box-shadow: 0 0 0 10px $bluesky, 0 0 0 36px rgba(108, 176, 246, 0.2);
+
+  }
+
+  100% {
+
+  outline-color: $bluesky;
+  box-shadow: 0 0 0 0 $bluesky, 0 0 0 0 rgba(108, 176, 246, 0);
+
+  }
+}
+
+// PICTURE
+.slider__picture  {
+
+  max-width: 250px;
+  max-height: auto;
+  border-radius: 50%;
+  border: 2px solid $bluesky;
+
 }
