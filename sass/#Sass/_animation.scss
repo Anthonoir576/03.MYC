@@ -1,0 +1,149 @@
+.reveal-L { 
+
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+
+}
+
+.reveal-R {
+
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+
+}
+
+.reveal-visible-L {
+
+    opacity: 1;
+    transform: none;
+    transition: 1500ms cubic-bezier(.5, 0, 0, 1);
+
+}
+
+.reveal-visible-R {
+
+    opacity: 1;
+    transform: none;
+    transition: 1500ms cubic-bezier(.5, 0, 0, 1);
+
+}
+
+
+/*
+
+    
+.reveal-visible {
+
+    opacity: 1;
+    transform: translateY(0);
+    transition: 2s cubic-bezier(.5, 0, 0, 1);
+
+}
+
+.reveal-visible-L {
+
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+    @-webkit-keyframes fadeInLeft {
+
+        0% {
+
+            opacity: 0;
+            -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+
+        } 100% {
+
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        
+        }
+    }
+
+    @keyframes fadeInLeft {
+        0% {
+
+            opacity: 0;
+            -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+
+        } 100% {
+
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+
+        }
+    } 
+
+
+.reveal-visible-R {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+    @-webkit-keyframes fadeInRight {
+
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(200%, 0, 0);
+            transform: translate3d(200%, 0, 0);
+        }
+
+        100% {
+
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+
+        }
+    }
+
+    @keyframes fadeInRight {
+        0% {
+
+            opacity: 0;
+            -webkit-transform: translate3d(200%, 0, 0);
+            transform: translate3d(200%, 0, 0);
+
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    } 
+
+
+*/
+
+// Effect progress bar on scroll
+.valide .bar .progress-line span {
+        
+    display: block;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: $bluesky;
+    box-shadow: 0 1px 15px 0px $bluesky;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+
+}
+

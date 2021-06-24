@@ -8,18 +8,17 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
-
-        <script src="js/script.js"></script>
-                
+        
         <title>FalvoEnterprise.com</title>
     </head>
 
     <!--
         - config mail 
-        - animation -SCROLL
+        - animation -SCROLL (EN COURS) faire des delais et finir
                     -effet ecriture pc
                     -chargement avec acceptation avant page home
-        - Responsive
+                    
+        - correction img 1er screen trop petite sur 15 pouces
     -->
 
     <!--1 one-->
@@ -67,7 +66,7 @@
         <!--2 two-->    
         <!-- div type Container -->
         <div class="about">
-            <aside>
+            <aside class="reveal-loaded reveal-L">
                 <figure id="nav-link-1">
                     <img src="image/blocPresentationrefonte.png" alt="Anthony FALVO"/>
                 </figure>
@@ -126,7 +125,7 @@
             </aside>
 
             <!-- Article text -->
-            <article>
+            <article class="reveal-loaded reveal-R">
                 <div class="aboutMe">                      
                     <h2>FALVO Anthony</h2>
                     <h3>Étudiant développeur Front-end</h3>                  
@@ -141,7 +140,7 @@
                     </p>                
                     <h4>&bull; Mes compétences</h4>                            
                     
-                    <div class="skill-bars">
+                    <div class="skill-bars invalide">
                         <div class="bar">
                             <div class="info">
                                 <span class="nameskill">HTML 5 / CSS 3 / Animation CSS</span>
@@ -507,7 +506,9 @@
             <div class="footer-copyright" id="nav-link-4">
                 <p><strong>Copyright 2021 &copy; - </strong> <em> FALVO Enterprise </em> </p>
             </div>     
-        </footer>          
+        </footer>  
+
+        <script type="text/javascript" src="js/script.js"></script>            
     </body>
     <!--END-->
 </html>

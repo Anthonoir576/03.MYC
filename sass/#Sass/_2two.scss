@@ -169,6 +169,7 @@ article {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
     border-radius: 10px;
 
+    
 
     ::selection {
 
@@ -237,8 +238,11 @@ article {
         }
     }
     
+    // OFF default ON on scroll
     .bar .progress-line span {
-    
+        
+        display: none;
+
         height: 100%;
         position: absolute;
         border-radius: 10px;
@@ -383,7 +387,7 @@ article {
 
         &:hover {
 
-            transform: scale(1.1);
+            transform: scale(1.05);
             box-shadow: 0px 0px 30px 0px $bluesky;
             filter: saturate(900%);
             -webkit-filter: saturate(300%); 

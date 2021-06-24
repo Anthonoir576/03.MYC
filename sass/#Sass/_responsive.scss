@@ -1040,7 +1040,7 @@ $centerbanner: #f8f9fb;
             height: auto;
             
             min-width: 400px;
-            max-width: 500px;
+            max-width: 550px;
           
         
         }
@@ -3759,9 +3759,19 @@ $centerbanner: #f8f9fb;
 
         & > a {
 
+
+
             & p {
         
                 font-size: 12px;
+
+                &:hover {
+    
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 30px 0px $bluesky;
+                    filter: saturate(900%);
+                    -webkit-filter: saturate(300%); 
+                }    
 
             }
         
