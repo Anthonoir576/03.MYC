@@ -129,7 +129,7 @@ article {
             border: 1px solid rgba(0, 0, 0, 0.2);
             border-radius: 5px;
             padding: 10px 10px;
-            width: 342px;
+            width: 252px;
 
         }
 
@@ -139,7 +139,7 @@ article {
             font-weight: 400;
             margin: 0px 0 38px 0;
             color: $gray;
-            width: 220px;
+            width: 198px;
 
             border: 1px solid rgba(0, 0, 0, 0.2);
             border-radius: 5px;
@@ -406,18 +406,21 @@ article {
         
             @keyframes swing {
 
-                20% {
-                -webkit-transform: rotate3d(0, 0, 1, 15deg);
-                transform: rotate3d(0, 0, 1, 15deg);
-                }
-                40% {
-                -webkit-transform: rotate3d(0, 0, 1, -10deg);
-                transform: rotate3d(0, 0, 1, -10deg);
-                }
-                60% {
+            20% {
                 -webkit-transform: rotate3d(0, 0, 1, 5deg);
                 transform: rotate3d(0, 0, 1, 5deg);
                 }
+
+            40% {
+                -webkit-transform: rotate3d(0, 0, 1, -5deg);
+                transform: rotate3d(0, 0, 1, -5deg);
+                }
+
+            60% {
+                -webkit-transform: rotate3d(0, 0, 1, 2.5deg);
+                transform: rotate3d(0, 0, 1, 2.5deg);
+                }
+                
             }
         }  
     }

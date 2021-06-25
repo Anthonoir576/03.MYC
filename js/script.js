@@ -545,7 +545,7 @@ window.addEventListener('DOMContentLoaded', function () {
 class TextScramble {
     constructor(el) {
       this.el = el;
-      this.chars = '0110001010';
+      this.chars = '01101010';
       this.update = this.update.bind(this);
     }
   
