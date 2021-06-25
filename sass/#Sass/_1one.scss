@@ -6,14 +6,14 @@ $bluesky: #6cb0f6;
 $gray: #727272;
 $centerbanner: #f8f9fb;
 
-// global property -- ( propriété de l'ensemble du doc )
+// Border BOX
 * {
 
     box-sizing: border-box;
     
 }
 
-// SCROLL BAR (a revoir !) 
+// SCROLL BAR
 ::-webkit-scrollbar {
 
     width: 8px;
@@ -22,26 +22,26 @@ $centerbanner: #f8f9fb;
 }
 ::-webkit-scrollbar-thumb {
 
-// #e66465 14% FIRST COLOR
-// background: linear-gradient(13deg, #9198E5 14%,#9198E5 64%);
-background: linear-gradient(13deg, $bluesky 14%, $bluesky 64%);
-border-radius: 10px;
+    // #e66465 14% FIRST COLOR
+    // background: linear-gradient(13deg, #9198E5 14%,#9198E5 64%);
+    background: linear-gradient(13deg, $bluesky 14%, $bluesky 64%);
+    border-radius: 10px;
 
 }
 ::-webkit-scrollbar-thumb:hover{
 
-background: linear-gradient(13deg, #c7ceff 14%, 64%);
+    background: linear-gradient(13deg, #c7ceff 14%, 64%);
 
 }
 ::-webkit-scrollbar-track{
 
-background: hsl(0, 0%, 100%);
-border-radius: 10px;
-box-shadow: inset 7px 10px 12px #f0f0f0;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
 
 }
 
-// property of HTML / BODY -- ( propriété du body )
+// Little reset CSS
 html, body {
 
     // cut default margin and padding
@@ -53,7 +53,7 @@ html, body {
 
 }
 
-// HEADER config - background and size -- ( Fond d'écran personnalisé )
+// HEADER config - background and size -
 header {
 
     //background-image: url(../image/headerbanner.png);
@@ -84,7 +84,7 @@ header {
 
 
 
-// LOGO config -- (logo en haut a gauche)
+// - LOGO config -
 .topbar-logo {
 
     display: flex;
@@ -113,7 +113,7 @@ header {
 
 }
 
-// NAV config -- (barre de navigation)
+// - NAV config -
 // fake double topbar. I used it to create the same type of content as the header so as not to use the margins
 .topbar-nav::before {
 
@@ -195,7 +195,7 @@ header {
 
 
 
-// HEADER - TEXT and PICTURE config -- (photo + description)
+// HEADER - TEXT and PICTURE config -
 .header {
 
     display: flex;
@@ -298,7 +298,7 @@ header {
 
 }
 
-// Effect picture HEADER
+// Effect - picture HEADER - and config
 .header-picture {
 
     // EFFET sur la photo / prend pas en compte le box, mais le contour de la photo sans transparence
@@ -313,7 +313,7 @@ header {
     
 }
 
-// ASIDE arrow content config -- (fleche d'animation)
+// ASIDE - arrow content config -
 .header-arrow {
 
     display: flex;
@@ -331,7 +331,7 @@ header {
 
 }
 
-// ANIMATION arrow 
+// - ANIMATION arrow -
 .header-arrow img {
 
     

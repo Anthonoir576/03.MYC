@@ -13,17 +13,22 @@
     </head>
 
     <!--
+                                                      CONSIGNE :
+
+
+        - refont logo perso
         - config mail 
-        - animation -SCROLL (EN COURS) faire des delais et finir
+        - animation -SCROLL a revoir probleme au responsive
                     -effet ecriture pc
                     -chargement avec acceptation avant page home
                     
-        - correction img 1er screen trop petite sur 15 pouces
+        - correction et minimification du responsive
+        - Enlever annotation au max du scss html js
     -->
 
     <!--1 one-->
     <body>
-        <header>
+        <header class="reveal-background">
             <div class="topbar">
 
                 <!-- Logo + text Af. -->
@@ -116,10 +121,10 @@
                     </table>
                     <hr />
                     <div class="about-networks">
-                        <div><a href="https://www.facebook.com/anthony.falvo.399/"><img src="image/f.png" alt="reseaux sociaux"/></a></div>
-                        <div><a href="https://www.linkedin.com/in/anthony-falvo-25657020a/"><img src="image/lkn.png" alt="reseaux sociaux"/></a></div>
-                        <div><a href="https://www.freecodecamp.org/anthonoir576"><img src="image/fcc.png" alt="reseaux sociaux"/></a></div>
-                        <div><a href="https://github.com/Anthonoir576" id="Nomarge2"><img src="image/gthb2.png" alt="reseaux sociaux"/></a></div>
+                        <div><a href="https://www.facebook.com/anthony.falvo.399/"><img class="reveal-loaded effectLight01" src="image/f.png" alt="reseaux sociaux" /></a></div>
+                        <div><a href="https://www.linkedin.com/in/anthony-falvo-25657020a/"><img class="reveal-loaded effectLight02" src="image/lkn.png" alt="reseaux sociaux" /></a></div>
+                        <div><a href="https://www.freecodecamp.org/anthonoir576"><img class="reveal-loaded effectLight03" src="image/fcc.png" alt="reseaux sociaux" /></a></div>
+                        <div><a href="https://github.com/Anthonoir576" id="Nomarge2"><img class="reveal-loaded effectLight04" src="image/gthb2.png" alt="reseaux sociaux" /></a></div>
                     </div>       
                 </div>
             </aside>
@@ -127,7 +132,7 @@
             <!-- Article text -->
             <article class="reveal-loaded reveal-R">
                 <div class="aboutMe">                      
-                    <h2>FALVO Anthony</h2>
+                    <h2 class="reveal-loaded reveal-R--title">FALVO Anthony</h2>
                     <h3>Étudiant développeur Front-end</h3>                  
                     <p>Étudiant en développement front-end, basé sur les éléments :
                     HTML 5, CSS 3, JavaScript ainsi que les connaissances basique sur la partie back -end,
@@ -140,7 +145,7 @@
                     </p>                
                     <h4>&bull; Mes compétences</h4>                            
                     
-                    <div class="skill-bars invalide">
+                    <div class="skill-bars reveal-loaded invalide">
                         <div class="bar">
                             <div class="info">
                                 <span class="nameskill">HTML 5 / CSS 3 / Animation CSS</span>
@@ -184,14 +189,14 @@
 
         <!--3 three-->
         <main>
-            <div class="EXP" id="nav-link-2">
+            <div class="EXP reveal-background-2" id="nav-link-2">
                 <div class="EXP-legend">
-                    <h2>Résumé <span>/</span> <em>Experience professionnelle :</em></h2>
-                    <h3> Experience globale dans le monde du travail.</h3>
+                    <h2 class="reveal-loaded reveal-L">Résumé <span>/</span> <em class="reveal-loaded reveal-L">Experience professionnelle :</em></h2>
+                    <h3 class="reveal-loaded reveal-POP-2"> Experience globale dans le monde du travail.</h3>
                 </div>
                 <div id="EXP-list">                
-                    <div class="EXP-list-L">
-                        <h4>&bull; Experience :</h4>
+                    <div class="EXP-list-L reveal-loaded reveal-L">
+                        <h4 class="reveal-loaded reveal-L--title">&bull; Experience :</h4>
                         <div class="EXP-items"> 
                             <img src="image/icon01.png" alt="icon book"/>
                             <p><strong>2019 - 2021</strong><br/>
@@ -208,8 +213,8 @@
                             Armée de terre, BTP, et logistique.</p>
                         </div>  
                     </div>
-                    <div class="EXP-list-R">
-                        <h4>&bull; Formation :</h4>
+                    <div class="EXP-list-R reveal-loaded reveal-R">
+                        <h4 class="reveal-loaded reveal-R--title">&bull; Formation :</h4>
                         <div class="EXP-items">
                             <img src="image/icon01.png" alt="icon book"/>
                             <p><strong>2021 - Développeur web</strong><br/>
@@ -232,8 +237,8 @@
    
         <!--4 four-->
         <div class="project EXP-legend" id="nav-link-3">
-            <h2> Mon travail <span>/</span></h2>
-            <strong><a href="#" onclick="return confirm ('En cours de maintenance')">Tous les projets</a><a href="#" onclick="return confirm ('En cours de maintenance')">Projets clients</a><a href="#" id="project-nav-link" onclick="return confirm ('En cours de maintenance')">Projets personnels</a><a href="#" onclick="return confirm ('En cours de maintenance')">Projets études</a></strong>
+            <h2 class="reveal-loaded reveal-L"> Mon travail <span>/</span></h2>
+            <strong class="reveal-loaded reveal-R"><a href="#" onclick="return confirm ('En cours de maintenance')">Tous les projets</a><a href="#" onclick="return confirm ('En cours de maintenance')">Projets clients</a><a href="#" id="project-nav-link" onclick="return confirm ('En cours de maintenance')">Projets personnels</a><a href="#" onclick="return confirm ('En cours de maintenance')">Projets études</a></strong>
         </div>
 
         <!-- CONTENT MY WEB PROJECT-->
@@ -246,7 +251,7 @@
             <input type="radio" class="inputNONE" id="s-6" name="slider-control">
             <input type="radio" class="inputNONE" id="s-7" name="slider-control">
 
-            <div class="slider">
+            <div class="slider reveal-loaded reveal-L">
 
                 <figure class="slider_item img-1">
                     <div class="slider_img">
@@ -254,7 +259,7 @@
                         <!--<img class="iconNew" src="image/iconnew.png" alt="icon new project" />-->
                     </div>
                     
-                    <figcaption class="caption">
+                    <figcaption class="caption reveal-loaded reveal-L--title">
                         <h3 class="h3"><div class="c-label">N&deg; 1</div><br class="view-sm mb-s">Projet d'étude n&deg; 02 'GRAFIKART'</h3>
                         <div class="moreinfo">
                             <ul class="credit">
@@ -262,7 +267,7 @@
                                 <li>Projet d'étude numéro 02 sur le site de <a href="https://grafikart.fr/" target="_blank"> grafikart </a>:</li>
                                 <li>THÈME : Réalisez un site web de type réseau social</li>        
                             </ul>
-                            <a href="https://youtu.be/kyayc5eI_k8" target="_blank"><p> En savoir plus </p></a>
+                            <a href="https://youtu.be/kyayc5eI_k8" target="_blank"><p class="reveal-loaded reveal-R--title-2"> En savoir plus </p></a>
                         </div>
                     </figcaption>
                 </figure>
@@ -400,35 +405,35 @@
         </div>    
  
         <!--5 five-->          
-        <div class="cover">
+        <div class="cover reveal-background">
 
             <div class="slider__container">
-                <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-                <input type="radio" name="slider" title="slide2" class="slider__nav"/>
-                <input type="radio" name="slider" title="slide3" class="slider__nav"/>
-                <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+                <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav reveal-loaded reveal-POP-2"/>
+                <input type="radio" name="slider" title="slide2" class="slider__nav reveal-loaded reveal-POP-2"/>
+                <input type="radio" name="slider" title="slide3" class="slider__nav reveal-loaded reveal-POP-2"/>
+                <input type="radio" name="slider" title="slide4" class="slider__nav reveal-loaded reveal-POP-2"/>
 
                 <!-- Slider picture About me : -->
                 <div class="slider__inner">
-                  <div class="slider__contents"><img src="image/slide1.jpg" class="slider__image slider__picture" />
-                    <h2 class="slider__caption">Développeur passionné</h2>
-                    <p class="slider__txt">Marre des développeurs qui ont toujours la "flemme" ? Vos dev's, disparaissent comme par magie, lorsqu'une nouvelle tâche est demandée ?<br /><br />
+                  <div class="slider__contents"><img src="image/slide1.jpg" class="slider__image slider__picture reveal-loaded reveal-L" />
+                    <h2 class="slider__caption reveal-loaded reveal-R--title">Développeur passionné</h2>
+                    <p class="slider__txt reveal-loaded reveal-L--title-2">Marre des développeurs qui ont toujours la "flemme" ? Vos dev's, disparaissent comme par magie, lorsqu'une nouvelle tâche est demandée ?<br /><br />
                         N'attendait plus !<br /><br />
                         Travaillez maintenant, avec un vrai passionné !</p>
                   </div>
-                  <div class="slider__contents"><img src="image/slide2.jpg" class="slider__image slider__picture" />
-                    <h2 class="slider__caption">Technologie de pointe !</h2>
-                    <p class="slider__txt">Utilisation des dernières technologies de pointe ! <br /><br />
+                  <div class="slider__contents"><img src="image/slide2.jpg" class="slider__image slider__picture reveal-loaded reveal-L" />
+                    <h2 class="slider__caption reveal-loaded reveal-R--title">Technologie de pointe !</h2>
+                    <p class="slider__txt reveal-loaded reveal-L--title-2">Utilisation des dernières technologies de pointe ! <br /><br />
                         Notamment grâce à une passion hors norme et un professionnalisme en veille technologique.</p>
                   </div>
-                  <div class="slider__contents"><img src="image/slide3.jpg" class="slider__image slider__picture" />
-                    <h2 class="slider__caption">Espace de travail <br /> professionnelle</h2>
-                    <p class="slider__txt">La pointe de la technologie en matière de hardware,
+                  <div class="slider__contents"><img src="image/slide3.jpg" class="slider__image slider__picture reveal-loaded reveal-L" />
+                    <h2 class="slider__caption reveal-loaded reveal-R--title">Espace de travail <br /> professionnelle</h2>
+                    <p class="slider__txt reveal-loaded reveal-L--title-2">La pointe de la technologie en matière de hardware,
                     software, et confort de travail.<br /><br /> Afin d'optimiser les performances sur vos projets.</p>
                   </div>
-                  <div class="slider__contents"><img src="image/slide4.jpg" class="slider__image slider__picture" />
-                    <h2 class="slider__caption">Allons boire un café ?</h2>
-                    <p class="slider__txt">Les entretiens d'embauche sont dépassés !<br /><br />
+                  <div class="slider__contents"><img src="image/slide4.jpg" class="slider__image slider__picture reveal-loaded reveal-L" />
+                    <h2 class="slider__caption reveal-loaded reveal-R--title">Allons boire un café ?</h2>
+                    <p class="slider__txt reveal-loaded reveal-L--title-2">Les entretiens d'embauche sont dépassés !<br /><br />
                         Prenons un café et voyons comment faire progresser votre entreprise.
                      </p>
                   </div>
@@ -441,8 +446,8 @@
         <div class="footer">    
             <div class="footer-legend">
 
-                <h2> Message&thinsp; <span>/</span> <em> Ecrire un petit mot ?</em></h2>
-                <h3>hésitez pas à m’envoyer un petit message<br/> de soutien, ou de suggestion.
+                <h2 class="reveal-loaded reveal-L"> Message&thinsp; <span>/</span> <em class="reveal-loaded reveal-R--title"> Ecrire un petit mot ?</em></h2>
+                <h3 class="reveal-loaded reveal-POP">hésitez pas à m’envoyer un petit message<br/> de soutien, ou de suggestion.
                 Merci :)</h3>
 
             </div>            
@@ -450,7 +455,7 @@
             
             <div class="footer-form_contact">
 
-                <form class="formulaire" action="traitement.php" method="post">
+                <form class="formulaire reveal-loaded reveal-L--title-3" action="traitement.php" method="post">
                     <div class="spaceform">
                         <input type="text" required id="name" name="user_name" minlength="3" maxlength="20" 
                         pattern="^[( )a-zA-Z]+$" placeholder="&ensp; Noms *"/>
@@ -475,7 +480,7 @@
                     </div>
                 </form>
 
-                <div class="contact-text_map">
+                <div class="contact-text_map reveal-loaded reveal-R--title-3">
         
                     <div class="contact-text">
                         <div class="icontxt">
@@ -504,7 +509,7 @@
         <!-- last footer--> 
         <footer>
             <div class="footer-copyright" id="nav-link-4">
-                <p><strong>Copyright 2021 &copy; - </strong> <em> FALVO Enterprise </em> </p>
+                <p><strong class="reveal-loaded reveal-POP-2">Copyright 2021 &copy; - </strong> <em class="reveal-loaded reveal-POP-2"> FALVO Enterprise </em> </p>
             </div>     
         </footer>  
 
