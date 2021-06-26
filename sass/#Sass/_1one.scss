@@ -77,6 +77,8 @@ header {
     flex-direction: column;
     justify-content: space-between;
 
+    overflow-x: hidden;
+
 
 }
 
@@ -119,7 +121,7 @@ header {
 
     content: '';
     display: block;
-    width: 400px;
+    width: 540px;
 
 }
 
@@ -225,9 +227,9 @@ header {
 
         & h1 {
 
-            font-size: 55px;
+            font-size: 48px;
             font-weight: 550;
-            margin: 0 0 0.5em 0;
+            margin: 0 0 24px 0;
             min-height: 60px;
             min-width: 550px;
             text-align: start;
@@ -242,7 +244,7 @@ header {
 
             display: block;
             
-            margin: 3.3em 0em 0em 0.2em;
+            margin: 52px 0em 0em 0.2em;
             max-width: 160px;
             
             font-size: 18px;
@@ -253,6 +255,12 @@ header {
             color: $bluesky;
             text-align: center;
             text-decoration: none;
+
+            & p {
+
+                margin: 16px 0;
+
+            }
 
             &:hover {
 
@@ -307,7 +315,7 @@ header {
         font-family: 'Courier New', Courier, monospace;
         font-weight: 100;
         opacity: 0.5;
-        font-size: 45px;
+        font-size: 36px; // 4px decart avec h1
 
     }
 

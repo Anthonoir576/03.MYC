@@ -82,7 +82,7 @@ aside {
                 -o-filter: grayscale(100%);
             }
             & img:hover {
-                transform: scale(1.1);
+                transform: scale(1.5);
                 filter: grayscale(0%);
                 -webkit-filter: grayscale(0%);
                 -moz-filter: grayscale(0%);
@@ -121,29 +121,23 @@ article {
 
         & h3 {
 
-            font-size: 22px;
-            font-weight: 400;
-            margin: 35px 0 43px 0;
+            font-size: 18px;
+            font-weight: 300;
+            margin: 35px 0 60px 0;
             color: $gray;
 
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            padding: 10px 10px;
-            width: 252px;
+            letter-spacing: 10px;
 
         }
 
         & h4 {
 
-            font-size: 22px;
-            font-weight: 400;
-            margin: 0px 0 38px 0;
+            font-size: 18px;
+            font-weight: 300;
+            margin: 30px 0 50px 0;
             color: $gray;
-            width: 198px;
-
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            padding: 10px 10px;
+           
+            letter-spacing: 5px;
 
         }
 

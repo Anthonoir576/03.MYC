@@ -1,5 +1,5 @@
 // ratio scroll 25% visible and pop
-const ratio = .25
+const ratio = .15
 
 const options = {
     root: null,

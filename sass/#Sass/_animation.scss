@@ -9,18 +9,36 @@ $centerbanner: #f8f9fb;
 .reveal-L { 
 
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    transform: translateX(-100%);
 
 }
 
 .reveal-R {
 
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    transform: translateX(100%);
 
 }
+
+// Opacity 1 + animation transition
+.reveal-visible-L {
+
+    opacity: 1;
+    transform: translateX(0);
+    transition: 700ms cubic-bezier(.5, 0, 0, 1);
+
+}
+
+.reveal-visible-R {
+
+    opacity: 1;
+    transform: translateX(0);
+    transition: 700ms cubic-bezier(.5, 0, 0, 1);
+
+}
+
+
+
 
 
 // Background header
@@ -39,68 +57,118 @@ $centerbanner: #f8f9fb;
 
 }
 
+.reveal-visible-background {
+
+    opacity: 1;
+    background: linear-gradient(60deg, #ffdc80, #fcaf45, #f77737, #f56040, #FD1D1D, #E1306C, #c13584 60%, #833AB4, #5851db , #405DE6 120%);
+    transition: 1.5s cubic-bezier(.5, 0, 0, 1);
+
+}
+
+.reveal-visible-background-2 {
+
+    opacity: 1;
+    background: $centerbanner;
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+
+}
+
+
+
+
 
 .reveal-L--title { 
 
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    transform: translateX(-100%);
 
 }
 
 .reveal-R--title {
 
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    transform: translateX(100%);
 
 }
 
 .reveal-L--title-2 { 
 
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    transform: translateX(-100%);
 
 }
 
 .reveal-R--title-2 {
 
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-
+    transform: translateX(100%);
 }
 
 .reveal-L--title-3 { 
 
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    transform: translateX(-100%);
 
 }
 
 .reveal-R--title-3 {
 
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    transform: translateX(100%);
+
+}
+
+.reveal-visible-L--title {
+
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+
+}
+
+.reveal-visible-R--title {
+
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+
+}
+
+.reveal-visible-L--title-2 {
+
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.3s cubic-bezier(.5, 0, 0, 1);
+
+}
+
+.reveal-visible-R--title-2 {
+
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.3s cubic-bezier(.5, 0, 0, 1);
+
+}
+
+.reveal-visible-L--title-3 {
+
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.8s cubic-bezier(.5, 0, 0, 1);
+
+}
+
+.reveal-visible-R--title-3 {
+
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.8s cubic-bezier(.5, 0, 0, 1);
 
 }
 
 
 
-.reveal-POP {
 
-    opacity: 0;
-
-}
-
-.reveal-POP-2 {
-
-    opacity: 0;
-
-}
 
 
 // Effect light social Network's
@@ -166,128 +234,6 @@ $centerbanner: #f8f9fb;
 
 }
 
-
-// Opacity 1 + animation transition
-.reveal-visible-L {
-
-    opacity: 1;
-    transform: none;
-    transition: 1500ms cubic-bezier(.5, 0, 0, 1);
-
-}
-
-.reveal-visible-R {
-
-    opacity: 1;
-    transform: none;
-    transition: 1500ms cubic-bezier(.5, 0, 0, 1);
-
-}
-
-
-
-.reveal-visible-background {
-
-    opacity: 1;
-    background: linear-gradient(60deg, #ffdc80, #fcaf45, #f77737, #f56040, #FD1D1D, #E1306C, #c13584 60%, #833AB4, #5851db , #405DE6 120%);
-    transition: 1.5s cubic-bezier(.5, 0, 0, 1);
-
-}
-
-.reveal-visible-background-2 {
-
-    opacity: 1;
-    background: $centerbanner;
-    transition: 5s cubic-bezier(.5, 0, 0, 1);
-
-}
-
-
-
-.reveal-visible-L--title {
-
-    opacity: 1;
-    transform: none;
-    transition: 1800ms cubic-bezier(.5, 0, 0, 1);
-
-}
-
-.reveal-visible-R--title {
-
-    opacity: 1;
-    transform: none;
-    transition: 1800ms cubic-bezier(.5, 0, 0, 1);
-
-}
-
-.reveal-visible-L--title-2 {
-
-    opacity: 1;
-    transform: none;
-    transition: 3500ms cubic-bezier(.5, 0, 0, 1);
-
-}
-
-.reveal-visible-R--title-2 {
-
-    opacity: 1;
-    transform: none;
-    transition: 3500ms cubic-bezier(.5, 0, 0, 1);
-
-}
-
-.reveal-visible-L--title-3 {
-
-    opacity: 1;
-    transform: none;
-    transition: 4500ms cubic-bezier(.5, 0, 0, 1);
-
-}
-
-.reveal-visible-R--title-3 {
-
-    opacity: 1;
-    transform: none;
-    transition: 4500ms cubic-bezier(.5, 0, 0, 1);
-
-}
-
-
-
-.reveal-visible-POP {
-
-    opacity: 1;
-    transition: 6000ms cubic-bezier(.5, 0, 0, 1);
-
-}
-
-.reveal-visible-POP-2 {
-
-    opacity: 1;
-    transition: 8s cubic-bezier(.5, 0, 0, 1);
-
-}
-
-
-
-// Effect progress bar on scroll
-.valide .bar .progress-line span {
-        
-    display: block;
-    height: 100%;
-    position: absolute;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    background: $bluesky;
-    box-shadow: 0 1px 15px 0px $bluesky;
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-
-}
-
-
-
-
 // Effect light social Network's
 .effectLight01-visible {
 
@@ -341,103 +287,58 @@ $centerbanner: #f8f9fb;
 
 }
 
-/*
 
-    
-.reveal-visible {
+
+
+
+
+.reveal-POP {
+
+    opacity: 0;
+
+}
+
+.reveal-POP-2 {
+
+    opacity: 0;
+
+}
+
+.reveal-visible-POP {
 
     opacity: 1;
-    transform: translateY(0);
-    transition: 2s cubic-bezier(.5, 0, 0, 1);
+    transition: 2.5s cubic-bezier(.5, 0, 0, 1);
 
 }
 
-.reveal-visible-L {
+.reveal-visible-POP-2 {
 
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    opacity: 1;
+    transition: 3s cubic-bezier(.5, 0, 0, 1);
 
 }
 
-    @-webkit-keyframes fadeInLeft {
 
-        0% {
 
-            opacity: 0;
-            -webkit-transform: translate3d(-200%, 0, 0);
-            transform: translate3d(-200%, 0, 0);
 
-        } 100% {
 
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none;
+// Effect progress bar on scroll
+.valide .bar .progress-line span {
         
-        }
-    }
+    display: block;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: $bluesky;
+    box-shadow: 0 1px 15px 0px $bluesky;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 
-    @keyframes fadeInLeft {
-        0% {
-
-            opacity: 0;
-            -webkit-transform: translate3d(-200%, 0, 0);
-            transform: translate3d(-200%, 0, 0);
-
-        } 100% {
-
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none;
-
-        }
-    } 
-
-
-.reveal-visible-R {
-    -webkit-animation-name: fadeInRight;
-    animation-name: fadeInRight;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
 }
 
-    @-webkit-keyframes fadeInRight {
-
-        0% {
-            opacity: 0;
-            -webkit-transform: translate3d(200%, 0, 0);
-            transform: translate3d(200%, 0, 0);
-        }
-
-        100% {
-
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none;
-
-        }
-    }
-
-    @keyframes fadeInRight {
-        0% {
-
-            opacity: 0;
-            -webkit-transform: translate3d(200%, 0, 0);
-            transform: translate3d(200%, 0, 0);
-
-        }
-
-        100% {
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none;
-        }
-    } 
 
 
-*/
+
+
+
