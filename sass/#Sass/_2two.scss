@@ -125,6 +125,8 @@ article {
             font-weight: 700;
             margin: 0;
             
+            max-height: 48px;
+
             letter-spacing: 10px;
             white-space: nowrap;
 
@@ -137,6 +139,8 @@ article {
             margin: 35px 0 60px 0;
             color: $gray;
 
+            max-height: 19px;
+
             letter-spacing: 10px;
 
         }
@@ -147,6 +151,8 @@ article {
             font-weight: 300;
             margin: 30px 0 50px 0;
             color: $gray;
+
+            max-height: 19px;
            
             letter-spacing: 5px;
 
@@ -174,6 +180,7 @@ article {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
     border-radius: 10px;
 
+    max-height: 255px;
     
 
     ::selection {

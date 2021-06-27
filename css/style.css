@@ -555,6 +555,7 @@ article .aboutMe h2 {
   font-size: 48px;
   font-weight: 700;
   margin: 0;
+  max-height: 48px;
   letter-spacing: 10px;
   white-space: nowrap;
 }
@@ -563,6 +564,7 @@ article .aboutMe h3 {
   font-weight: 300;
   margin: 35px 0 60px 0;
   color: #727272;
+  max-height: 19px;
   letter-spacing: 10px;
 }
 article .aboutMe h4 {
@@ -570,6 +572,7 @@ article .aboutMe h4 {
   font-weight: 300;
   margin: 30px 0 50px 0;
   color: #727272;
+  max-height: 19px;
   letter-spacing: 5px;
 }
 article .aboutMe > p {
@@ -586,6 +589,7 @@ article .aboutMe > p {
   background: #fff;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  max-height: 255px;
 }
 .skill-bars ::selection {
   color: #fff;
@@ -2357,7 +2361,7 @@ figcaption {
 @media only screen and (max-width: 1080px) and (min-width: 0px) {
   .about {
     flex-direction: column;
-    margin: 6.5em 1em 8em 1em;
+    margin: 6.5em 1em 15em 1em;
     align-items: center;
   }
 
