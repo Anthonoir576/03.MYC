@@ -524,6 +524,9 @@ aside .about-text_networks .about-networks {
   margin: 20px 0 15px 0;
   /* ##### effect dark / light ##### */
 }
+aside .about-text_networks .about-networks a img:hover {
+  transform: scale(1.1);
+}
 aside .about-text_networks .about-networks img {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -531,7 +534,10 @@ aside .about-text_networks .about-networks img {
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
 }
-aside .about-text_networks .about-networks img:hover {
+aside .about-text_networks .about-networks .effectLight01:hover,
+aside .about-text_networks .about-networks .effectLight02:hover,
+aside .about-text_networks .about-networks .effectLight03:hover,
+aside .about-text_networks .about-networks .effectLight04:hover {
   transform: scale(1.5);
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
@@ -1660,90 +1666,38 @@ figcaption {
 
 .effectLight01 {
   opacity: 0;
-  transform: scale(1.1);
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: saturate(200%);
-  -webkit-filter: saturate(200%);
 }
 
 .effectLight02 {
   opacity: 0;
-  transform: scale(1.1);
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: saturate(200%);
-  -webkit-filter: saturate(200%);
 }
 
 .effectLight03 {
   opacity: 0;
-  transform: scale(1.1);
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: saturate(200%);
-  -webkit-filter: saturate(200%);
 }
 
 .effectLight04 {
   opacity: 0;
-  transform: scale(1.1);
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: saturate(200%);
-  -webkit-filter: saturate(200%);
 }
 
 .effectLight01-visible {
   opacity: 1;
   transition: 5s;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
 }
 
 .effectLight02-visible {
   opacity: 1;
   transition: 7s;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
 }
 
 .effectLight03-visible {
   opacity: 1;
   transition: 9s;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
 }
 
 .effectLight04-visible {
   opacity: 1;
   transition: 11s;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
 }
 
 .reveal-POP {
@@ -1937,90 +1891,38 @@ figcaption {
 
   .effectLight01 {
     opacity: 0;
-    transform: scale(1.1);
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    filter: saturate(200%);
-    -webkit-filter: saturate(200%);
   }
 
   .effectLight02 {
     opacity: 0;
-    transform: scale(1.1);
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    filter: saturate(200%);
-    -webkit-filter: saturate(200%);
   }
 
   .effectLight03 {
     opacity: 0;
-    transform: scale(1.1);
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    filter: saturate(200%);
-    -webkit-filter: saturate(200%);
   }
 
   .effectLight04 {
     opacity: 0;
-    transform: scale(1.1);
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    filter: saturate(200%);
-    -webkit-filter: saturate(200%);
   }
 
   .effectLight01-visible {
     opacity: 1;
     transition: 5s;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
   }
 
   .effectLight02-visible {
     opacity: 1;
     transition: 7s;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
   }
 
   .effectLight03-visible {
     opacity: 1;
     transition: 9s;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
   }
 
   .effectLight04-visible {
     opacity: 1;
     transition: 11s;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
   }
 }
 @media only screen and (max-width: 1200px) {

@@ -73,7 +73,14 @@ aside {
             justify-content: space-around;
             margin: 20px 0 15px 0;
 
-            /* ##### effect dark / light ##### */
+            /* ##### effect dark / light ##### */  
+
+            & a img:hover {
+
+                transform: scale(1.1);
+
+            }
+
             & img {
                 filter: grayscale(100%);
                 -webkit-filter: grayscale(100%);
@@ -81,7 +88,11 @@ aside {
                 -ms-filter: grayscale(100%);
                 -o-filter: grayscale(100%);
             }
-            & img:hover {
+            & .effectLight01:hover,
+              .effectLight02:hover,
+              .effectLight03:hover,
+              .effectLight04:hover {
+
                 transform: scale(1.5);
                 filter: grayscale(0%);
                 -webkit-filter: grayscale(0%);
