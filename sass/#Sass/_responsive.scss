@@ -413,7 +413,7 @@ $centerbanner: #f8f9fb;
 
                 font-size: 35px;
                 min-width: 370px;
-                margin-bottom: 15px;
+                margin-bottom: 0px;
 
             }
 
@@ -426,14 +426,8 @@ $centerbanner: #f8f9fb;
             & a {
 
                 max-width: 140px;
-
-                & p {
-
-                    font-size: 18px;
-                    margin: 14px 0;
-                    width: 100%;
-
-                }
+                font-size: 16px;
+                margin-top: 30px;
 
             }
 
@@ -1068,12 +1062,7 @@ $centerbanner: #f8f9fb;
                 padding: 7px 0;
 
                 border-radius: 5px;
-
-                & p {
-
-                    font-size: 10px;
-
-                }
+                font-size: 10px;
 
             }
 
