@@ -38,7 +38,7 @@ $centerbanner: #f8f9fb;
                 -webkit-animation-name: none;
                 animation-name: none;
                 -webkit-animation-duration: 0;
-                animation-duration: 0;
+                animation-duration: 0s;
      
             }
         
@@ -62,7 +62,7 @@ $centerbanner: #f8f9fb;
                     -webkit-animation-name: none;
                     animation-name: none;
                     -webkit-animation-duration: 0;
-                    animation-duration: 0;
+                    animation-duration: 0s;
 
                 }  
             }
@@ -80,7 +80,7 @@ $centerbanner: #f8f9fb;
                 -webkit-animation-name: none;
                 animation-name: none;
                 -webkit-animation-duration: 0;
-                animation-duration: 0;
+                animation-duration: 0s;
      
             }
         
@@ -628,7 +628,6 @@ $centerbanner: #f8f9fb;
                     transform: scale(1);
     
                     text-decoration: underline;
-                    text-decoration-thickness: 1px;
                     text-underline-position: under;
     
                 }
@@ -2681,7 +2680,7 @@ $centerbanner: #f8f9fb;
     .slider__picture  {
 
         max-width: 190px;
-        max-height: auto;
+        height: auto;
         border-radius: 50%;
         border: 2px solid $bluesky;
     

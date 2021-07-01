@@ -11,5 +11,11 @@
   "devDependencies": {
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-mailer": "^0.3.1",
+    "nodemailer": "^6.6.2",
+    "swig": "^0.14.0"
   }
 }

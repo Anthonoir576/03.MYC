@@ -50,12 +50,12 @@ header {
   display: flex;
   margin: 3.2px;
   position: fixed;
-  left: 0em;
-  top: 0;
+  left: -2px;
+  top: -3px;
 }
 .topbar-logo img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 }
 .topbar-logo p {
   margin: 0;
@@ -92,8 +92,7 @@ header {
 }
 .topbar .topbar-nav li:hover {
   transform: scale(1.4);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
+  text-decoration: none;
   text-underline-position: under;
 }
 .topbar .topbar-nav li:first-child {
@@ -131,7 +130,7 @@ header {
 }
 .header div h1 {
   font-size: 48px;
-  font-weight: 550;
+  font-weight: 500;
   margin: 0 0 10px 0;
   min-height: 60px;
   min-width: 550px;
@@ -1324,7 +1323,7 @@ figcaption {
 }
 .slider__picture {
   max-width: 250px;
-  max-height: auto;
+  height: auto;
   border-radius: 50%;
   border: 2px solid #6cb0f6;
 }
@@ -1501,7 +1500,6 @@ figcaption {
 }
 .contact-text_map .contact-text .icontxt {
   display: flex;
-  justify-content: baseline;
   align-items: center;
 }
 .contact-text_map .contact-text .icontxt img {
@@ -1744,7 +1742,7 @@ figcaption {
     -webkit-animation-name: none;
     animation-name: none;
     -webkit-animation-duration: 0;
-    animation-duration: 0;
+    animation-duration: 0s;
   }
 }
 @media only screen and (max-width: 570px) {
@@ -1752,14 +1750,14 @@ figcaption {
     -webkit-animation-name: none;
     animation-name: none;
     -webkit-animation-duration: 0;
-    animation-duration: 0;
+    animation-duration: 0s;
   }
 
   .moreinfo > a:hover {
     -webkit-animation-name: none;
     animation-name: none;
     -webkit-animation-duration: 0;
-    animation-duration: 0;
+    animation-duration: 0s;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -2093,7 +2091,6 @@ figcaption {
   .topbar .topbar-nav li:hover {
     transform: scale(1);
     text-decoration: underline;
-    text-decoration-thickness: 1px;
     text-underline-position: under;
   }
 }
@@ -3124,7 +3121,7 @@ figcaption {
 
   .slider__picture {
     max-width: 190px;
-    max-height: auto;
+    height: auto;
     border-radius: 50%;
     border: 2px solid #6cb0f6;
   }
