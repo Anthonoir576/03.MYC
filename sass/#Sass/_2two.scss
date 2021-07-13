@@ -83,10 +83,6 @@ aside {
 
             & img {
                 filter: grayscale(100%);
-                -webkit-filter: grayscale(100%);
-                -moz-filter: grayscale(100%);
-                -ms-filter: grayscale(100%);
-                -o-filter: grayscale(100%);
             }
             & .effectLight01:hover,
               .effectLight02:hover,
@@ -95,12 +91,7 @@ aside {
 
                 transform: scale(1.5);
                 filter: grayscale(0%);
-                -webkit-filter: grayscale(0%);
-                -moz-filter: grayscale(0%);
-                -ms-filter: grayscale(0%);
-                -o-filter: grayscale(0%);
                 filter: saturate(200%);
-                -webkit-filter: saturate(200%);
 
             }
     
@@ -401,35 +392,26 @@ article {
 
             transform: scale(1.05);
             box-shadow: 0px 0px 30px 0px $bluesky;
-            filter: saturate(900%);
-            -webkit-filter: saturate(300%); 
+            filter: saturate(500%);
 
 
             // EFFECT ROTATION BUTTON
-            -webkit-transform-origin: top center;
-            -ms-transform-origin: top center;
             transform-origin: top center;
-            -webkit-animation-name: swing;
             animation-name: swing;
-            -webkit-animation-duration: 1s;
             animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
         
             @keyframes swing {
 
             20% {
-                -webkit-transform: rotate3d(0, 0, 1, 5deg);
                 transform: rotate3d(0, 0, 1, 5deg);
                 }
 
             40% {
-                -webkit-transform: rotate3d(0, 0, 1, -5deg);
                 transform: rotate3d(0, 0, 1, -5deg);
                 }
 
             60% {
-                -webkit-transform: rotate3d(0, 0, 1, 2.5deg);
                 transform: rotate3d(0, 0, 1, 2.5deg);
                 }
                 

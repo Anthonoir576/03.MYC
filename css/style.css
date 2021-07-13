@@ -107,7 +107,6 @@ header {
   text-shadow: 1px 0px 10px white;
   color: #6cb0f6;
   filter: saturate(900%);
-  -webkit-filter: saturate(300%);
 }
 
 .header {
@@ -157,28 +156,19 @@ header {
   transform: scale(1.05);
   box-shadow: 0px 0px 30px 0px #6cb0f6;
   filter: saturate(900%);
-  -webkit-filter: saturate(300%);
-  -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
   transform-origin: top center;
-  -webkit-animation-name: swing;
   animation-name: swing;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 @keyframes swing {
   20% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
     transform: rotate3d(0, 0, 1, 5deg);
   }
   40% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
     transform: rotate3d(0, 0, 1, -5deg);
   }
   60% {
-    -webkit-transform: rotate3d(0, 0, 1, 2.5deg);
     transform: rotate3d(0, 0, 1, 2.5deg);
   }
 }
@@ -213,62 +203,44 @@ header {
 }
 
 .header-arrow img {
-  -webkit-animation-name: bounce;
   animation-name: bounce;
-  -webkit-transform-origin: center bottom;
-  -ms-transform-origin: center bottom;
   transform-origin: center bottom;
-  -webkit-animation-duration: 1s;
   animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
 }
 @-webkit-keyframes bounce {
   0%, 20%, 53%, 80%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
   40%, 43% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
   }
   70% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
   }
   90% {
-    -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
   }
 }
 @keyframes bounce {
   0%, 20%, 53%, 80%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
   40%, 43% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
   }
   70% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
   }
   90% {
-    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
   }
 }
@@ -526,10 +498,6 @@ aside .about-text_networks .about-networks a img:hover {
 }
 aside .about-text_networks .about-networks img {
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
 }
 aside .about-text_networks .about-networks .effectLight01:hover,
 aside .about-text_networks .about-networks .effectLight02:hover,
@@ -537,12 +505,7 @@ aside .about-text_networks .about-networks .effectLight03:hover,
 aside .about-text_networks .about-networks .effectLight04:hover {
   transform: scale(1.5);
   filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
   filter: saturate(200%);
-  -webkit-filter: saturate(200%);
 }
 
 article {
@@ -728,29 +691,20 @@ article .aboutMe > p {
 .aboutMe-downloadcv a:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 30px 0px #6cb0f6;
-  filter: saturate(900%);
-  -webkit-filter: saturate(300%);
-  -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
+  filter: saturate(500%);
   transform-origin: top center;
-  -webkit-animation-name: swing;
   animation-name: swing;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 @keyframes swing {
   20% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
     transform: rotate3d(0, 0, 1, 5deg);
   }
   40% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
     transform: rotate3d(0, 0, 1, -5deg);
   }
   60% {
-    -webkit-transform: rotate3d(0, 0, 1, 2.5deg);
     transform: rotate3d(0, 0, 1, 2.5deg);
   }
 }
