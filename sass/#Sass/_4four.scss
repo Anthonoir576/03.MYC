@@ -36,8 +36,7 @@ $centerbanner: #f8f9fb;
             border: 1px solid $bluesky;
             border-radius: 7px;
             
-            filter: saturate(900%);
-            -webkit-filter: saturate(300%);
+            filter: saturate(300%);
             
             transform: scale(1.1);
             padding: 9px 10px 9px 12px;
@@ -199,10 +198,8 @@ figcaption {
 
     & strong {
 
-        border: 1px solid $bluesky;
         border-radius: 3px;
         background-color: $bluesky;
-
         color: white;
         padding: 7px 7px 5px 7px;
         letter-spacing: 1px;
@@ -229,35 +226,26 @@ figcaption {
     
             transform: scale(1.05);
             box-shadow: 0px 0px 30px 0px $bluesky;
-            filter: saturate(900%);
-            -webkit-filter: saturate(300%); 
+            filter: saturate(300%);
     
     
             // EFFECT ROTATION BUTTON
-            -webkit-transform-origin: top center;
-            -ms-transform-origin: top center;
             transform-origin: top center;
-            -webkit-animation-name: swing;
             animation-name: swing;
-            -webkit-animation-duration: 500ms;
             animation-duration: 500ms;
-            -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
         
             @keyframes swing {
 
             20% {
-                -webkit-transform: rotate3d(0, 0, 1, 5deg);
                 transform: rotate3d(0, 0, 1, 5deg);
                 }
 
             40% {
-                -webkit-transform: rotate3d(0, 0, 1, -5deg);
                 transform: rotate3d(0, 0, 1, -5deg);
                 }
 
             60% {
-                -webkit-transform: rotate3d(0, 0, 1, 2.5deg);
                 transform: rotate3d(0, 0, 1, 2.5deg);
                 }
                 
