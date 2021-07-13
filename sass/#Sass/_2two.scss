@@ -73,7 +73,14 @@ aside {
             justify-content: space-around;
             margin: 20px 0 15px 0;
 
-            /* ##### effect dark / light ##### */
+            /* ##### effect dark / light ##### */  
+
+            & a img:hover {
+
+                transform: scale(1.1);
+
+            }
+
             & img {
                 filter: grayscale(100%);
                 -webkit-filter: grayscale(100%);
@@ -81,8 +88,12 @@ aside {
                 -ms-filter: grayscale(100%);
                 -o-filter: grayscale(100%);
             }
-            & img:hover {
-                transform: scale(1.1);
+            & .effectLight01:hover,
+              .effectLight02:hover,
+              .effectLight03:hover,
+              .effectLight04:hover {
+
+                transform: scale(1.5);
                 filter: grayscale(0%);
                 -webkit-filter: grayscale(0%);
                 -moz-filter: grayscale(0%);
@@ -114,6 +125,8 @@ article {
             font-weight: 700;
             margin: 0;
             
+            max-height: 48px;
+
             letter-spacing: 10px;
             white-space: nowrap;
 
@@ -121,29 +134,27 @@ article {
 
         & h3 {
 
-            font-size: 22px;
-            font-weight: 400;
-            margin: 35px 0 43px 0;
+            font-size: 18px;
+            font-weight: 300;
+            margin: 35px 0 60px 0;
             color: $gray;
 
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            padding: 10px 10px;
-            width: 342px;
+            max-height: 19px;
+
+            letter-spacing: 10px;
 
         }
 
         & h4 {
 
-            font-size: 22px;
-            font-weight: 400;
-            margin: 0px 0 38px 0;
+            font-size: 18px;
+            font-weight: 300;
+            margin: 30px 0 50px 0;
             color: $gray;
-            width: 220px;
 
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            padding: 10px 10px;
+            max-height: 19px;
+           
+            letter-spacing: 5px;
 
         }
 
@@ -169,6 +180,8 @@ article {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
     border-radius: 10px;
 
+    max-height: 255px;
+    
 
     ::selection {
 
@@ -237,8 +250,11 @@ article {
         }
     }
     
+    // OFF default ON on scroll
     .bar .progress-line span {
-    
+        
+        display: none;
+
         height: 100%;
         position: absolute;
         border-radius: 10px;
@@ -383,7 +399,7 @@ article {
 
         &:hover {
 
-            transform: scale(1.1);
+            transform: scale(1.05);
             box-shadow: 0px 0px 30px 0px $bluesky;
             filter: saturate(900%);
             -webkit-filter: saturate(300%); 
@@ -402,18 +418,21 @@ article {
         
             @keyframes swing {
 
-                20% {
-                -webkit-transform: rotate3d(0, 0, 1, 15deg);
-                transform: rotate3d(0, 0, 1, 15deg);
-                }
-                40% {
-                -webkit-transform: rotate3d(0, 0, 1, -10deg);
-                transform: rotate3d(0, 0, 1, -10deg);
-                }
-                60% {
+            20% {
                 -webkit-transform: rotate3d(0, 0, 1, 5deg);
                 transform: rotate3d(0, 0, 1, 5deg);
                 }
+
+            40% {
+                -webkit-transform: rotate3d(0, 0, 1, -5deg);
+                transform: rotate3d(0, 0, 1, -5deg);
+                }
+
+            60% {
+                -webkit-transform: rotate3d(0, 0, 1, 2.5deg);
+                transform: rotate3d(0, 0, 1, 2.5deg);
+                }
+                
             }
         }  
     }

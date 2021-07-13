@@ -6,14 +6,14 @@ $bluesky: #6cb0f6;
 $gray: #727272;
 $centerbanner: #f8f9fb;
 
-// global property -- ( propriété de l'ensemble du doc )
+// Border BOX
 * {
 
     box-sizing: border-box;
     
 }
 
-// SCROLL BAR (a revoir !) 
+// SCROLL BAR
 ::-webkit-scrollbar {
 
     width: 8px;
@@ -22,26 +22,26 @@ $centerbanner: #f8f9fb;
 }
 ::-webkit-scrollbar-thumb {
 
-// #e66465 14% FIRST COLOR
-// background: linear-gradient(13deg, #9198E5 14%,#9198E5 64%);
-background: linear-gradient(13deg, $bluesky 14%, $bluesky 64%);
-border-radius: 10px;
+    // #e66465 14% FIRST COLOR
+    // background: linear-gradient(13deg, #9198E5 14%,#9198E5 64%);
+    background: linear-gradient(13deg, $bluesky 14%, $bluesky 64%);
+    border-radius: 10px;
 
 }
 ::-webkit-scrollbar-thumb:hover{
 
-background: linear-gradient(13deg, #c7ceff 14%, 64%);
+    background: linear-gradient(13deg, #c7ceff 14%, 64%);
 
 }
 ::-webkit-scrollbar-track{
 
-background: hsl(0, 0%, 100%);
-border-radius: 10px;
-box-shadow: inset 7px 10px 12px #f0f0f0;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
 
 }
 
-// property of HTML / BODY -- ( propriété du body )
+// Little reset CSS
 html, body {
 
     // cut default margin and padding
@@ -53,7 +53,7 @@ html, body {
 
 }
 
-// HEADER config - background and size -- ( Fond d'écran personnalisé )
+// HEADER config - background and size -
 header {
 
     //background-image: url(../image/headerbanner.png);
@@ -77,6 +77,9 @@ header {
     flex-direction: column;
     justify-content: space-between;
 
+    overflow-x: hidden;
+
+
 
 }
 
@@ -84,20 +87,20 @@ header {
 
 
 
-// LOGO config -- (logo en haut a gauche)
+// - LOGO config -
 .topbar-logo {
 
     display: flex;
     margin: 3.2px;
     position: fixed;
-    left: 0em;
-    top: 0;
+    left: -2px;
+    top: -3px;
 
     & img {
 
         // logo size
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
 
     }
 
@@ -113,13 +116,13 @@ header {
 
 }
 
-// NAV config -- (barre de navigation)
+// - NAV config -
 // fake double topbar. I used it to create the same type of content as the header so as not to use the margins
 .topbar-nav::before {
 
     content: '';
     display: block;
-    width: 400px;
+    width: 540px;
 
 }
 
@@ -155,8 +158,7 @@ header {
 
                 transform: scale(1.4);
 
-                text-decoration: underline;
-                text-decoration-thickness: 1px;
+                text-decoration: none;
                 text-underline-position: under;
 
             }
@@ -195,13 +197,12 @@ header {
 
 
 
-// HEADER - TEXT and PICTURE config -- (photo + description)
+// HEADER - TEXT and PICTURE config -
 .header {
 
     display: flex;
     justify-content: space-around;
     margin: 0em 0em 0em 0em;
-
 
     // HEADER text 
     & div {
@@ -210,7 +211,7 @@ header {
 
         & h2 {
 
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 300;
             padding-left: 0.1em;
             margin: 0;
@@ -225,12 +226,15 @@ header {
 
         & h1 {
 
-            font-size: 56px;
-            font-weight: 550;
-            margin: 0 0 0.5em 0;
+            font-size: 48px;
+            font-weight: 500;
+            margin: 0 0 10px 0;
+            min-height: 60px;
+            min-width: 550px;
+            text-align: start;
             
             text-shadow: 0px 0px 3.5px $bluesky;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
 
             white-space: nowrap; // empeche le retour a la ligne 
         }
@@ -238,8 +242,10 @@ header {
         & a {
 
             display: block;
-            
-            margin: 3.3em 0em 0em 0.2em;
+
+            padding: 12px 1px;
+
+            margin: 35px 0em 0em 0.2em;
             max-width: 160px;
             
             font-size: 18px;
@@ -253,7 +259,7 @@ header {
 
             &:hover {
 
-                transform: scale(1.1);
+                transform: scale(1.05);
                 box-shadow: 0px 0px 30px 0px $bluesky;
                 filter: saturate(900%);
                 -webkit-filter: saturate(300%); 
@@ -273,17 +279,20 @@ header {
                 @keyframes swing {
 
                     20% {
-                    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-                    transform: rotate3d(0, 0, 1, 15deg);
-                    }
-                    40% {
-                    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-                    transform: rotate3d(0, 0, 1, -10deg);
-                    }
-                    60% {
                     -webkit-transform: rotate3d(0, 0, 1, 5deg);
                     transform: rotate3d(0, 0, 1, 5deg);
                     }
+
+                    40% {
+                    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+                    transform: rotate3d(0, 0, 1, -5deg);
+                    }
+
+                    60% {
+                    -webkit-transform: rotate3d(0, 0, 1, 2.5deg);
+                    transform: rotate3d(0, 0, 1, 2.5deg);
+                    }
+                    
                 }
             }  
         }
@@ -293,12 +302,21 @@ header {
         
         margin: 0;
         align-self: center;
-    
+
+    }
+
+    & .header-text-effect {
+
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 100;
+        opacity: 0.5;
+        font-size: 36px; // 4px decart avec h1
+
     }
 
 }
 
-// Effect picture HEADER
+// Effect - picture HEADER - and config
 .header-picture {
 
     // EFFET sur la photo / prend pas en compte le box, mais le contour de la photo sans transparence
@@ -313,7 +331,7 @@ header {
     
 }
 
-// ASIDE arrow content config -- (fleche d'animation)
+// ASIDE - arrow content config -
 .header-arrow {
 
     display: flex;
@@ -331,7 +349,7 @@ header {
 
 }
 
-// ANIMATION arrow 
+// - ANIMATION arrow -
 .header-arrow img {
 
     
@@ -412,9 +430,6 @@ header {
     } 
 
 }
-
-
-
 
 
 // TEST POUR EFFET !!!!

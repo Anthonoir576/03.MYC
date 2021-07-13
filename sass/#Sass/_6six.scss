@@ -185,10 +185,10 @@ $centerbanner: #f8f9fb;
 
     & button {
 
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         border: 1.5px solid white;
-        border-radius: 10px;
+        border-radius: 7px;
         background-color: $bluesky;
         letter-spacing: 1px;
 
@@ -217,18 +217,21 @@ $centerbanner: #f8f9fb;
         
             @keyframes swing {
 
-                20% {
-                -webkit-transform: rotate3d(0, 0, 1, 15deg);
-                transform: rotate3d(0, 0, 1, 15deg);
-                }
-                40% {
-                -webkit-transform: rotate3d(0, 0, 1, -10deg);
-                transform: rotate3d(0, 0, 1, -10deg);
-                }
-                60% {
+            20% {
                 -webkit-transform: rotate3d(0, 0, 1, 5deg);
                 transform: rotate3d(0, 0, 1, 5deg);
                 }
+
+            40% {
+                -webkit-transform: rotate3d(0, 0, 1, -5deg);
+                transform: rotate3d(0, 0, 1, -5deg);
+                }
+
+            60% {
+                -webkit-transform: rotate3d(0, 0, 1, 2.5deg);
+                transform: rotate3d(0, 0, 1, 2.5deg);
+                }
+                
             }
         }  
     }
@@ -251,22 +254,22 @@ $centerbanner: #f8f9fb;
 
         & .icontxt {
 
-            display: flex;
-            justify-content: baseline;
+            display: flex;           
             align-items: center;
 
             & img {
 
-                margin-right: 1em;
+                margin-right: 2em;
                 text-align: center;
-                width: 18px;
+                width: 14px;
                 height: auto;
 
             }
 
             & p {
 
-                font-size: 18px;
+                font-size: 16px;
+                font-weight: 300;
 
             }
 
@@ -275,23 +278,28 @@ $centerbanner: #f8f9fb;
         //modifier icon IMG
         & :last-child img {
 
-           width: 16px;
+           width: 12px;
            margin-left: 2px;
-
+           margin-bottom: 10px; 
         }   
 
     }
 
 }
 
-.MAP {
+.MAP,
+.MAP-S {
 
     border: 1px solid $bluesky;
     border-radius: 15px;
 
 }
 
+.MAP-S {
 
+    display: none;
+
+}
 
 // FOOTER COPYRIGHT 
 .footer-copyright {
@@ -327,6 +335,13 @@ $centerbanner: #f8f9fb;
         background-color: black;
 
         opacity: 0.1;
+
+    }
+
+    & p {
+
+        font-size: 12px;
+        margin: 7px 0;
 
     }
 
